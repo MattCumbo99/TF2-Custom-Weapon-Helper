@@ -43,4 +43,44 @@ public class WeaponStat {
         this.desc = desc;
         this.type = type;
     }
+    
+    public int getId(){
+        return id;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getDescription(){
+        return desc;
+    }
+    
+    public int getType(){
+        return type;
+    }
+    
+    @Override
+    public String toString(){
+        String str;
+        switch(type){
+            case 0:
+                str = "percentage";
+                break;
+            case 1:
+                str = "inverted_percentage";
+                break;
+            case 2:
+                str = "additive";
+                break;
+            case 3:
+                str = "constant";
+                break;
+            default:
+                System.out.println("There is a weapon stat with a bad type parameter!");
+                str = "ERROR";
+                break;
+        }
+        return (id + " | " + name + " | " + desc + " | " + str);
+    }
 }
