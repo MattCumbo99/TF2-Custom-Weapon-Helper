@@ -22,5 +22,25 @@ package tf2weaponhelper;
  */
 public class WeaponStat {
     
+    private int id;
+    private String name;
+    private String desc;
+    private int type;
     
+    /**
+     * Creates a new weapon stat. Use this link:
+     * https://wiki.teamfortress.com/wiki/List_of_item_attributes
+     * @param id Identification number of the attribute
+     * @param name Name of the attribute
+     * @param desc Description of the attribute
+     * @param type Value type of the attribute. 0=percentage, 1=inverted_percentage, 2=additive, 3=constant
+     */
+    public WeaponStat(int id, String name, String desc, int type){
+        if(type < 0 || type > 3 || id < 1)
+            throw new IllegalArgumentException();
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.type = type;
+    }
 }
