@@ -38,17 +38,156 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        tabbedPane = new javax.swing.JTabbedPane();
+        infBasicSettings = new javax.swing.JInternalFrame();
+        lblWeaponNumber = new javax.swing.JLabel();
+        txtWeaponNumber = new javax.swing.JTextField();
+        lblClassname = new javax.swing.JLabel();
+        txtClassname = new javax.swing.JTextField();
+        lblWeaponNumber2 = new javax.swing.JLabel();
+        txtWeaponNumber2 = new javax.swing.JTextField();
+        lblWeaponNumber3 = new javax.swing.JLabel();
+        lblWeaponNumber4 = new javax.swing.JLabel();
+        txtWeaponNumber4 = new javax.swing.JTextField();
+        lblWeaponNumber5 = new javax.swing.JLabel();
+        txtWeaponNumber5 = new javax.swing.JTextField();
+        lblWeaponNumber6 = new javax.swing.JLabel();
+        txtWeaponNumber6 = new javax.swing.JTextField();
+        boxSlot = new javax.swing.JComboBox<>();
+        infAttributes = new javax.swing.JInternalFrame();
+        infWeaponCode = new javax.swing.JInternalFrame();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        codeText = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("TF2 Custom Weapon Helper");
+
+        infBasicSettings.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        infBasicSettings.setFrameIcon(null);
+        infBasicSettings.setVisible(true);
+        infBasicSettings.getContentPane().setLayout(null);
+
+        lblWeaponNumber.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber.setText("Weapon number:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber);
+        lblWeaponNumber.setBounds(10, 10, 140, 22);
+
+        txtWeaponNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtWeaponNumber.setText("10000");
+        infBasicSettings.getContentPane().add(txtWeaponNumber);
+        txtWeaponNumber.setBounds(210, 10, 90, 23);
+
+        lblClassname.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblClassname.setText("Classname:");
+        infBasicSettings.getContentPane().add(lblClassname);
+        lblClassname.setBounds(10, 40, 140, 22);
+
+        txtClassname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtClassname.setText("tf_weapon_rocketlauncher");
+        infBasicSettings.getContentPane().add(txtClassname);
+        txtClassname.setBounds(210, 40, 240, 23);
+
+        lblWeaponNumber2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber2.setText("Index:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber2);
+        lblWeaponNumber2.setBounds(10, 70, 140, 22);
+
+        txtWeaponNumber2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtWeaponNumber2.setText("228");
+        infBasicSettings.getContentPane().add(txtWeaponNumber2);
+        txtWeaponNumber2.setBounds(210, 70, 140, 23);
+
+        lblWeaponNumber3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber3.setText("Slot:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber3);
+        lblWeaponNumber3.setBounds(10, 100, 140, 22);
+
+        lblWeaponNumber4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber4.setText("Quality:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber4);
+        lblWeaponNumber4.setBounds(10, 130, 140, 22);
+
+        txtWeaponNumber4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtWeaponNumber4.setText("6");
+        infBasicSettings.getContentPane().add(txtWeaponNumber4);
+        txtWeaponNumber4.setBounds(210, 130, 50, 23);
+
+        lblWeaponNumber5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber5.setText("Level:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber5);
+        lblWeaponNumber5.setBounds(10, 160, 140, 22);
+
+        txtWeaponNumber5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtWeaponNumber5.setText("29");
+        infBasicSettings.getContentPane().add(txtWeaponNumber5);
+        txtWeaponNumber5.setBounds(210, 160, 50, 23);
+
+        lblWeaponNumber6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber6.setText("Ammo:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber6);
+        lblWeaponNumber6.setBounds(10, 190, 140, 22);
+
+        txtWeaponNumber6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtWeaponNumber6.setText("20");
+        infBasicSettings.getContentPane().add(txtWeaponNumber6);
+        txtWeaponNumber6.setBounds(210, 190, 80, 23);
+
+        boxSlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        boxSlot.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primary", "Secondary", "Melee" }));
+        infBasicSettings.getContentPane().add(boxSlot);
+        boxSlot.setBounds(210, 100, 180, 23);
+
+        tabbedPane.addTab("Basic settings", infBasicSettings);
+
+        infAttributes.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        infAttributes.setFrameIcon(null);
+        infAttributes.setVisible(true);
+
+        javax.swing.GroupLayout infAttributesLayout = new javax.swing.GroupLayout(infAttributes.getContentPane());
+        infAttributes.getContentPane().setLayout(infAttributesLayout);
+        infAttributesLayout.setHorizontalGroup(
+            infAttributesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        infAttributesLayout.setVerticalGroup(
+            infAttributesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 462, Short.MAX_VALUE)
+        );
+
+        tabbedPane.addTab("Attributes", infAttributes);
+
+        infWeaponCode.setFrameIcon(null);
+        infWeaponCode.setVisible(true);
+
+        codeText.setEditable(false);
+        codeText.setColumns(20);
+        codeText.setRows(5);
+        codeText.setText("\"10000\"\n{\n\t\"classname\"\t\t\"tf_weapon_rocketlauncher\"\n\t\"index\"\t\t\t\"228\"\n\t\"slot\"\t\t\t\"0\"\n\t\"quality\"\t\t\"6\"\n\t\"level\"\t\t\t\"29\"\n\t\"attribs\"\t\t\"134 ; 19\"\n\t\"ammo\"\t\t\"20\"\n}");
+        codeText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jScrollPane1.setViewportView(codeText);
+
+        javax.swing.GroupLayout infWeaponCodeLayout = new javax.swing.GroupLayout(infWeaponCode.getContentPane());
+        infWeaponCode.getContentPane().setLayout(infWeaponCodeLayout);
+        infWeaponCodeLayout.setHorizontalGroup(
+            infWeaponCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 739, Short.MAX_VALUE)
+        );
+        infWeaponCodeLayout.setVerticalGroup(
+            infWeaponCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE)
+        );
+
+        tabbedPane.addTab("Weapon code", infWeaponCode);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 762, Short.MAX_VALUE)
+            .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 522, Short.MAX_VALUE)
+            .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -90,5 +229,25 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> boxSlot;
+    private javax.swing.JTextArea codeText;
+    private javax.swing.JInternalFrame infAttributes;
+    private javax.swing.JInternalFrame infBasicSettings;
+    private javax.swing.JInternalFrame infWeaponCode;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblClassname;
+    private javax.swing.JLabel lblWeaponNumber;
+    private javax.swing.JLabel lblWeaponNumber2;
+    private javax.swing.JLabel lblWeaponNumber3;
+    private javax.swing.JLabel lblWeaponNumber4;
+    private javax.swing.JLabel lblWeaponNumber5;
+    private javax.swing.JLabel lblWeaponNumber6;
+    private javax.swing.JTabbedPane tabbedPane;
+    private javax.swing.JTextField txtClassname;
+    private javax.swing.JTextField txtWeaponNumber;
+    private javax.swing.JTextField txtWeaponNumber2;
+    private javax.swing.JTextField txtWeaponNumber4;
+    private javax.swing.JTextField txtWeaponNumber5;
+    private javax.swing.JTextField txtWeaponNumber6;
     // End of variables declaration//GEN-END:variables
 }
