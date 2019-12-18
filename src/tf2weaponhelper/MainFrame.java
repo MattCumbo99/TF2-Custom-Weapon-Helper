@@ -73,6 +73,8 @@ public class MainFrame extends javax.swing.JFrame {
         lblAmmo = new javax.swing.JLabel();
         boxModel = new javax.swing.JComboBox<>();
         infAttributes = new javax.swing.JInternalFrame();
+        lblIndex1 = new javax.swing.JLabel();
+        boxAttribute = new javax.swing.JComboBox<>();
         infWeaponCode = new javax.swing.JInternalFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         codeText = new javax.swing.JTextArea();
@@ -98,6 +100,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtClassname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtClassname.setText("tf_weapon_rocketlauncher");
+        txtClassname.setEnabled(false);
         infBasicSettings.getContentPane().add(txtClassname);
         txtClassname.setBounds(210, 40, 240, 23);
 
@@ -108,6 +111,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtIndex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtIndex.setText("228");
+        txtIndex.setEnabled(false);
         infBasicSettings.getContentPane().add(txtIndex);
         txtIndex.setBounds(210, 70, 140, 23);
 
@@ -147,7 +151,7 @@ public class MainFrame extends javax.swing.JFrame {
         txtAmmo.setBounds(210, 190, 80, 23);
 
         boxSlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        boxSlot.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primary", "Secondary", "Melee" }));
+        boxSlot.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primary", "Secondary", "Melee", "PDA", "Sapper", "Invis watch" }));
         infBasicSettings.getContentPane().add(boxSlot);
         boxSlot.setBounds(210, 100, 180, 23);
 
@@ -156,6 +160,7 @@ public class MainFrame extends javax.swing.JFrame {
         infBasicSettings.getContentPane().add(lblClassname);
         lblClassname.setBounds(10, 40, 140, 22);
 
+        chkUsePreset.setSelected(true);
         chkUsePreset.setText("Use preset");
         chkUsePreset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,25 +177,26 @@ public class MainFrame extends javax.swing.JFrame {
 
         boxModel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxModel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Scattergun", "Force-A-Nature", "The Shortstop", "The Soda Popper", "Festive Scattergun", "Baby Face's Blaster", "Silver Botkiller Scattergun Mk.I", "Gold Botkiller Scattergun Mk.I", "Rust Botkiller Scattergun Mk.I", "Blood Botkiller Scattergun Mk.I", "Carbonado Botkiller Scattergun Mk.I", "Diamond Botkiller Scattergun Mk.I", "Silver Botkiller Scattergun Mk.II", "Gold Botkiller Scattergun Mk.II", "Festive Force-A-Nature", "The Back Scatter", "Scout's Pistol", "Bonk! Atomic Punch", "Vintage Lugermorph", "Crit-A-Cola", "Mad Milk", "Lugermorph", "The Winger", "Pretty Boy's Pocket Pistol", "The Flying Guillotine", "Mutated Milk", "Festive Bonk!", "The C.A.P.P.E.R.", "Bat", "The Sandman", "The Holy Mackerel", "Frying Pan", "The Candy Cane", "The Boston Basher", "Sun-on-a-Stick", "The Fan O'War", "Saxxy", "The Atomizer", "Three-Rune Blade", "The Conscientious Objector", "Unarmed Combat", "The Wrap Assassin", "Festive Bat", "The Freedom Staff", "The Bat Outta Hell", "The Memory Maker", "Festive Holy Mackerel", "The Ham Shank", "Gold Frying Pan", "The Necro Smasher", "The Crossing Guard", "Batsaber", "Prinny Machete", "Rocket Launcher", "The Direct Hit", "The Black Box", "Rocket Jumper", "The Liberty Launcher", "The Cow Mangler 5000", "The Original", "Festive Rocket Launcher", "The Beggar's Bazooka", "Silver Botkiller Rocket Launcher Mk.I", "Gold Botkiller Rocket Launcher Mk.I", "Rust Botkiller Rocket Launcher Mk.I", "Blood Botkiller Rocket Launcher Mk.I", "Carbonado Botkiller Rocket Launcher Mk.I", "Diamond Botkiller Rocket Launcher Mk.I", "Silver Botkiller Rocket Launcher Mk.II", "Gold Botkiller Rocket Launcher Mk.II", "Festive Black Box", "The Air Strike", "Soldier's Shotgun", "The Buff Banner", "Gunboats", "The Battalion's Backup", "The Righteous Bison", "The Mantreads", "Festive Buff Banner", "The B.A.S.E. Jumper", "Festive Shotgun", "Panic Attack", "Shovel", "The Equalizer", "The Pain Train", "The Half-Zatoichi", "The Market Gardener", "The Disciplinary Action", "The Escape Plan", "Flame Thrower", "The Backburner", "The Degreaser", "The Phlogistinator", "Festive Flame Thrower", "The Rainblower", "Silver Botkiller Flame Thrower Mk.I", "Gold Botkiller Flame Thrower Mk.I", "Rust Botkiller Flame Thrower Mk.I", "Blood Botkiller Flame Thrower Mk.I", "Carbonado Botkiller Flame Thrower Mk.I", "Diamond Botkiller Flame Thrower Mk.I", "Silver Botkiller Flame Thrower Mk.II", "Gold Botkiller Flame Thrower Mk.II", "Festive Backburner", "Dragon's Fury", "Pyro's Shotgun", "The Flare Gun", "The Detonator", "The Reserve Shooter", "The Manmelter", "The Scorch Shot", "Festive Flare Gun", "Fire Axe", "The Axtinguisher", "Homewrecker", "The Powerjack", "The Back Scratcher", "Sharpened Volcano Fragment", "The Postal Pummeler", "The Maul", "The Third Degree", "The Lollichop", "Neon Annihilator", "The Festive Axtinguisher", "Hot Hand", "Grenade Launcher", "The Loch-n-Load", "Ali Baba's Wee Booties", "The Bootlegger", "The Loose Cannon", "Festive Grenade Launcher", "The Iron Bomber", "Stickybomb Launcher", "The Scottish Resistance", "The Chargin' Targe", "Sticky Jumper", "The Splendid Screen", "Festive Stickybomb Launcher", "Silver Botkiller Stickybomb Launcher Mk.I", "Gold Botkiller Stickybomb Launcher Mk.I", "Rust Botkiller Stickybomb Launcher Mk.I", "Blood Botkiller Stickybomb Launcher Mk.I", "Carbonado Botkiller Stickybomb Launcher Mk.I", "Diamond Botkiller Stickybomb Launcher Mk.I", "Silver Botkiller Stickybomb Launcher Mk.II", "Gold Botkiller Stickybomb Launcher Mk.II", "The Tide Turner", "Festive Targe", "The Quickiebomb Launcher", "Bottle", "The Eyelander", "The Pain Train", "The Scotsman's Skullcutter", "Horseless Headless Horsemann's Headtaker", "Ullapool Caber", "The Claidheamh Mor", "The Persian Persuader", "Nessie's Nine Iron", "The Scottish Handshake", "Festive Eyelander", "Minigun", "Natascha", "Iron Curtain", "The Brass Beast", "Tomislav", "Festive Minigun", "Silver Botkiller Minigun Mk.I", "Gold Botkiller Minigun Mk.I", "Rust Botkiller Minigun Mk.I", "Blood Botkiller Minigun Mk.I", "Carbonado Botkiller Minigun Mk.I", "Diamond Botkiller Minigun Mk.I", "Silver Botkiller Minigun Mk.II", "Gold Botkiller Minigun Mk.II", "The Huo-Long Heater", "Heavy's Shotgun", "Sandvich", "The Dalokohs Bar", "The Buffalo Steak Sandvich", "The Family Business", "Fishcake", "Robo-Sandvich", "Festive Sandvich", "Second Banana", "Fists", "The Killing Gloves of Boxing", "Gloves of Running Urgently", "Warrior's Spirit", "Fists of Steel", "The Eviction Notice", "Apoco-Fists", "The Holiday Punch", "Festive Gloves of Running Urgently", "The Bread Bite", "Engineer's Shotgun", "The Frontier Justice", "The Widowmaker", "The Pomson 6000", "The Rescue Ranger", "Festive Frontier Justice", "Engineer's Pistol", "The Wrangler", "The Short Circuit", "Festive Wrangler", "The Gigar Counter", "Wrench", "The Gunslinger", "The Southern Hospitality", "Golden Wrench", "The Jag", "The Eureka Effect", "Festive Wrench", "Silver Botkiller Wrench Mk.I", "Gold Botkiller Wrench Mk.I", "Rust Botkiller Wrench Mk.I", "Blood Botkiller Wrench Mk.I", "Carbonado Botkiller Wrench Mk.I", "Diamond Botkiller Wrench Mk.I", "Silver Botkiller Wrench Mk.II", "Gold Botkiller Wrench Mk.II", "Construction PDA", "Destruction PDA", "Syringe Gun", "The Blutsauger", "Crusader's Crossbow", "The Overdose", "Festive Crusader's Crossbow", "Medi Gun", "The Kritzkrieg", "The Quick-Fix", "Festive Medi Gun", "Silver Botkiller Medi Gun Mk.I", "Gold Botkiller Medi Gun Mk.I", "Rust Botkiller Medi Gun Mk.I", "Blood Botkiller Medi Gun Mk.I", "Carbonado Botkiller Medi Gun Mk.I", "Diamond Botkiller Medi Gun Mk.I", "Silver Botkiller Medi Gun Mk.II", "Gold Botkiller Medi Gun Mk.II", "The Vaccinator", "Bonesaw", "The Ubersaw", "The Vita-Saw", "Amputator", "The Solemn Vow", "Festive Ubersaw", "Festive Bonesaw", "Sniper Rifle", "The Huntsman", "The Syndey Sleeper", "The Bazaar Bargain", "The Machina", "Festive Sniper Rifle", "The Hitman's Heatmaker", "The AWPer Hand", "Silver Botkiller Sniper Rifle Mk.I", "Gold Botkiller Sniper Rifle Mk.I", "Rust Botkiller Sniper Rifle Mk.I", "Blood Botkiller Sniper Rifle Mk.I", "Carbonado Botkiller Sniper Rifle Mk.I", "Diamond Botkiller Sniper Rifle Mk.I", "Silver Botkiller Sniper Rifle Mk.II", "Gold Botkiller Sniper Rifle Mk.II", "Festive Huntsman", "The Fortified Compound", "The Classic", "Shooting Star", "SMG", "The Razorback", "Jarate", "Darwin's Danger Shield", "Cozy Camper", "The Cleaner's Carbine", "Festive Jarate", "The Self-Aware Beauty Mark", "Festive SMG", "Kukri", "The Tribalman's Shiv", "The Bushwacka", "The Shahanshah", "Revolver", "The Ambassador", "Big Kill", "L'Etranger", "The Enforcer", "The Diamondback", "Festive Ambassador", "Festive Revolver", "Sapper", "The Red-Tape Recorder", "The Ap-Sap", "Festive Sapper", "The Snack Attack", "Knife", "Your Eternal Reward", "Conniver's Kunai", "The Big Earner", "The Wanga Prick", "The Sharp Dresser", "The Spy-cicle", "Festive Knife", "The Black Rose", "Silver Botkiller Knife Mk.I", "Gold Botkiller Knife Mk.I", "Rust Botkiller Knife Mk.I", "Blood Botkiller Knife Mk.I", "Carbonado Botkiller Knife Mk.I", "Diamond Botkiller Knife Mk.I", "Silver Botkiller Knife Mk.II", "Gold Botkiller Knife Mk.II", "Invis Watch", "The Dead Ringer", "The Cloak and Dagger", "Enthusiast's Timepiece", "The Quackenbirdt" }));
+        boxModel.setSelectedIndex(55);
         infBasicSettings.getContentPane().add(boxModel);
-        boxModel.setBounds(140, 250, 270, 23);
+        boxModel.setBounds(140, 250, 360, 23);
 
         tabbedPane.addTab("Basic settings", infBasicSettings);
 
         infAttributes.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         infAttributes.setFrameIcon(null);
         infAttributes.setVisible(true);
+        infAttributes.getContentPane().setLayout(null);
 
-        javax.swing.GroupLayout infAttributesLayout = new javax.swing.GroupLayout(infAttributes.getContentPane());
-        infAttributes.getContentPane().setLayout(infAttributesLayout);
-        infAttributesLayout.setHorizontalGroup(
-            infAttributesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        infAttributesLayout.setVerticalGroup(
-            infAttributesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 462, Short.MAX_VALUE)
-        );
+        lblIndex1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblIndex1.setText("Attribute:");
+        infAttributes.getContentPane().add(lblIndex1);
+        lblIndex1.setBounds(10, 10, 80, 22);
+
+        boxAttribute.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        boxAttribute.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Damage penalty", "Damage bonus", "Lower clip size", "Increased clip size", "Slower firing speed", "Faster firing speed", "Slower heal rate", "Faster heal rate", "Ubercharge rate penalty", "Ubercharge rate bonus", "Overheal bonus", "Overheal decay penalty", "Overheal decay bonus", "Overheal decay disabled", "No random critical hits", "On Hit: Gain up to +%s1 health", "On Hit: %s1% Ubercharge added", "Ubercharge grants 100% critical chance", "On Hit: +%s1% damage bonus", "100% critical hit vs burning players", "Damage penalty vs non-burning players", "No critical hits vs non-burning players", "No compression blast", "100% critical hits from behind", "Increased max health on wearer", "No random critical hits (hidden)", "On Kill: %s1 seconds of 100% critical chance", "On Hit: %s1% chance to slow target", "Cloak Type: Feign Death", "Cloak drain rate", "Cloak regen rate", "Spread penalty", "Alt-Fire: Launches a ball that slows opponents", "%s1% damage vs non-stunned players", "No move penalty from zoom", "Charge rate bonus", "No headshots", "Knockback on the target and shooter", "Increased bullets per shot", "Zoom reduction", "No zoom or damage charge", "Cloak Type: Motion Sensitive", "Disables double jump", "Absorbs %s1% damage while cloaked", "Crits on headshot", "Blocks a single backstab attempt", "Wearer cannot ignite", "Slower move speed on wearer", "Increased health regenerated per second on wearer", "Increased self damage force", "Decreased self damage force", "Increased fire damage resistance on wearer", "Increased fire damage vulnerability on wearer", "Critical hit damage resistance on wearer", "Critical hit damage vulnerability on wearer", "Explosive damage resistance on wearer", "Explosive damage vulnerability on wearer", "Bullet damage resistance on wearer", "Bullet damage vulnerability on wearer", "Increased capture rate", "Decreased health from healers on wearer", "Increased health from healers on wearer", "Afterburn damage bonus", "Afterburn damage penalty", "Increased afterburn duration", "Decreased afterburn duration", "Faster move speed while deployed", "Increased max primary ammo on wearer", "Decreased max primary ammo on wearer" }));
+        infAttributes.getContentPane().add(boxAttribute);
+        boxAttribute.setBounds(100, 10, 390, 23);
 
         tabbedPane.addTab("Attributes", infAttributes);
 
@@ -235,10 +241,14 @@ public class MainFrame extends javax.swing.JFrame {
         if(chkUsePreset.isSelected()){
             txtIndex.setEnabled(false);
             txtClassname.setEnabled(false);
+            lblModelPreset.setVisible(true);
+            boxModel.setVisible(true);
         }
         else{
             txtIndex.setEnabled(true);
             txtClassname.setEnabled(true);
+            lblModelPreset.setVisible(false);
+            boxModel.setVisible(false);
         }
     }//GEN-LAST:event_chkUsePresetActionPerformed
 
@@ -278,6 +288,7 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> boxAttribute;
     private javax.swing.JComboBox<String> boxModel;
     private javax.swing.JComboBox<String> boxSlot;
     private javax.swing.JCheckBox chkUsePreset;
@@ -289,6 +300,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblAmmo;
     private javax.swing.JLabel lblClassname;
     private javax.swing.JLabel lblIndex;
+    private javax.swing.JLabel lblIndex1;
     private javax.swing.JLabel lblLevel;
     private javax.swing.JLabel lblModelPreset;
     private javax.swing.JLabel lblQuality;
