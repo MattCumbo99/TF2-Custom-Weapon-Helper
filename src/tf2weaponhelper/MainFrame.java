@@ -16,17 +16,32 @@
  */
 package tf2weaponhelper;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Matthew Cumbo
  */
 public class MainFrame extends javax.swing.JFrame {
 
+    private ArrayList<Weapon> weapons;
+    private ArrayList<WeaponStat> stats;
+    
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
         initComponents();
+        initWeaponDatabase();
+        initStatDatabase();
+    }
+    
+    private void initWeaponDatabase(){
+        weapons = new ArrayList<>();
+    }
+    
+    private void initStatDatabase(){
+        stats = new ArrayList<>();
     }
 
     /**
