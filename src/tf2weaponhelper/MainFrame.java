@@ -42,7 +42,6 @@ public class MainFrame extends javax.swing.JFrame {
         infBasicSettings = new javax.swing.JInternalFrame();
         lblWeaponNumber = new javax.swing.JLabel();
         txtWeaponNumber = new javax.swing.JTextField();
-        lblClassname = new javax.swing.JLabel();
         txtClassname = new javax.swing.JTextField();
         lblWeaponNumber2 = new javax.swing.JLabel();
         txtWeaponNumber2 = new javax.swing.JTextField();
@@ -54,6 +53,10 @@ public class MainFrame extends javax.swing.JFrame {
         lblWeaponNumber6 = new javax.swing.JLabel();
         txtWeaponNumber6 = new javax.swing.JTextField();
         boxSlot = new javax.swing.JComboBox<>();
+        lblClassname = new javax.swing.JLabel();
+        chkUsePreset = new javax.swing.JCheckBox();
+        lblWeaponNumber7 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         infAttributes = new javax.swing.JInternalFrame();
         infWeaponCode = new javax.swing.JInternalFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -61,6 +64,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TF2 Custom Weapon Helper");
+        setResizable(false);
 
         infBasicSettings.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         infBasicSettings.setFrameIcon(null);
@@ -76,11 +80,6 @@ public class MainFrame extends javax.swing.JFrame {
         txtWeaponNumber.setText("10000");
         infBasicSettings.getContentPane().add(txtWeaponNumber);
         txtWeaponNumber.setBounds(210, 10, 90, 23);
-
-        lblClassname.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblClassname.setText("Classname:");
-        infBasicSettings.getContentPane().add(lblClassname);
-        lblClassname.setBounds(10, 40, 140, 22);
 
         txtClassname.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtClassname.setText("tf_weapon_rocketlauncher");
@@ -123,9 +122,9 @@ public class MainFrame extends javax.swing.JFrame {
         txtWeaponNumber5.setBounds(210, 160, 50, 23);
 
         lblWeaponNumber6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblWeaponNumber6.setText("Ammo:");
+        lblWeaponNumber6.setText("Model preset:");
         infBasicSettings.getContentPane().add(lblWeaponNumber6);
-        lblWeaponNumber6.setBounds(10, 190, 140, 22);
+        lblWeaponNumber6.setBounds(10, 250, 140, 22);
 
         txtWeaponNumber6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtWeaponNumber6.setText("20");
@@ -136,6 +135,25 @@ public class MainFrame extends javax.swing.JFrame {
         boxSlot.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primary", "Secondary", "Melee" }));
         infBasicSettings.getContentPane().add(boxSlot);
         boxSlot.setBounds(210, 100, 180, 23);
+
+        lblClassname.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblClassname.setText("Classname:");
+        infBasicSettings.getContentPane().add(lblClassname);
+        lblClassname.setBounds(10, 40, 140, 22);
+
+        chkUsePreset.setText("Use preset");
+        infBasicSettings.getContentPane().add(chkUsePreset);
+        chkUsePreset.setBounds(460, 40, 100, 23);
+
+        lblWeaponNumber7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblWeaponNumber7.setText("Ammo:");
+        infBasicSettings.getContentPane().add(lblWeaponNumber7);
+        lblWeaponNumber7.setBounds(10, 190, 140, 22);
+
+        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Scattergun", "Scattergun (Renamed/Strange)", "Force-A-Nature", "The Shortstop", "The Soda Popper", "Festive Scattergun", "Baby Face's Blaster", "Silver Botkiller Scattergun Mk.I", "Gold Botkiller Scattergun Mk.I", "Rust Botkiller Scattergun Mk.I", "Blood Botkiller Scattergun Mk.I", "Carbonado Botkiller Scattergun Mk.I", "Diamond Botkiller Scattergun Mk.I", "Silver Botkiller Scattergun Mk.II", "Gold Botkiller Scattergun Mk.II", "Festive Force-A-Nature", "The Back Scatter", "Scout's Pistol", "Pistol (Renamed/Strange)", "Bonk! Atomic Punch", "Vintage Lugermorph", "Crit-A-Cola", "Mad Milk", "Lugermorph", "The Winger", "Pretty Boy's Pocket Pistol", "The Flying Guillotine", "The Flying Guillotine (Genuine)", "Mutated Milk", "Festive Bonk!", "The C.A.P.P.E.R.", "Bat", "Bat (Renamed/Strange)", "The Sandman", "The Holy Mackerel", "Frying Pan", "The Candy Cane", "The Boston Basher", "Sun-on-a-Stick", "The Fan O'War", "Saxxy", "The Atomizer", "Three-Rune Blade", "The Conscientious Objector", "Unarmed Combat", "The Wrap Assassin", "Festive Bat", "The Freedom Staff", "The Bat Outta Hell", "The Memory Maker", "Festive Holy Mackerel", "The Ham Shank", "Gold Frying Pan", "The Necro Smasher", "The Crossing Guard", "Batsaber", "Prinny Machete", "Rocket Launcher", "Rocket Launcher (Renamed/Strange)", "The Direct Hit", "The Black Box", "Rocket Jumper", "The Liberty Launcher", "The Cow Mangler 5000", "The Original", "Festive Rocket Launcher", "The Beggar's Bazooka", "Silver Botkiller Rocket Launcher Mk.I", "Gold Botkiller Rocket Launcher Mk.I", "Rust Botkiller Rocket Launcher Mk.I", "Blood Botkiller Rocket Launcher Mk.I", "Carbonado Botkiller Rocket Launcher Mk.I", "Diamond Botkiller Rocket Launcher Mk.I", "Silver Botkiller Rocket Launcher Mk.II", "Gold Botkiller Rocket Launcher Mk.II", "Festive Black Box", "The Air Strike", "Soldier's Shotgun", "Shotgun (Renamed/Strange)", "The Buff Banner", "Gunboats", "The Battalion's Backup", "The Righteous Bison", "The Mantreads", "Festive Buff Banner", "The B.A.S.E. Jumper", "Festive Shotgun", "Panic Attack", "Shovel", "Shovel (Renamed/Strange)", "The Equalizer", "The Pain Train", "The Half-Zatoichi", "The Market Gardener", "The Disciplinary Action", "The Escape Plan", "Flame Thrower", "Flame Thrower (Renamed/Strange)", "The Backburner", "The Degreaser", "The Phlogistinator", "Festive Flame Thrower", "The Rainblower", "Silver Botkiller Flame Thrower Mk.I", "Gold Botkiller Flame Thrower Mk.I", "Rust Botkiller Flame Thrower Mk.I", "Blood Botkiller Flame Thrower Mk.I", "Carbonado Botkiller Flame Thrower Mk.I", "Diamond Botkiller Flame Thrower Mk.I", "Silver Botkiller Flame Thrower Mk.II", "Gold Botkiller Flame Thrower Mk.II", "Festive Backburner", "Dragon's Fury", "Pyro's Shotgun", "The Flare Gun", "The Detonator", "The Reserve Shooter", "The Manmelter", "The Scorch Shot", "Festive Flare Gun", "Fire Axe", "Fire Axe (Renamed/Strange)", "The Axtinguisher", "Homewrecker", "The Powerjack", "The Back Scratcher", "Sharpened Volcano Fragment", "The Postal Pummeler", "The Maul", "The Third Degree", "The Lollichop", "Neon Annihilator", "Neon Annihilator (Genuine)", "The Festive Axtinguisher", "Hot Hand", "Grenade Launcher", "Grenade Launcher (Renamed/Strange)", "The Loch-n-Load", "Ali Baba's Wee Booties", "The Bootlegger", "The Loose Cannon", "Festive Grenade Launcher", "The Iron Bomber", "Stickybomb Launcher", "Stickybomb Launcher (Renamed/Strange)", "The Scottish Resistance", "The Chargin' Targe", "Sticky Jumper", "The Splendid Screen", "Festive Stickybomb Launcher", "Silver Botkiller Stickybomb Launcher Mk.I", "Gold Botkiller Stickybomb Launcher Mk.I", "Rust Botkiller Stickybomb Launcher Mk.I", "Blood Botkiller Stickybomb Launcher Mk.I", "Carbonado Botkiller Stickybomb Launcher Mk.I", "Diamond Botkiller Stickybomb Launcher Mk.I", "Silver Botkiller Stickybomb Launcher Mk.II", "Gold Botkiller Stickybomb Launcher Mk.II", "The Tide Turner", "Festive Targe", "The Quickiebomb Launcher", "Bottle", "Bottle (Renamed/Strange)", "The Eyelander", "The Pain Train", "The Scotsman's Skullcutter", "Horseless Headless Horsemann's Headtaker", "Ullapool Caber", "The Claidheamh Mor", "The Persian Persuader", "Nessie's Nine Iron", "The Scottish Handshake", "Festive Eyelander", "Minigun", "Minigun (Renamed/Strange)", "Natascha", "Iron Curtain", "The Brass Beast", "Tomislav", "Festive Minigun", "Silver Botkiller Minigun Mk.I", "Gold Botkiller Minigun Mk.I", "Rust Botkiller Minigun Mk.I", "Blood Botkiller Minigun Mk.I", "Carbonado Botkiller Minigun Mk.I", "Diamond Botkiller Minigun Mk.I", "Silver Botkiller Minigun Mk.II", "Gold Botkiller Minigun Mk.II", "The Huo-Long Heater", "Heavy's Shotgun", "Sandvich", "The Dalokohs Bar", "The Buffalo Steak Sandvich", "The Family Business", "Fishcake", "Robo-Sandvich", "Festive Sandvich", "Second Banana", "Fists", "The Killing Gloves of Boxing", "Gloves of Running Urgently", "Warrior's Spirit", "Fists of Steel", "The Eviction Notice", "Apoco-Fists", "The Holiday Punch", "Festive Gloves of Running Urgently", "The Bread Bite" }));
+        infBasicSettings.getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(140, 250, 270, 23);
 
         tabbedPane.addTab("Basic settings", infBasicSettings);
 
@@ -204,7 +222,7 @@ public class MainFrame extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -230,10 +248,12 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> boxSlot;
+    private javax.swing.JCheckBox chkUsePreset;
     private javax.swing.JTextArea codeText;
     private javax.swing.JInternalFrame infAttributes;
     private javax.swing.JInternalFrame infBasicSettings;
     private javax.swing.JInternalFrame infWeaponCode;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblClassname;
     private javax.swing.JLabel lblWeaponNumber;
@@ -242,6 +262,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblWeaponNumber4;
     private javax.swing.JLabel lblWeaponNumber5;
     private javax.swing.JLabel lblWeaponNumber6;
+    private javax.swing.JLabel lblWeaponNumber7;
     private javax.swing.JTabbedPane tabbedPane;
     private javax.swing.JTextField txtClassname;
     private javax.swing.JTextField txtWeaponNumber;
