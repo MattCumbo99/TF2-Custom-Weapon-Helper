@@ -282,336 +282,322 @@
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="329">
+                  <StringArray count="315">
                     <StringItem index="0" value="Scattergun"/>
-                    <StringItem index="1" value="Scattergun (Renamed/Strange)"/>
-                    <StringItem index="2" value="Force-A-Nature"/>
-                    <StringItem index="3" value="The Shortstop"/>
-                    <StringItem index="4" value="The Soda Popper"/>
-                    <StringItem index="5" value="Festive Scattergun"/>
-                    <StringItem index="6" value="Baby Face&apos;s Blaster"/>
-                    <StringItem index="7" value="Silver Botkiller Scattergun Mk.I"/>
-                    <StringItem index="8" value="Gold Botkiller Scattergun Mk.I"/>
-                    <StringItem index="9" value="Rust Botkiller Scattergun Mk.I"/>
-                    <StringItem index="10" value="Blood Botkiller Scattergun Mk.I"/>
-                    <StringItem index="11" value="Carbonado Botkiller Scattergun Mk.I"/>
-                    <StringItem index="12" value="Diamond Botkiller Scattergun Mk.I"/>
-                    <StringItem index="13" value="Silver Botkiller Scattergun Mk.II"/>
-                    <StringItem index="14" value="Gold Botkiller Scattergun Mk.II"/>
-                    <StringItem index="15" value="Festive Force-A-Nature"/>
-                    <StringItem index="16" value="The Back Scatter"/>
-                    <StringItem index="17" value="Scout&apos;s Pistol"/>
-                    <StringItem index="18" value="Pistol (Renamed/Strange)"/>
-                    <StringItem index="19" value="Bonk! Atomic Punch"/>
-                    <StringItem index="20" value="Vintage Lugermorph"/>
-                    <StringItem index="21" value="Crit-A-Cola"/>
-                    <StringItem index="22" value="Mad Milk"/>
-                    <StringItem index="23" value="Lugermorph"/>
-                    <StringItem index="24" value="The Winger"/>
-                    <StringItem index="25" value="Pretty Boy&apos;s Pocket Pistol"/>
-                    <StringItem index="26" value="The Flying Guillotine"/>
-                    <StringItem index="27" value="The Flying Guillotine (Genuine)"/>
-                    <StringItem index="28" value="Mutated Milk"/>
-                    <StringItem index="29" value="Festive Bonk!"/>
-                    <StringItem index="30" value="The C.A.P.P.E.R."/>
-                    <StringItem index="31" value="Bat"/>
-                    <StringItem index="32" value="Bat (Renamed/Strange)"/>
-                    <StringItem index="33" value="The Sandman"/>
-                    <StringItem index="34" value="The Holy Mackerel"/>
-                    <StringItem index="35" value="Frying Pan"/>
-                    <StringItem index="36" value="The Candy Cane"/>
-                    <StringItem index="37" value="The Boston Basher"/>
-                    <StringItem index="38" value="Sun-on-a-Stick"/>
-                    <StringItem index="39" value="The Fan O&apos;War"/>
-                    <StringItem index="40" value="Saxxy"/>
-                    <StringItem index="41" value="The Atomizer"/>
-                    <StringItem index="42" value="Three-Rune Blade"/>
-                    <StringItem index="43" value="The Conscientious Objector"/>
-                    <StringItem index="44" value="Unarmed Combat"/>
-                    <StringItem index="45" value="The Wrap Assassin"/>
-                    <StringItem index="46" value="Festive Bat"/>
-                    <StringItem index="47" value="The Freedom Staff"/>
-                    <StringItem index="48" value="The Bat Outta Hell"/>
-                    <StringItem index="49" value="The Memory Maker"/>
-                    <StringItem index="50" value="Festive Holy Mackerel"/>
-                    <StringItem index="51" value="The Ham Shank"/>
-                    <StringItem index="52" value="Gold Frying Pan"/>
-                    <StringItem index="53" value="The Necro Smasher"/>
-                    <StringItem index="54" value="The Crossing Guard"/>
-                    <StringItem index="55" value="Batsaber"/>
-                    <StringItem index="56" value="Prinny Machete"/>
-                    <StringItem index="57" value="Rocket Launcher"/>
-                    <StringItem index="58" value="Rocket Launcher (Renamed/Strange)"/>
-                    <StringItem index="59" value="The Direct Hit"/>
-                    <StringItem index="60" value="The Black Box"/>
-                    <StringItem index="61" value="Rocket Jumper"/>
-                    <StringItem index="62" value="The Liberty Launcher"/>
-                    <StringItem index="63" value="The Cow Mangler 5000"/>
-                    <StringItem index="64" value="The Original"/>
-                    <StringItem index="65" value="Festive Rocket Launcher"/>
-                    <StringItem index="66" value="The Beggar&apos;s Bazooka"/>
-                    <StringItem index="67" value="Silver Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="68" value="Gold Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="69" value="Rust Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="70" value="Blood Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="71" value="Carbonado Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="72" value="Diamond Botkiller Rocket Launcher Mk.I"/>
-                    <StringItem index="73" value="Silver Botkiller Rocket Launcher Mk.II"/>
-                    <StringItem index="74" value="Gold Botkiller Rocket Launcher Mk.II"/>
-                    <StringItem index="75" value="Festive Black Box"/>
-                    <StringItem index="76" value="The Air Strike"/>
-                    <StringItem index="77" value="Soldier&apos;s Shotgun"/>
-                    <StringItem index="78" value="Shotgun (Renamed/Strange)"/>
-                    <StringItem index="79" value="The Buff Banner"/>
-                    <StringItem index="80" value="Gunboats"/>
-                    <StringItem index="81" value="The Battalion&apos;s Backup"/>
-                    <StringItem index="82" value="The Righteous Bison"/>
-                    <StringItem index="83" value="The Mantreads"/>
-                    <StringItem index="84" value="Festive Buff Banner"/>
-                    <StringItem index="85" value="The B.A.S.E. Jumper"/>
-                    <StringItem index="86" value="Festive Shotgun"/>
-                    <StringItem index="87" value="Panic Attack"/>
-                    <StringItem index="88" value="Shovel"/>
-                    <StringItem index="89" value="Shovel (Renamed/Strange)"/>
-                    <StringItem index="90" value="The Equalizer"/>
-                    <StringItem index="91" value="The Pain Train"/>
-                    <StringItem index="92" value="The Half-Zatoichi"/>
-                    <StringItem index="93" value="The Market Gardener"/>
-                    <StringItem index="94" value="The Disciplinary Action"/>
-                    <StringItem index="95" value="The Escape Plan"/>
-                    <StringItem index="96" value="Flame Thrower"/>
-                    <StringItem index="97" value="Flame Thrower (Renamed/Strange)"/>
-                    <StringItem index="98" value="The Backburner"/>
-                    <StringItem index="99" value="The Degreaser"/>
-                    <StringItem index="100" value="The Phlogistinator"/>
-                    <StringItem index="101" value="Festive Flame Thrower"/>
-                    <StringItem index="102" value="The Rainblower"/>
-                    <StringItem index="103" value="Silver Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="104" value="Gold Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="105" value="Rust Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="106" value="Blood Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="107" value="Carbonado Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="108" value="Diamond Botkiller Flame Thrower Mk.I"/>
-                    <StringItem index="109" value="Silver Botkiller Flame Thrower Mk.II"/>
-                    <StringItem index="110" value="Gold Botkiller Flame Thrower Mk.II"/>
-                    <StringItem index="111" value="Festive Backburner"/>
-                    <StringItem index="112" value="Dragon&apos;s Fury"/>
-                    <StringItem index="113" value="Pyro&apos;s Shotgun"/>
-                    <StringItem index="114" value="The Flare Gun"/>
-                    <StringItem index="115" value="The Detonator"/>
-                    <StringItem index="116" value="The Reserve Shooter"/>
-                    <StringItem index="117" value="The Manmelter"/>
-                    <StringItem index="118" value="The Scorch Shot"/>
-                    <StringItem index="119" value="Festive Flare Gun"/>
-                    <StringItem index="120" value="Fire Axe"/>
-                    <StringItem index="121" value="Fire Axe (Renamed/Strange)"/>
-                    <StringItem index="122" value="The Axtinguisher"/>
-                    <StringItem index="123" value="Homewrecker"/>
-                    <StringItem index="124" value="The Powerjack"/>
-                    <StringItem index="125" value="The Back Scratcher"/>
-                    <StringItem index="126" value="Sharpened Volcano Fragment"/>
-                    <StringItem index="127" value="The Postal Pummeler"/>
-                    <StringItem index="128" value="The Maul"/>
-                    <StringItem index="129" value="The Third Degree"/>
-                    <StringItem index="130" value="The Lollichop"/>
-                    <StringItem index="131" value="Neon Annihilator"/>
-                    <StringItem index="132" value="Neon Annihilator (Genuine)"/>
-                    <StringItem index="133" value="The Festive Axtinguisher"/>
-                    <StringItem index="134" value="Hot Hand"/>
-                    <StringItem index="135" value="Grenade Launcher"/>
-                    <StringItem index="136" value="Grenade Launcher (Renamed/Strange)"/>
-                    <StringItem index="137" value="The Loch-n-Load"/>
-                    <StringItem index="138" value="Ali Baba&apos;s Wee Booties"/>
-                    <StringItem index="139" value="The Bootlegger"/>
-                    <StringItem index="140" value="The Loose Cannon"/>
-                    <StringItem index="141" value="Festive Grenade Launcher"/>
-                    <StringItem index="142" value="The Iron Bomber"/>
-                    <StringItem index="143" value="Stickybomb Launcher"/>
-                    <StringItem index="144" value="Stickybomb Launcher (Renamed/Strange)"/>
-                    <StringItem index="145" value="The Scottish Resistance"/>
-                    <StringItem index="146" value="The Chargin&apos; Targe"/>
-                    <StringItem index="147" value="Sticky Jumper"/>
-                    <StringItem index="148" value="The Splendid Screen"/>
-                    <StringItem index="149" value="Festive Stickybomb Launcher"/>
-                    <StringItem index="150" value="Silver Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="151" value="Gold Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="152" value="Rust Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="153" value="Blood Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="154" value="Carbonado Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="155" value="Diamond Botkiller Stickybomb Launcher Mk.I"/>
-                    <StringItem index="156" value="Silver Botkiller Stickybomb Launcher Mk.II"/>
-                    <StringItem index="157" value="Gold Botkiller Stickybomb Launcher Mk.II"/>
-                    <StringItem index="158" value="The Tide Turner"/>
-                    <StringItem index="159" value="Festive Targe"/>
-                    <StringItem index="160" value="The Quickiebomb Launcher"/>
-                    <StringItem index="161" value="Bottle"/>
-                    <StringItem index="162" value="Bottle (Renamed/Strange)"/>
-                    <StringItem index="163" value="The Eyelander"/>
-                    <StringItem index="164" value="The Pain Train"/>
-                    <StringItem index="165" value="The Scotsman&apos;s Skullcutter"/>
-                    <StringItem index="166" value="Horseless Headless Horsemann&apos;s Headtaker"/>
-                    <StringItem index="167" value="Ullapool Caber"/>
-                    <StringItem index="168" value="The Claidheamh Mor"/>
-                    <StringItem index="169" value="The Persian Persuader"/>
-                    <StringItem index="170" value="Nessie&apos;s Nine Iron"/>
-                    <StringItem index="171" value="The Scottish Handshake"/>
-                    <StringItem index="172" value="Festive Eyelander"/>
-                    <StringItem index="173" value="Minigun"/>
-                    <StringItem index="174" value="Minigun (Renamed/Strange)"/>
-                    <StringItem index="175" value="Natascha"/>
-                    <StringItem index="176" value="Iron Curtain"/>
-                    <StringItem index="177" value="The Brass Beast"/>
-                    <StringItem index="178" value="Tomislav"/>
-                    <StringItem index="179" value="Festive Minigun"/>
-                    <StringItem index="180" value="Silver Botkiller Minigun Mk.I"/>
-                    <StringItem index="181" value="Gold Botkiller Minigun Mk.I"/>
-                    <StringItem index="182" value="Rust Botkiller Minigun Mk.I"/>
-                    <StringItem index="183" value="Blood Botkiller Minigun Mk.I"/>
-                    <StringItem index="184" value="Carbonado Botkiller Minigun Mk.I"/>
-                    <StringItem index="185" value="Diamond Botkiller Minigun Mk.I"/>
-                    <StringItem index="186" value="Silver Botkiller Minigun Mk.II"/>
-                    <StringItem index="187" value="Gold Botkiller Minigun Mk.II"/>
-                    <StringItem index="188" value="The Huo-Long Heater"/>
-                    <StringItem index="189" value="Heavy&apos;s Shotgun"/>
-                    <StringItem index="190" value="Sandvich"/>
-                    <StringItem index="191" value="The Dalokohs Bar"/>
-                    <StringItem index="192" value="The Buffalo Steak Sandvich"/>
-                    <StringItem index="193" value="The Family Business"/>
-                    <StringItem index="194" value="Fishcake"/>
-                    <StringItem index="195" value="Robo-Sandvich"/>
-                    <StringItem index="196" value="Festive Sandvich"/>
-                    <StringItem index="197" value="Second Banana"/>
-                    <StringItem index="198" value="Fists"/>
-                    <StringItem index="199" value="The Killing Gloves of Boxing"/>
-                    <StringItem index="200" value="Gloves of Running Urgently"/>
-                    <StringItem index="201" value="Warrior&apos;s Spirit"/>
-                    <StringItem index="202" value="Fists of Steel"/>
-                    <StringItem index="203" value="The Eviction Notice"/>
-                    <StringItem index="204" value="Apoco-Fists"/>
-                    <StringItem index="205" value="The Holiday Punch"/>
-                    <StringItem index="206" value="Festive Gloves of Running Urgently"/>
-                    <StringItem index="207" value="The Bread Bite"/>
-                    <StringItem index="208" value="Engineer&apos;s Shotgun"/>
-                    <StringItem index="209" value="The Frontier Justice"/>
-                    <StringItem index="210" value="The Widowmaker"/>
-                    <StringItem index="211" value="The Pomson 6000"/>
-                    <StringItem index="212" value="The Rescue Ranger"/>
-                    <StringItem index="213" value="Festive Frontier Justice"/>
-                    <StringItem index="214" value="Engineer&apos;s Pistol"/>
-                    <StringItem index="215" value="The Wrangler"/>
-                    <StringItem index="216" value="The Short Circuit"/>
-                    <StringItem index="217" value="Festive Wrangler"/>
-                    <StringItem index="218" value="The Gigar Counter"/>
-                    <StringItem index="219" value="Wrench"/>
-                    <StringItem index="220" value="The Gunslinger"/>
-                    <StringItem index="221" value="The Southern Hospitality"/>
-                    <StringItem index="222" value="Golden Wrench"/>
-                    <StringItem index="223" value="The Jag"/>
-                    <StringItem index="224" value="The Eureka Effect"/>
-                    <StringItem index="225" value="Festive Wrench"/>
-                    <StringItem index="226" value="Silver Botkiller Wrench Mk.I"/>
-                    <StringItem index="227" value="Gold Botkiller Wrench Mk.I"/>
-                    <StringItem index="228" value="Rust Botkiller Wrench Mk.I"/>
-                    <StringItem index="229" value="Blood Botkiller Wrench Mk.I"/>
-                    <StringItem index="230" value="Carbonado Botkiller Wrench Mk.I"/>
-                    <StringItem index="231" value="Diamond Botkiller Wrench Mk.I"/>
-                    <StringItem index="232" value="Silver Botkiller Wrench Mk.II"/>
-                    <StringItem index="233" value="Gold Botkiller Wrench Mk.II"/>
-                    <StringItem index="234" value="Construction PDA"/>
-                    <StringItem index="235" value="Destruction PDA"/>
-                    <StringItem index="236" value="Syringe Gun"/>
-                    <StringItem index="237" value="The Blutsauger"/>
-                    <StringItem index="238" value="Crusader&apos;s Crossbow"/>
-                    <StringItem index="239" value="The Overdose"/>
-                    <StringItem index="240" value="Festive Crusader&apos;s Crossbow"/>
-                    <StringItem index="241" value="Medi Gun"/>
-                    <StringItem index="242" value="The Kritzkrieg"/>
-                    <StringItem index="243" value="The Quick-Fix"/>
-                    <StringItem index="244" value="Festive Medi Gun"/>
-                    <StringItem index="245" value="Silver Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="246" value="Gold Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="247" value="Rust Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="248" value="Blood Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="249" value="Carbonado Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="250" value="Diamond Botkiller Medi Gun Mk.I"/>
-                    <StringItem index="251" value="Silver Botkiller Medi Gun Mk.II"/>
-                    <StringItem index="252" value="Gold Botkiller Medi Gun Mk.II"/>
-                    <StringItem index="253" value="The Vaccinator"/>
-                    <StringItem index="254" value="Bonesaw"/>
-                    <StringItem index="255" value="The Ubersaw"/>
-                    <StringItem index="256" value="The Vita-Saw"/>
-                    <StringItem index="257" value="Amputator"/>
-                    <StringItem index="258" value="The Solemn Vow"/>
-                    <StringItem index="259" value="Festive Ubersaw"/>
-                    <StringItem index="260" value="Festive Bonesaw"/>
-                    <StringItem index="261" value="Sniper Rifle"/>
-                    <StringItem index="262" value="The Huntsman"/>
-                    <StringItem index="263" value="The Syndey Sleeper"/>
-                    <StringItem index="264" value="The Bazaar Bargain"/>
-                    <StringItem index="265" value="The Machina"/>
-                    <StringItem index="266" value="Festive Sniper Rifle"/>
-                    <StringItem index="267" value="The Hitman&apos;s Heatmaker"/>
-                    <StringItem index="268" value="The AWPer Hand"/>
-                    <StringItem index="269" value="Silver Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="270" value="Gold Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="271" value="Rust Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="272" value="Blood Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="273" value="Carbonado Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="274" value="Diamond Botkiller Sniper Rifle Mk.I"/>
-                    <StringItem index="275" value="Silver Botkiller Sniper Rifle Mk.II"/>
-                    <StringItem index="276" value="Gold Botkiller Sniper Rifle Mk.II"/>
-                    <StringItem index="277" value="Festive Huntsman"/>
-                    <StringItem index="278" value="The Fortified Compound"/>
-                    <StringItem index="279" value="The Classic"/>
-                    <StringItem index="280" value="Shooting Star"/>
-                    <StringItem index="281" value="SMG"/>
-                    <StringItem index="282" value="The Razorback"/>
-                    <StringItem index="283" value="Jarate"/>
-                    <StringItem index="284" value="Darwin&apos;s Danger Shield"/>
-                    <StringItem index="285" value="Cozy Camper"/>
-                    <StringItem index="286" value="The Cleaner&apos;s Carbine"/>
-                    <StringItem index="287" value="Festive Jarate"/>
-                    <StringItem index="288" value="The Self-Aware Beauty Mark"/>
-                    <StringItem index="289" value="Festive SMG"/>
-                    <StringItem index="290" value="Kukri"/>
-                    <StringItem index="291" value="The Tribalman&apos;s Shiv"/>
-                    <StringItem index="292" value="The Bushwacka"/>
-                    <StringItem index="293" value="The Shahanshah"/>
-                    <StringItem index="294" value="Revolver"/>
-                    <StringItem index="295" value="The Ambassador"/>
-                    <StringItem index="296" value="Big Kill"/>
-                    <StringItem index="297" value="L&apos;Etranger"/>
-                    <StringItem index="298" value="The Enforcer"/>
-                    <StringItem index="299" value="The Diamondback"/>
-                    <StringItem index="300" value="Festive Ambassador"/>
-                    <StringItem index="301" value="Festive Revolver"/>
-                    <StringItem index="302" value="Sapper"/>
-                    <StringItem index="303" value="The Red-Tape Recorder"/>
-                    <StringItem index="304" value="The Ap-Sap"/>
-                    <StringItem index="305" value="Festive Sapper"/>
-                    <StringItem index="306" value="The Snack Attack"/>
-                    <StringItem index="307" value="Knife"/>
-                    <StringItem index="308" value="Your Eternal Reward"/>
-                    <StringItem index="309" value="Conniver&apos;s Kunai"/>
-                    <StringItem index="310" value="The Big Earner"/>
-                    <StringItem index="311" value="The Wanga Prick"/>
-                    <StringItem index="312" value="The Sharp Dresser"/>
-                    <StringItem index="313" value="The Spy-cicle"/>
-                    <StringItem index="314" value="Festive Knife"/>
-                    <StringItem index="315" value="The Black Rose"/>
-                    <StringItem index="316" value="Silver Botkiller Knife Mk.I"/>
-                    <StringItem index="317" value="Gold Botkiller Knife Mk.I"/>
-                    <StringItem index="318" value="Rust Botkiller Knife Mk.I"/>
-                    <StringItem index="319" value="Blood Botkiller Knife Mk.I"/>
-                    <StringItem index="320" value="Carbonado Botkiller Knife Mk.I"/>
-                    <StringItem index="321" value="Diamond Botkiller Knife Mk.I"/>
-                    <StringItem index="322" value="Silver Botkiller Knife Mk.II"/>
-                    <StringItem index="323" value="Gold Botkiller Knife Mk.II"/>
-                    <StringItem index="324" value="Invis Watch"/>
-                    <StringItem index="325" value="The Dead Ringer"/>
-                    <StringItem index="326" value="The Cloak and Dagger"/>
-                    <StringItem index="327" value="Enthusiast&apos;s Timepiece"/>
-                    <StringItem index="328" value="The Quackenbirdt"/>
+                    <StringItem index="1" value="Force-A-Nature"/>
+                    <StringItem index="2" value="The Shortstop"/>
+                    <StringItem index="3" value="The Soda Popper"/>
+                    <StringItem index="4" value="Festive Scattergun"/>
+                    <StringItem index="5" value="Baby Face&apos;s Blaster"/>
+                    <StringItem index="6" value="Silver Botkiller Scattergun Mk.I"/>
+                    <StringItem index="7" value="Gold Botkiller Scattergun Mk.I"/>
+                    <StringItem index="8" value="Rust Botkiller Scattergun Mk.I"/>
+                    <StringItem index="9" value="Blood Botkiller Scattergun Mk.I"/>
+                    <StringItem index="10" value="Carbonado Botkiller Scattergun Mk.I"/>
+                    <StringItem index="11" value="Diamond Botkiller Scattergun Mk.I"/>
+                    <StringItem index="12" value="Silver Botkiller Scattergun Mk.II"/>
+                    <StringItem index="13" value="Gold Botkiller Scattergun Mk.II"/>
+                    <StringItem index="14" value="Festive Force-A-Nature"/>
+                    <StringItem index="15" value="The Back Scatter"/>
+                    <StringItem index="16" value="Scout&apos;s Pistol"/>
+                    <StringItem index="17" value="Bonk! Atomic Punch"/>
+                    <StringItem index="18" value="Vintage Lugermorph"/>
+                    <StringItem index="19" value="Crit-A-Cola"/>
+                    <StringItem index="20" value="Mad Milk"/>
+                    <StringItem index="21" value="Lugermorph"/>
+                    <StringItem index="22" value="The Winger"/>
+                    <StringItem index="23" value="Pretty Boy&apos;s Pocket Pistol"/>
+                    <StringItem index="24" value="The Flying Guillotine"/>
+                    <StringItem index="25" value="Mutated Milk"/>
+                    <StringItem index="26" value="Festive Bonk!"/>
+                    <StringItem index="27" value="The C.A.P.P.E.R."/>
+                    <StringItem index="28" value="Bat"/>
+                    <StringItem index="29" value="The Sandman"/>
+                    <StringItem index="30" value="The Holy Mackerel"/>
+                    <StringItem index="31" value="Frying Pan"/>
+                    <StringItem index="32" value="The Candy Cane"/>
+                    <StringItem index="33" value="The Boston Basher"/>
+                    <StringItem index="34" value="Sun-on-a-Stick"/>
+                    <StringItem index="35" value="The Fan O&apos;War"/>
+                    <StringItem index="36" value="Saxxy"/>
+                    <StringItem index="37" value="The Atomizer"/>
+                    <StringItem index="38" value="Three-Rune Blade"/>
+                    <StringItem index="39" value="The Conscientious Objector"/>
+                    <StringItem index="40" value="Unarmed Combat"/>
+                    <StringItem index="41" value="The Wrap Assassin"/>
+                    <StringItem index="42" value="Festive Bat"/>
+                    <StringItem index="43" value="The Freedom Staff"/>
+                    <StringItem index="44" value="The Bat Outta Hell"/>
+                    <StringItem index="45" value="The Memory Maker"/>
+                    <StringItem index="46" value="Festive Holy Mackerel"/>
+                    <StringItem index="47" value="The Ham Shank"/>
+                    <StringItem index="48" value="Gold Frying Pan"/>
+                    <StringItem index="49" value="The Necro Smasher"/>
+                    <StringItem index="50" value="The Crossing Guard"/>
+                    <StringItem index="51" value="Batsaber"/>
+                    <StringItem index="52" value="Prinny Machete"/>
+                    <StringItem index="53" value="Rocket Launcher"/>
+                    <StringItem index="54" value="The Direct Hit"/>
+                    <StringItem index="55" value="The Black Box"/>
+                    <StringItem index="56" value="Rocket Jumper"/>
+                    <StringItem index="57" value="The Liberty Launcher"/>
+                    <StringItem index="58" value="The Cow Mangler 5000"/>
+                    <StringItem index="59" value="The Original"/>
+                    <StringItem index="60" value="Festive Rocket Launcher"/>
+                    <StringItem index="61" value="The Beggar&apos;s Bazooka"/>
+                    <StringItem index="62" value="Silver Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="63" value="Gold Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="64" value="Rust Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="65" value="Blood Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="66" value="Carbonado Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="67" value="Diamond Botkiller Rocket Launcher Mk.I"/>
+                    <StringItem index="68" value="Silver Botkiller Rocket Launcher Mk.II"/>
+                    <StringItem index="69" value="Gold Botkiller Rocket Launcher Mk.II"/>
+                    <StringItem index="70" value="Festive Black Box"/>
+                    <StringItem index="71" value="The Air Strike"/>
+                    <StringItem index="72" value="Soldier&apos;s Shotgun"/>
+                    <StringItem index="73" value="The Buff Banner"/>
+                    <StringItem index="74" value="Gunboats"/>
+                    <StringItem index="75" value="The Battalion&apos;s Backup"/>
+                    <StringItem index="76" value="The Righteous Bison"/>
+                    <StringItem index="77" value="The Mantreads"/>
+                    <StringItem index="78" value="Festive Buff Banner"/>
+                    <StringItem index="79" value="The B.A.S.E. Jumper"/>
+                    <StringItem index="80" value="Festive Shotgun"/>
+                    <StringItem index="81" value="Panic Attack"/>
+                    <StringItem index="82" value="Shovel"/>
+                    <StringItem index="83" value="The Equalizer"/>
+                    <StringItem index="84" value="The Pain Train"/>
+                    <StringItem index="85" value="The Half-Zatoichi"/>
+                    <StringItem index="86" value="The Market Gardener"/>
+                    <StringItem index="87" value="The Disciplinary Action"/>
+                    <StringItem index="88" value="The Escape Plan"/>
+                    <StringItem index="89" value="Flame Thrower"/>
+                    <StringItem index="90" value="The Backburner"/>
+                    <StringItem index="91" value="The Degreaser"/>
+                    <StringItem index="92" value="The Phlogistinator"/>
+                    <StringItem index="93" value="Festive Flame Thrower"/>
+                    <StringItem index="94" value="The Rainblower"/>
+                    <StringItem index="95" value="Silver Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="96" value="Gold Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="97" value="Rust Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="98" value="Blood Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="99" value="Carbonado Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="100" value="Diamond Botkiller Flame Thrower Mk.I"/>
+                    <StringItem index="101" value="Silver Botkiller Flame Thrower Mk.II"/>
+                    <StringItem index="102" value="Gold Botkiller Flame Thrower Mk.II"/>
+                    <StringItem index="103" value="Festive Backburner"/>
+                    <StringItem index="104" value="Dragon&apos;s Fury"/>
+                    <StringItem index="105" value="Pyro&apos;s Shotgun"/>
+                    <StringItem index="106" value="The Flare Gun"/>
+                    <StringItem index="107" value="The Detonator"/>
+                    <StringItem index="108" value="The Reserve Shooter"/>
+                    <StringItem index="109" value="The Manmelter"/>
+                    <StringItem index="110" value="The Scorch Shot"/>
+                    <StringItem index="111" value="Festive Flare Gun"/>
+                    <StringItem index="112" value="Fire Axe"/>
+                    <StringItem index="113" value="The Axtinguisher"/>
+                    <StringItem index="114" value="Homewrecker"/>
+                    <StringItem index="115" value="The Powerjack"/>
+                    <StringItem index="116" value="The Back Scratcher"/>
+                    <StringItem index="117" value="Sharpened Volcano Fragment"/>
+                    <StringItem index="118" value="The Postal Pummeler"/>
+                    <StringItem index="119" value="The Maul"/>
+                    <StringItem index="120" value="The Third Degree"/>
+                    <StringItem index="121" value="The Lollichop"/>
+                    <StringItem index="122" value="Neon Annihilator"/>
+                    <StringItem index="123" value="The Festive Axtinguisher"/>
+                    <StringItem index="124" value="Hot Hand"/>
+                    <StringItem index="125" value="Grenade Launcher"/>
+                    <StringItem index="126" value="The Loch-n-Load"/>
+                    <StringItem index="127" value="Ali Baba&apos;s Wee Booties"/>
+                    <StringItem index="128" value="The Bootlegger"/>
+                    <StringItem index="129" value="The Loose Cannon"/>
+                    <StringItem index="130" value="Festive Grenade Launcher"/>
+                    <StringItem index="131" value="The Iron Bomber"/>
+                    <StringItem index="132" value="Stickybomb Launcher"/>
+                    <StringItem index="133" value="The Scottish Resistance"/>
+                    <StringItem index="134" value="The Chargin&apos; Targe"/>
+                    <StringItem index="135" value="Sticky Jumper"/>
+                    <StringItem index="136" value="The Splendid Screen"/>
+                    <StringItem index="137" value="Festive Stickybomb Launcher"/>
+                    <StringItem index="138" value="Silver Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="139" value="Gold Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="140" value="Rust Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="141" value="Blood Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="142" value="Carbonado Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="143" value="Diamond Botkiller Stickybomb Launcher Mk.I"/>
+                    <StringItem index="144" value="Silver Botkiller Stickybomb Launcher Mk.II"/>
+                    <StringItem index="145" value="Gold Botkiller Stickybomb Launcher Mk.II"/>
+                    <StringItem index="146" value="The Tide Turner"/>
+                    <StringItem index="147" value="Festive Targe"/>
+                    <StringItem index="148" value="The Quickiebomb Launcher"/>
+                    <StringItem index="149" value="Bottle"/>
+                    <StringItem index="150" value="The Eyelander"/>
+                    <StringItem index="151" value="The Pain Train"/>
+                    <StringItem index="152" value="The Scotsman&apos;s Skullcutter"/>
+                    <StringItem index="153" value="Horseless Headless Horsemann&apos;s Headtaker"/>
+                    <StringItem index="154" value="Ullapool Caber"/>
+                    <StringItem index="155" value="The Claidheamh Mor"/>
+                    <StringItem index="156" value="The Persian Persuader"/>
+                    <StringItem index="157" value="Nessie&apos;s Nine Iron"/>
+                    <StringItem index="158" value="The Scottish Handshake"/>
+                    <StringItem index="159" value="Festive Eyelander"/>
+                    <StringItem index="160" value="Minigun"/>
+                    <StringItem index="161" value="Natascha"/>
+                    <StringItem index="162" value="Iron Curtain"/>
+                    <StringItem index="163" value="The Brass Beast"/>
+                    <StringItem index="164" value="Tomislav"/>
+                    <StringItem index="165" value="Festive Minigun"/>
+                    <StringItem index="166" value="Silver Botkiller Minigun Mk.I"/>
+                    <StringItem index="167" value="Gold Botkiller Minigun Mk.I"/>
+                    <StringItem index="168" value="Rust Botkiller Minigun Mk.I"/>
+                    <StringItem index="169" value="Blood Botkiller Minigun Mk.I"/>
+                    <StringItem index="170" value="Carbonado Botkiller Minigun Mk.I"/>
+                    <StringItem index="171" value="Diamond Botkiller Minigun Mk.I"/>
+                    <StringItem index="172" value="Silver Botkiller Minigun Mk.II"/>
+                    <StringItem index="173" value="Gold Botkiller Minigun Mk.II"/>
+                    <StringItem index="174" value="The Huo-Long Heater"/>
+                    <StringItem index="175" value="Heavy&apos;s Shotgun"/>
+                    <StringItem index="176" value="Sandvich"/>
+                    <StringItem index="177" value="The Dalokohs Bar"/>
+                    <StringItem index="178" value="The Buffalo Steak Sandvich"/>
+                    <StringItem index="179" value="The Family Business"/>
+                    <StringItem index="180" value="Fishcake"/>
+                    <StringItem index="181" value="Robo-Sandvich"/>
+                    <StringItem index="182" value="Festive Sandvich"/>
+                    <StringItem index="183" value="Second Banana"/>
+                    <StringItem index="184" value="Fists"/>
+                    <StringItem index="185" value="The Killing Gloves of Boxing"/>
+                    <StringItem index="186" value="Gloves of Running Urgently"/>
+                    <StringItem index="187" value="Warrior&apos;s Spirit"/>
+                    <StringItem index="188" value="Fists of Steel"/>
+                    <StringItem index="189" value="The Eviction Notice"/>
+                    <StringItem index="190" value="Apoco-Fists"/>
+                    <StringItem index="191" value="The Holiday Punch"/>
+                    <StringItem index="192" value="Festive Gloves of Running Urgently"/>
+                    <StringItem index="193" value="The Bread Bite"/>
+                    <StringItem index="194" value="Engineer&apos;s Shotgun"/>
+                    <StringItem index="195" value="The Frontier Justice"/>
+                    <StringItem index="196" value="The Widowmaker"/>
+                    <StringItem index="197" value="The Pomson 6000"/>
+                    <StringItem index="198" value="The Rescue Ranger"/>
+                    <StringItem index="199" value="Festive Frontier Justice"/>
+                    <StringItem index="200" value="Engineer&apos;s Pistol"/>
+                    <StringItem index="201" value="The Wrangler"/>
+                    <StringItem index="202" value="The Short Circuit"/>
+                    <StringItem index="203" value="Festive Wrangler"/>
+                    <StringItem index="204" value="The Gigar Counter"/>
+                    <StringItem index="205" value="Wrench"/>
+                    <StringItem index="206" value="The Gunslinger"/>
+                    <StringItem index="207" value="The Southern Hospitality"/>
+                    <StringItem index="208" value="Golden Wrench"/>
+                    <StringItem index="209" value="The Jag"/>
+                    <StringItem index="210" value="The Eureka Effect"/>
+                    <StringItem index="211" value="Festive Wrench"/>
+                    <StringItem index="212" value="Silver Botkiller Wrench Mk.I"/>
+                    <StringItem index="213" value="Gold Botkiller Wrench Mk.I"/>
+                    <StringItem index="214" value="Rust Botkiller Wrench Mk.I"/>
+                    <StringItem index="215" value="Blood Botkiller Wrench Mk.I"/>
+                    <StringItem index="216" value="Carbonado Botkiller Wrench Mk.I"/>
+                    <StringItem index="217" value="Diamond Botkiller Wrench Mk.I"/>
+                    <StringItem index="218" value="Silver Botkiller Wrench Mk.II"/>
+                    <StringItem index="219" value="Gold Botkiller Wrench Mk.II"/>
+                    <StringItem index="220" value="Construction PDA"/>
+                    <StringItem index="221" value="Destruction PDA"/>
+                    <StringItem index="222" value="Syringe Gun"/>
+                    <StringItem index="223" value="The Blutsauger"/>
+                    <StringItem index="224" value="Crusader&apos;s Crossbow"/>
+                    <StringItem index="225" value="The Overdose"/>
+                    <StringItem index="226" value="Festive Crusader&apos;s Crossbow"/>
+                    <StringItem index="227" value="Medi Gun"/>
+                    <StringItem index="228" value="The Kritzkrieg"/>
+                    <StringItem index="229" value="The Quick-Fix"/>
+                    <StringItem index="230" value="Festive Medi Gun"/>
+                    <StringItem index="231" value="Silver Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="232" value="Gold Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="233" value="Rust Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="234" value="Blood Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="235" value="Carbonado Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="236" value="Diamond Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="237" value="Silver Botkiller Medi Gun Mk.II"/>
+                    <StringItem index="238" value="Gold Botkiller Medi Gun Mk.II"/>
+                    <StringItem index="239" value="The Vaccinator"/>
+                    <StringItem index="240" value="Bonesaw"/>
+                    <StringItem index="241" value="The Ubersaw"/>
+                    <StringItem index="242" value="The Vita-Saw"/>
+                    <StringItem index="243" value="Amputator"/>
+                    <StringItem index="244" value="The Solemn Vow"/>
+                    <StringItem index="245" value="Festive Ubersaw"/>
+                    <StringItem index="246" value="Festive Bonesaw"/>
+                    <StringItem index="247" value="Sniper Rifle"/>
+                    <StringItem index="248" value="The Huntsman"/>
+                    <StringItem index="249" value="The Syndey Sleeper"/>
+                    <StringItem index="250" value="The Bazaar Bargain"/>
+                    <StringItem index="251" value="The Machina"/>
+                    <StringItem index="252" value="Festive Sniper Rifle"/>
+                    <StringItem index="253" value="The Hitman&apos;s Heatmaker"/>
+                    <StringItem index="254" value="The AWPer Hand"/>
+                    <StringItem index="255" value="Silver Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="256" value="Gold Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="257" value="Rust Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="258" value="Blood Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="259" value="Carbonado Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="260" value="Diamond Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="261" value="Silver Botkiller Sniper Rifle Mk.II"/>
+                    <StringItem index="262" value="Gold Botkiller Sniper Rifle Mk.II"/>
+                    <StringItem index="263" value="Festive Huntsman"/>
+                    <StringItem index="264" value="The Fortified Compound"/>
+                    <StringItem index="265" value="The Classic"/>
+                    <StringItem index="266" value="Shooting Star"/>
+                    <StringItem index="267" value="SMG"/>
+                    <StringItem index="268" value="The Razorback"/>
+                    <StringItem index="269" value="Jarate"/>
+                    <StringItem index="270" value="Darwin&apos;s Danger Shield"/>
+                    <StringItem index="271" value="Cozy Camper"/>
+                    <StringItem index="272" value="The Cleaner&apos;s Carbine"/>
+                    <StringItem index="273" value="Festive Jarate"/>
+                    <StringItem index="274" value="The Self-Aware Beauty Mark"/>
+                    <StringItem index="275" value="Festive SMG"/>
+                    <StringItem index="276" value="Kukri"/>
+                    <StringItem index="277" value="The Tribalman&apos;s Shiv"/>
+                    <StringItem index="278" value="The Bushwacka"/>
+                    <StringItem index="279" value="The Shahanshah"/>
+                    <StringItem index="280" value="Revolver"/>
+                    <StringItem index="281" value="The Ambassador"/>
+                    <StringItem index="282" value="Big Kill"/>
+                    <StringItem index="283" value="L&apos;Etranger"/>
+                    <StringItem index="284" value="The Enforcer"/>
+                    <StringItem index="285" value="The Diamondback"/>
+                    <StringItem index="286" value="Festive Ambassador"/>
+                    <StringItem index="287" value="Festive Revolver"/>
+                    <StringItem index="288" value="Sapper"/>
+                    <StringItem index="289" value="The Red-Tape Recorder"/>
+                    <StringItem index="290" value="The Ap-Sap"/>
+                    <StringItem index="291" value="Festive Sapper"/>
+                    <StringItem index="292" value="The Snack Attack"/>
+                    <StringItem index="293" value="Knife"/>
+                    <StringItem index="294" value="Your Eternal Reward"/>
+                    <StringItem index="295" value="Conniver&apos;s Kunai"/>
+                    <StringItem index="296" value="The Big Earner"/>
+                    <StringItem index="297" value="The Wanga Prick"/>
+                    <StringItem index="298" value="The Sharp Dresser"/>
+                    <StringItem index="299" value="The Spy-cicle"/>
+                    <StringItem index="300" value="Festive Knife"/>
+                    <StringItem index="301" value="The Black Rose"/>
+                    <StringItem index="302" value="Silver Botkiller Knife Mk.I"/>
+                    <StringItem index="303" value="Gold Botkiller Knife Mk.I"/>
+                    <StringItem index="304" value="Rust Botkiller Knife Mk.I"/>
+                    <StringItem index="305" value="Blood Botkiller Knife Mk.I"/>
+                    <StringItem index="306" value="Carbonado Botkiller Knife Mk.I"/>
+                    <StringItem index="307" value="Diamond Botkiller Knife Mk.I"/>
+                    <StringItem index="308" value="Silver Botkiller Knife Mk.II"/>
+                    <StringItem index="309" value="Gold Botkiller Knife Mk.II"/>
+                    <StringItem index="310" value="Invis Watch"/>
+                    <StringItem index="311" value="The Dead Ringer"/>
+                    <StringItem index="312" value="The Cloak and Dagger"/>
+                    <StringItem index="313" value="Enthusiast&apos;s Timepiece"/>
+                    <StringItem index="314" value="The Quackenbirdt"/>
                   </StringArray>
                 </Property>
               </Properties>
