@@ -98,7 +98,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber2">
+            <Component class="javax.swing.JLabel" name="lblIndex">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -111,7 +111,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtWeaponNumber2">
+            <Component class="javax.swing.JTextField" name="txtIndex">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -124,7 +124,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber3">
+            <Component class="javax.swing.JLabel" name="lblSlot">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -137,7 +137,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber4">
+            <Component class="javax.swing.JLabel" name="lblQuality">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -150,7 +150,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtWeaponNumber4">
+            <Component class="javax.swing.JTextField" name="txtQuality">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -163,7 +163,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber5">
+            <Component class="javax.swing.JLabel" name="lblLevel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -176,7 +176,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtWeaponNumber5">
+            <Component class="javax.swing.JTextField" name="txtLevel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -189,7 +189,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber6">
+            <Component class="javax.swing.JLabel" name="lblModelPreset">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -198,11 +198,11 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="250" width="140" height="-1"/>
+                  <AbsoluteConstraints x="10" y="250" width="130" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtWeaponNumber6">
+            <Component class="javax.swing.JTextField" name="txtAmmo">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -254,13 +254,16 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Use preset"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkUsePresetActionPerformed"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="460" y="40" width="100" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblWeaponNumber7">
+            <Component class="javax.swing.JLabel" name="lblAmmo">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="18" style="0"/>
@@ -273,13 +276,13 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox1">
+            <Component class="javax.swing.JComboBox" name="boxModel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="208">
+                  <StringArray count="329">
                     <StringItem index="0" value="Scattergun"/>
                     <StringItem index="1" value="Scattergun (Renamed/Strange)"/>
                     <StringItem index="2" value="Force-A-Nature"/>
@@ -488,6 +491,127 @@
                     <StringItem index="205" value="The Holiday Punch"/>
                     <StringItem index="206" value="Festive Gloves of Running Urgently"/>
                     <StringItem index="207" value="The Bread Bite"/>
+                    <StringItem index="208" value="Engineer&apos;s Shotgun"/>
+                    <StringItem index="209" value="The Frontier Justice"/>
+                    <StringItem index="210" value="The Widowmaker"/>
+                    <StringItem index="211" value="The Pomson 6000"/>
+                    <StringItem index="212" value="The Rescue Ranger"/>
+                    <StringItem index="213" value="Festive Frontier Justice"/>
+                    <StringItem index="214" value="Engineer&apos;s Pistol"/>
+                    <StringItem index="215" value="The Wrangler"/>
+                    <StringItem index="216" value="The Short Circuit"/>
+                    <StringItem index="217" value="Festive Wrangler"/>
+                    <StringItem index="218" value="The Gigar Counter"/>
+                    <StringItem index="219" value="Wrench"/>
+                    <StringItem index="220" value="The Gunslinger"/>
+                    <StringItem index="221" value="The Southern Hospitality"/>
+                    <StringItem index="222" value="Golden Wrench"/>
+                    <StringItem index="223" value="The Jag"/>
+                    <StringItem index="224" value="The Eureka Effect"/>
+                    <StringItem index="225" value="Festive Wrench"/>
+                    <StringItem index="226" value="Silver Botkiller Wrench Mk.I"/>
+                    <StringItem index="227" value="Gold Botkiller Wrench Mk.I"/>
+                    <StringItem index="228" value="Rust Botkiller Wrench Mk.I"/>
+                    <StringItem index="229" value="Blood Botkiller Wrench Mk.I"/>
+                    <StringItem index="230" value="Carbonado Botkiller Wrench Mk.I"/>
+                    <StringItem index="231" value="Diamond Botkiller Wrench Mk.I"/>
+                    <StringItem index="232" value="Silver Botkiller Wrench Mk.II"/>
+                    <StringItem index="233" value="Gold Botkiller Wrench Mk.II"/>
+                    <StringItem index="234" value="Construction PDA"/>
+                    <StringItem index="235" value="Destruction PDA"/>
+                    <StringItem index="236" value="Syringe Gun"/>
+                    <StringItem index="237" value="The Blutsauger"/>
+                    <StringItem index="238" value="Crusader&apos;s Crossbow"/>
+                    <StringItem index="239" value="The Overdose"/>
+                    <StringItem index="240" value="Festive Crusader&apos;s Crossbow"/>
+                    <StringItem index="241" value="Medi Gun"/>
+                    <StringItem index="242" value="The Kritzkrieg"/>
+                    <StringItem index="243" value="The Quick-Fix"/>
+                    <StringItem index="244" value="Festive Medi Gun"/>
+                    <StringItem index="245" value="Silver Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="246" value="Gold Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="247" value="Rust Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="248" value="Blood Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="249" value="Carbonado Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="250" value="Diamond Botkiller Medi Gun Mk.I"/>
+                    <StringItem index="251" value="Silver Botkiller Medi Gun Mk.II"/>
+                    <StringItem index="252" value="Gold Botkiller Medi Gun Mk.II"/>
+                    <StringItem index="253" value="The Vaccinator"/>
+                    <StringItem index="254" value="Bonesaw"/>
+                    <StringItem index="255" value="The Ubersaw"/>
+                    <StringItem index="256" value="The Vita-Saw"/>
+                    <StringItem index="257" value="Amputator"/>
+                    <StringItem index="258" value="The Solemn Vow"/>
+                    <StringItem index="259" value="Festive Ubersaw"/>
+                    <StringItem index="260" value="Festive Bonesaw"/>
+                    <StringItem index="261" value="Sniper Rifle"/>
+                    <StringItem index="262" value="The Huntsman"/>
+                    <StringItem index="263" value="The Syndey Sleeper"/>
+                    <StringItem index="264" value="The Bazaar Bargain"/>
+                    <StringItem index="265" value="The Machina"/>
+                    <StringItem index="266" value="Festive Sniper Rifle"/>
+                    <StringItem index="267" value="The Hitman&apos;s Heatmaker"/>
+                    <StringItem index="268" value="The AWPer Hand"/>
+                    <StringItem index="269" value="Silver Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="270" value="Gold Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="271" value="Rust Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="272" value="Blood Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="273" value="Carbonado Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="274" value="Diamond Botkiller Sniper Rifle Mk.I"/>
+                    <StringItem index="275" value="Silver Botkiller Sniper Rifle Mk.II"/>
+                    <StringItem index="276" value="Gold Botkiller Sniper Rifle Mk.II"/>
+                    <StringItem index="277" value="Festive Huntsman"/>
+                    <StringItem index="278" value="The Fortified Compound"/>
+                    <StringItem index="279" value="The Classic"/>
+                    <StringItem index="280" value="Shooting Star"/>
+                    <StringItem index="281" value="SMG"/>
+                    <StringItem index="282" value="The Razorback"/>
+                    <StringItem index="283" value="Jarate"/>
+                    <StringItem index="284" value="Darwin&apos;s Danger Shield"/>
+                    <StringItem index="285" value="Cozy Camper"/>
+                    <StringItem index="286" value="The Cleaner&apos;s Carbine"/>
+                    <StringItem index="287" value="Festive Jarate"/>
+                    <StringItem index="288" value="The Self-Aware Beauty Mark"/>
+                    <StringItem index="289" value="Festive SMG"/>
+                    <StringItem index="290" value="Kukri"/>
+                    <StringItem index="291" value="The Tribalman&apos;s Shiv"/>
+                    <StringItem index="292" value="The Bushwacka"/>
+                    <StringItem index="293" value="The Shahanshah"/>
+                    <StringItem index="294" value="Revolver"/>
+                    <StringItem index="295" value="The Ambassador"/>
+                    <StringItem index="296" value="Big Kill"/>
+                    <StringItem index="297" value="L&apos;Etranger"/>
+                    <StringItem index="298" value="The Enforcer"/>
+                    <StringItem index="299" value="The Diamondback"/>
+                    <StringItem index="300" value="Festive Ambassador"/>
+                    <StringItem index="301" value="Festive Revolver"/>
+                    <StringItem index="302" value="Sapper"/>
+                    <StringItem index="303" value="The Red-Tape Recorder"/>
+                    <StringItem index="304" value="The Ap-Sap"/>
+                    <StringItem index="305" value="Festive Sapper"/>
+                    <StringItem index="306" value="The Snack Attack"/>
+                    <StringItem index="307" value="Knife"/>
+                    <StringItem index="308" value="Your Eternal Reward"/>
+                    <StringItem index="309" value="Conniver&apos;s Kunai"/>
+                    <StringItem index="310" value="The Big Earner"/>
+                    <StringItem index="311" value="The Wanga Prick"/>
+                    <StringItem index="312" value="The Sharp Dresser"/>
+                    <StringItem index="313" value="The Spy-cicle"/>
+                    <StringItem index="314" value="Festive Knife"/>
+                    <StringItem index="315" value="The Black Rose"/>
+                    <StringItem index="316" value="Silver Botkiller Knife Mk.I"/>
+                    <StringItem index="317" value="Gold Botkiller Knife Mk.I"/>
+                    <StringItem index="318" value="Rust Botkiller Knife Mk.I"/>
+                    <StringItem index="319" value="Blood Botkiller Knife Mk.I"/>
+                    <StringItem index="320" value="Carbonado Botkiller Knife Mk.I"/>
+                    <StringItem index="321" value="Diamond Botkiller Knife Mk.I"/>
+                    <StringItem index="322" value="Silver Botkiller Knife Mk.II"/>
+                    <StringItem index="323" value="Gold Botkiller Knife Mk.II"/>
+                    <StringItem index="324" value="Invis Watch"/>
+                    <StringItem index="325" value="The Dead Ringer"/>
+                    <StringItem index="326" value="The Cloak and Dagger"/>
+                    <StringItem index="327" value="Enthusiast&apos;s Timepiece"/>
+                    <StringItem index="328" value="The Quackenbirdt"/>
                   </StringArray>
                 </Property>
               </Properties>
