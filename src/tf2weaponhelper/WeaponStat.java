@@ -26,6 +26,7 @@ public class WeaponStat {
     private String name;
     private String desc;
     private int type;
+    private double value;
     
     /**
      * Creates a new weapon stat. Use this link:
@@ -42,6 +43,7 @@ public class WeaponStat {
         this.name = name;
         this.desc = desc;
         this.type = type;
+        value = 0.0;
     }
     
     public int getId(){
@@ -60,6 +62,26 @@ public class WeaponStat {
         return type;
     }
     
+    public double getValue(){
+        return value;
+    }
+    
+    public void setValue(double val){
+        value = val;
+    }
+    
+    /**
+     * Gets the formatted version of the value.
+     * @return name | value
+     */
+    public String displayAttrib(){
+        return name + " | " + value;
+    }
+    
+    /**
+     * Gets the string format of a weapon stat.
+     * @return String example: 1 | Damage boost | gives a damage bonus | percentage
+     */
     @Override
     public String toString(){
         String str;
