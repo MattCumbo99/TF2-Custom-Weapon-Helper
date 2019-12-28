@@ -257,6 +257,12 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(588, "The Pomson 6000", "tf_weapon_drg_pomson"));
         weapons.add(new Weapon(997, "The Rescue Ranger", "tf_weapon_shotgun_building_rescue"));
         weapons.add(new Weapon(1004, "Festive Frontier Justice", "tf_weapon_sentry_revenge"));
+        //Engineer secondary
+        weapons.add(new Weapon(22, "Engineer's Pistol", "tf_weapon_pistol"));
+        weapons.add(new Weapon(140, "The Wrangler", "tf_weapon_laser_pointer"));
+        weapons.add(new Weapon(528, "The Short Circuit", "tf_weapon_mechanical_arm"));
+        weapons.add(new Weapon(1086, "Festive Wrangler", "tf_weapon_laser_pointer"));
+        weapons.add(new Weapon(30668, "The Gigar Counter", "tf_weapon_laser_pointer"));
     }
     
     private void initStatDatabase(){
