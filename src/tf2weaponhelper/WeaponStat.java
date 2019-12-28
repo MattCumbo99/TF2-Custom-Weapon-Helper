@@ -46,26 +46,50 @@ public class WeaponStat {
         value = 0.0;
     }
     
+    /**
+     * Gets the ID number of the stat.
+     * @return Stat ID number.
+     */
     public int getId(){
         return id;
     }
     
+    /**
+     * Gets the name of the stat.
+     * @return Stat name
+     */
     public String getName(){
         return name;
     }
     
+    /**
+     * Gets the description of the stat.
+     * @return Stat description
+     */
     public String getDescription(){
         return desc;
     }
     
+    /**
+     * Gets the type of value of the stat.
+     * @return Stat type
+     */
     public int getType(){
         return type;
     }
     
+    /**
+     * Gets the current value of the stat.
+     * @return Stat value
+     */
     public double getValue(){
         return value;
     }
     
+    /**
+     * Sets the stat's value.
+     * @param val Value to set the stat to
+     */
     public void setValue(double val){
         value = val;
     }
