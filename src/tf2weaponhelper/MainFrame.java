@@ -474,6 +474,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtWeaponNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtWeaponNumber.setText("10000");
+        txtWeaponNumber.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtWeaponNumberFocusLost(evt);
+            }
+        });
         txtWeaponNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtWeaponNumberActionPerformed(evt);
@@ -538,6 +543,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtAmmo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtAmmo.setText("20");
+        txtAmmo.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtAmmoFocusLost(evt);
+            }
+        });
         txtAmmo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtAmmoKeyTyped(evt);
@@ -548,6 +558,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         boxSlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxSlot.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primary", "Secondary", "Melee", "PDA", "Sapper", "Invis watch" }));
+        boxSlot.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                boxSlotItemStateChanged(evt);
+            }
+        });
         infBasicSettings.getContentPane().add(boxSlot);
         boxSlot.setBounds(210, 100, 180, 23);
 
@@ -604,6 +619,11 @@ public class MainFrame extends javax.swing.JFrame {
         boxQuality.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         boxQuality.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Unique", "Vintage", "Genuine", "Strange", "Unusual", "Haunted", "Collector's", "Decorated", "Community", "Self-Made", "Valve" }));
         boxQuality.setSelectedIndex(6);
+        boxQuality.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                boxQualityItemStateChanged(evt);
+            }
+        });
         infBasicSettings.getContentPane().add(boxQuality);
         boxQuality.setBounds(210, 130, 180, 23);
 
@@ -669,6 +689,13 @@ public class MainFrame extends javax.swing.JFrame {
             txtClassname.setEnabled(false);
             lblModelPreset.setVisible(true);
             boxModel.setVisible(true);
+            for(Weapon w: weapons){
+                if(w.getName().equals(boxModel.getSelectedItem().toString())){
+                    txtClassname.setText(w.getWeaponClass());
+                    txtIndex.setText(Integer.toString(w.getIndex()));
+                    break;
+                }
+            }
         }
         else{
             txtIndex.setEnabled(true);
@@ -709,6 +736,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void sldLevelStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldLevelStateChanged
         txtLevel.setText(Integer.toString(sldLevel.getValue()));
+        level = txtLevel.getText();
     }//GEN-LAST:event_sldLevelStateChanged
 
     private void boxModelItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_boxModelItemStateChanged
@@ -722,8 +750,32 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_boxModelItemStateChanged
 
     private void tabbedPaneStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_tabbedPaneStateChanged
+        wepNumber = txtWeaponNumber.getText();
+        ammo = txtAmmo.getText();
+        index = txtIndex.getText();
+        classname = txtClassname.getText();
         updateCode();
     }//GEN-LAST:event_tabbedPaneStateChanged
+
+    private void txtWeaponNumberFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtWeaponNumberFocusLost
+        if(txtWeaponNumber.getText().isEmpty()){
+            txtWeaponNumber.setText("0");
+        }
+    }//GEN-LAST:event_txtWeaponNumberFocusLost
+
+    private void txtAmmoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAmmoFocusLost
+        if(txtAmmo.getText().isEmpty()){
+            txtAmmo.setText("0");
+        }
+    }//GEN-LAST:event_txtAmmoFocusLost
+
+    private void boxQualityItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_boxQualityItemStateChanged
+        quality = Integer.toString(boxQuality.getSelectedIndex());
+    }//GEN-LAST:event_boxQualityItemStateChanged
+
+    private void boxSlotItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_boxSlotItemStateChanged
+        slot = Integer.toString(boxSlot.getSelectedIndex());
+    }//GEN-LAST:event_boxSlotItemStateChanged
 
     /**
      * @param args the command line arguments
