@@ -135,6 +135,24 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(416, "The Market Gardener", "tf_weapon_shovel"));
         weapons.add(new Weapon(447, "The Disciplinary Action", "tf_weapon_shovel"));
         weapons.add(new Weapon(775, "The Escape Plan", "tf_weapon_shovel"));
+        //Pyro primary
+        weapons.add(new Weapon(21, "Flame Thrower", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(40, "The Backburner", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(215, "The Degreaser", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(594, "The Phlogistinator", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(659, "Festive Flame Thrower", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(741, "The Rainblower", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(798, "Silver Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(807, "Gold Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(887, "Rust Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(896, "Blood Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(905, "Carbonado Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(914, "Diamond Botkiller Flame Thrower Mk.I", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(963, "Silver Botkiller Flame Thrower Mk.II", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(972, "Gold Botkiller Flame Thrower Mk.II", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(1146, "Festive Backburner", "tf_weapon_flamethrower"));
+        weapons.add(new Weapon(1178, "Dragon's Fury", "tf_weapon_rocketlauncher_fireball"));
+        weapons.add(new Weapon(30474, "Nostromo Napalmer", "tf_weapon_flamethrower"));
     }
     
     private void initStatDatabase(){
