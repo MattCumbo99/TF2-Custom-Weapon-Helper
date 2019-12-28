@@ -250,6 +250,13 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(656, "The Holiday Punch", "tf_weapon_fists"));
         weapons.add(new Weapon(1084, "Festive Gloves of Running Urgently", "tf_weapon_fists"));
         weapons.add(new Weapon(1100, "The Bread Bite", "tf_weapon_fists"));
+        //Engineer primary
+        weapons.add(new Weapon(9, "Engineer's Shotgun", "tf_weapon_shotgun_primary"));
+        weapons.add(new Weapon(141, "The Frontier Justice", "tf_weapon_sentry_revenge"));
+        weapons.add(new Weapon(527, "The Widowmaker", "tf_weapon_shotgun_primary"));
+        weapons.add(new Weapon(588, "The Pomson 6000", "tf_weapon_drg_pomson"));
+        weapons.add(new Weapon(997, "The Rescue Ranger", "tf_weapon_shotgun_building_rescue"));
+        weapons.add(new Weapon(1004, "Festive Frontier Justice", "tf_weapon_sentry_revenge"));
     }
     
     private void initStatDatabase(){
