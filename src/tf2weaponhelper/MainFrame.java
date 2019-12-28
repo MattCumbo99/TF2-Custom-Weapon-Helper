@@ -27,6 +27,8 @@ public class MainFrame extends javax.swing.JFrame {
     private ArrayList<Weapon> weapons;
     private ArrayList<WeaponStat> stats;
     
+    private String wepNumber, classname, index, slot, quality, level, attribs, ammo;
+    
     /**
      * Creates new form MainFrame
      */
@@ -34,6 +36,21 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         initWeaponDatabase();
         initStatDatabase();
+        initValues();
+    }
+    
+    /**
+     * Initializes the string values from the default selected ones.
+     */
+    private void initValues(){
+        wepNumber = "10000";
+        classname = "tf_weapon_rocketlauncher";
+        index = "228";
+        slot = "0";
+        quality = "6";
+        level = "29";
+        attribs = "134 ; 19";
+        ammo = "20";
     }
     
     private void initWeaponDatabase(){
