@@ -229,6 +229,16 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(958, "Silver Botkiller Minigun Mk.II", "tf_weapon_minigun"));
         weapons.add(new Weapon(967, "Gold Botkiller Minigun Mk.II", "tf_weapon_minigun"));
         weapons.add(new Weapon(811, "The Huo-Long Heater", "tf_weapon_minigun"));
+        //Heavy secondary
+        weapons.add(new Weapon(11, "Heavy's Shotgun", "tf_weapon_shotgun_hwg"));
+        weapons.add(new Weapon(42, "Sandvich", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(159, "The Dalokohs Bar", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(311, "The Buffalo Steak Sandvich", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(425, "The Family Business", "tf_weapon_shotgun_hwg"));
+        weapons.add(new Weapon(433, "Fishcake", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(863, "Robo-Sandvich", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(1002, "Festive Sandvich", "tf_weapon_lunchbox"));
+        weapons.add(new Weapon(1190, "Second Banana", "tf_weapon_lunchbox"));
     }
     
     private void initStatDatabase(){
