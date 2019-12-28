@@ -279,6 +279,8 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(911, "Diamond Botkiller Wrench Mk.I", "tf_weapon_wrench"));
         weapons.add(new Weapon(960, "Silver Botkiller Wrench Mk.II", "tf_weapon_wrench"));
         weapons.add(new Weapon(969, "Gold Botkiller Wrench Mk.II", "tf_weapon_wrench"));
+        //Engineer PDA
+        weapons.add(new Weapon(25, "Construction PDA", "tf_weapon_pda_engineer_build"));
     }
     
     private void initStatDatabase(){
