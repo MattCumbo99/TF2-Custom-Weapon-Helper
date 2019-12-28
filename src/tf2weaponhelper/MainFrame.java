@@ -153,6 +153,15 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1146, "Festive Backburner", "tf_weapon_flamethrower"));
         weapons.add(new Weapon(1178, "Dragon's Fury", "tf_weapon_rocketlauncher_fireball"));
         weapons.add(new Weapon(30474, "Nostromo Napalmer", "tf_weapon_flamethrower"));
+        //Pyro secondary
+        weapons.add(new Weapon(12, "Pyro's Shotgun", "tf_weapon_shotgun_pyro"));
+        weapons.add(new Weapon(39, "The Flare Gun", "tf_weapon_flaregun"));
+        weapons.add(new Weapon(351, "The Detonator", "tf_weapon_flaregun"));
+        weapons.add(new Weapon(595, "The Manmelter", "tf_weapon_flaregun_revenge"));
+        weapons.add(new Weapon(740, "The Scorch Shot", "tf_weapon_flaregun"));
+        weapons.add(new Weapon(1081, "Festive Flare Gun", "tf_weapon_flaregun"));
+        weapons.add(new Weapon(1179, "Thermal Thruster", "tf_weapon_rocketpack"));
+        weapons.add(new Weapon(1180, "Gas Passer", "tf_weapon_jar_gas"));
     }
     
     private void initStatDatabase(){
