@@ -127,6 +127,14 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1101, "The B.A.S.E. Jumper", "tf_weapon_parachute"));
         weapons.add(new Weapon(1141, "Festive Shotgun", "tf_weapon_shotgun"));
         weapons.add(new Weapon(1153, "Panic Attack", "tf_weapon_shotgun"));
+        //Soldier melee
+        weapons.add(new Weapon(6, "Shovel", "tf_weapon_shovel"));
+        weapons.add(new Weapon(128, "The Equalizer", "tf_weapon_shovel"));
+        weapons.add(new Weapon(154, "The Pain Train", "tf_weapon_shovel"));
+        weapons.add(new Weapon(357, "The Half-Zatoichi", "tf_weapon_katana"));
+        weapons.add(new Weapon(416, "The Market Gardener", "tf_weapon_shovel"));
+        weapons.add(new Weapon(447, "The Disciplinary Action", "tf_weapon_shovel"));
+        weapons.add(new Weapon(775, "The Escape Plan", "tf_weapon_shovel"));
     }
     
     private void initStatDatabase(){
