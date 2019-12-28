@@ -434,6 +434,16 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtWeaponNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtWeaponNumber.setText("10000");
+        txtWeaponNumber.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtWeaponNumberActionPerformed(evt);
+            }
+        });
+        txtWeaponNumber.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtWeaponNumberKeyTyped(evt);
+            }
+        });
         infBasicSettings.getContentPane().add(txtWeaponNumber);
         txtWeaponNumber.setBounds(210, 10, 90, 23);
 
@@ -451,6 +461,11 @@ public class MainFrame extends javax.swing.JFrame {
         txtIndex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtIndex.setText("228");
         txtIndex.setEnabled(false);
+        txtIndex.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtIndexKeyTyped(evt);
+            }
+        });
         infBasicSettings.getContentPane().add(txtIndex);
         txtIndex.setBounds(210, 70, 140, 23);
 
@@ -486,6 +501,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtAmmo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtAmmo.setText("20");
+        txtAmmo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAmmoKeyTyped(evt);
+            }
+        });
         infBasicSettings.getContentPane().add(txtAmmo);
         txtAmmo.setBounds(210, 190, 80, 23);
 
@@ -590,6 +610,31 @@ public class MainFrame extends javax.swing.JFrame {
             boxModel.setVisible(false);
         }
     }//GEN-LAST:event_chkUsePresetActionPerformed
+
+    private void txtWeaponNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtWeaponNumberActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtWeaponNumberActionPerformed
+
+    private void txtWeaponNumberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtWeaponNumberKeyTyped
+        char enter = evt.getKeyChar();
+        if(!(Character.isDigit(enter))){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtWeaponNumberKeyTyped
+
+    private void txtIndexKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIndexKeyTyped
+        char enter = evt.getKeyChar();
+        if(!(Character.isDigit(enter))){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtIndexKeyTyped
+
+    private void txtAmmoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAmmoKeyTyped
+        char enter = evt.getKeyChar();
+        if(!(Character.isDigit(enter))){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtAmmoKeyTyped
 
     /**
      * @param args the command line arguments
