@@ -344,6 +344,15 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(171, "The Tribalman's Shiv", "tf_weapon_club"));
         weapons.add(new Weapon(232, "The Bushwacka", "tf_weapon_club"));
         weapons.add(new Weapon(401, "The Shahanshah", "tf_weapon_club"));
+        //Spy primary
+        weapons.add(new Weapon(24, "Revolver", "tf_weapon_revolver"));
+        weapons.add(new Weapon(61, "The Ambassador", "tf_weapon_revolver"));
+        weapons.add(new Weapon(161, "Big Kill", "tf_weapon_revolver"));
+        weapons.add(new Weapon(224, "L'Etranger", "tf_weapon_revolver"));
+        weapons.add(new Weapon(460, "The Enforcer", "tf_weapon_revolver"));
+        weapons.add(new Weapon(525, "The Diamondback", "tf_weapon_revolver"));
+        weapons.add(new Weapon(1006, "Festive Ambassador", "tf_weapon_revolver"));
+        weapons.add(new Weapon(1142, "Festive Revolver", "tf_weapon_revolver"));
     }
     
     private void initStatDatabase(){
