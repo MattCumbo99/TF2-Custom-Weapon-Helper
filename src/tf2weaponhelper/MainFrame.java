@@ -213,6 +213,22 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(482, "Nessie's Nine Iron", "tf_weapon_sword"));
         weapons.add(new Weapon(609, "The Scottish Handshake", "tf_weapon_bottle"));
         weapons.add(new Weapon(1082, "Festive Eyelander", "tf_weapon_sword"));
+        //Heavy primary
+        weapons.add(new Weapon(15, "Minigun", "tf_weapon_minigun"));
+        weapons.add(new Weapon(41, "Natascha", "tf_weapon_minigun"));
+        weapons.add(new Weapon(298, "Iron Curtain", "tf_weapon_minigun"));
+        weapons.add(new Weapon(312, "The Brass Beast", "tf_weapon_minigun"));
+        weapons.add(new Weapon(424, "Tomislav", "tf_weapon_minigun"));
+        weapons.add(new Weapon(654, "Festive Minigun", "tf_weapon_minigun"));
+        weapons.add(new Weapon(793, "Silver Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(802, "Gold Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(882, "Rust Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(891, "Blood Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(900, "Carbonado Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(909, "Diamond Botkiller Minigun Mk.I", "tf_weapon_minigun"));
+        weapons.add(new Weapon(958, "Silver Botkiller Minigun Mk.II", "tf_weapon_minigun"));
+        weapons.add(new Weapon(967, "Gold Botkiller Minigun Mk.II", "tf_weapon_minigun"));
+        weapons.add(new Weapon(811, "The Huo-Long Heater", "tf_weapon_minigun"));
     }
     
     private void initStatDatabase(){
