@@ -281,6 +281,12 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(969, "Gold Botkiller Wrench Mk.II", "tf_weapon_wrench"));
         //Engineer PDA
         weapons.add(new Weapon(25, "Construction PDA", "tf_weapon_pda_engineer_build"));
+        //Medic primary
+        weapons.add(new Weapon(17, "Syringe Gun", "tf_weapon_syringegun_medic"));
+        weapons.add(new Weapon(36, "The Blutsauger", "tf_weapon_syringegun_medic"));
+        weapons.add(new Weapon(305, "Crusader's Crossbow", "tf_weapon_crossbow"));
+        weapons.add(new Weapon(412, "The Overdose", "tf_weapon_syringegun_medic"));
+        weapons.add(new Weapon(1079, "Festive Crusader's Crossbow", "tf_weapon_crossbow"));
     }
     
     private void initStatDatabase(){
