@@ -309,6 +309,26 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(413, "The Solemn Vow", "tf_weapon_bonesaw"));
         weapons.add(new Weapon(1003, "Festive Ubersaw", "tf_weapon_bonesaw"));
         weapons.add(new Weapon(1143, "Festive Bonesaw", "tf_weapon_bonesaw"));
+        //Sniper primary
+        weapons.add(new Weapon(14, "Sniper Rifle", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(56, "The Huntsman", "tf_weapon_compound_bow"));
+        weapons.add(new Weapon(230, "The Sydney Sleeper", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(402, "The Bazaar Bargain", "tf_weapon_sniperrifle_decap"));
+        weapons.add(new Weapon(526, "The Machina", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(752, "The Hitman's Heatmaker", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(792, "Silver Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(801, "Gold Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(851, "The AWPer Hand", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(881, "Rust Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(890, "Blood Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(899, "Carbonado Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(908, "Diamond Botkiller Sniper Rifle Mk.I", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(957, "Silver Botkiller Sniper Rifle Mk.II", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(966, "Gold Botkiller Sniper Rifle Mk.II", "tf_weapon_sniperrifle"));
+        weapons.add(new Weapon(1005, "Festive Huntsman", "tf_weapon_compound_bow"));
+        weapons.add(new Weapon(1092, "The Fortified Compound", "tf_weapon_compound_bow"));
+        weapons.add(new Weapon(1098, "The Classic", "tf_weapon_sniperrifle_classic"));
+        weapons.add(new Weapon(30665, "Shooting Star", "tf_weapon_sniperrifle"));
     }
     
     private void initStatDatabase(){
