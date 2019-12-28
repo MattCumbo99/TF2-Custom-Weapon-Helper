@@ -68,6 +68,32 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1121, "Mutated Milk", "tf_weapon_jar_milk"));
         weapons.add(new Weapon(1145, "Festive Bonk!", "tf_weapon_lunchbox_drink"));
         weapons.add(new Weapon(30666, "The C.A.P.P.E.R.", "tf_weapon_pistol"));
+        //Scout melee
+        weapons.add(new Weapon(0, "Bat", "tf_weapon_bat"));
+        weapons.add(new Weapon(44, "The Sandman", "tf_weapon_bat_wood"));
+        weapons.add(new Weapon(221, "The Holy Mackerel", "tf_weapon_bat_fish"));
+        weapons.add(new Weapon(264, "Frying Pan", "saxxy"));
+        weapons.add(new Weapon(317, "The Candy Cane", "tf_weapon_bat"));
+        weapons.add(new Weapon(325, "The Boston Basher", "tf_weapon_bat"));
+        weapons.add(new Weapon(349, "Sun-on-a-Stick", "tf_weapon_bat"));
+        weapons.add(new Weapon(355, "The Fan O'War", "tf_weapon_bat"));
+        weapons.add(new Weapon(423, "Saxxy", "saxxy"));
+        weapons.add(new Weapon(450, "The Atomizer", "tf_weapon_bat"));
+        weapons.add(new Weapon(452, "Three-Rune Blade", "tf_weapon_bat"));
+        weapons.add(new Weapon(474, "The Conscientious Objector", "saxxy"));
+        weapons.add(new Weapon(572, "Unarmed Combat", "tf_weapon_bat_fish"));
+        weapons.add(new Weapon(648, "The Wrap Assassin", "tf_weapon_bat_giftwrap"));
+        weapons.add(new Weapon(660, "Festive Bat", "tf_weapon_bat"));
+        weapons.add(new Weapon(880, "The Freedom Staff", "saxxy"));
+        weapons.add(new Weapon(939, "The Bat Outta Hell", "saxxy"));
+        weapons.add(new Weapon(954, "The Memory Maker", "saxxy"));
+        weapons.add(new Weapon(999, "Festive Holy Mackerel", "tf_weapon_bat_fish"));
+        weapons.add(new Weapon(1013, "The Ham Shank", "saxxy"));
+        weapons.add(new Weapon(1071, "Gold Frying Pan", "saxxy"));
+        weapons.add(new Weapon(1123, "The Necro Smasher", "saxxy"));
+        weapons.add(new Weapon(1127, "The Crossing Guard", "saxxy"));
+        weapons.add(new Weapon(30667, "Batsaber", "tf_weapon_bat"));
+        weapons.add(new Weapon(30758, "Prinny Machete", "saxxy"));
     }
     
     private void initStatDatabase(){
