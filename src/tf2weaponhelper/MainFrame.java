@@ -287,6 +287,20 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(305, "Crusader's Crossbow", "tf_weapon_crossbow"));
         weapons.add(new Weapon(412, "The Overdose", "tf_weapon_syringegun_medic"));
         weapons.add(new Weapon(1079, "Festive Crusader's Crossbow", "tf_weapon_crossbow"));
+        //Medic secondary
+        weapons.add(new Weapon(29, "Medi Gun", "tf_weapon_medigun"));
+        weapons.add(new Weapon(35, "The Kritzkrieg", "tf_weapon_medigun"));
+        weapons.add(new Weapon(411, "The Quick-Fix", "tf_weapon_medigun"));
+        weapons.add(new Weapon(663, "Festive Medi Gun", "tf_weapon_medigun"));
+        weapons.add(new Weapon(796, "Silver Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(805, "Gold Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(885, "Rust Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(894, "Blood Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(903, "Carbonado Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(912, "Diamond Botkiller Medi Gun Mk.I", "tf_weapon_medigun"));
+        weapons.add(new Weapon(961, "Silver Botkiller Medi Gun Mk.II", "tf_weapon_medigun"));
+        weapons.add(new Weapon(970, "Gold Botkiller Medi Gun Mk.II", "tf_weapon_medigun"));
+        weapons.add(new Weapon(998, "The Vaccinator", "tf_weapon_medigun"));
     }
     
     private void initStatDatabase(){
