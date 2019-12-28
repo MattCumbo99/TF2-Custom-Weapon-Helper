@@ -301,6 +301,14 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(961, "Silver Botkiller Medi Gun Mk.II", "tf_weapon_medigun"));
         weapons.add(new Weapon(970, "Gold Botkiller Medi Gun Mk.II", "tf_weapon_medigun"));
         weapons.add(new Weapon(998, "The Vaccinator", "tf_weapon_medigun"));
+        //Medic melee
+        weapons.add(new Weapon(8, "Bonesaw", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(37, "The Ubersaw", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(173, "The Vita-Saw", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(304, "Amputator", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(413, "The Solemn Vow", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(1003, "Festive Ubersaw", "tf_weapon_bonesaw"));
+        weapons.add(new Weapon(1143, "Festive Bonesaw", "tf_weapon_bonesaw"));
     }
     
     private void initStatDatabase(){
