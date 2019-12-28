@@ -658,7 +658,7 @@
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="69">
+                  <StringArray count="107">
                     <StringItem index="0" value="Damage penalty"/>
                     <StringItem index="1" value="Damage bonus"/>
                     <StringItem index="2" value="Lower clip size"/>
@@ -728,6 +728,44 @@
                     <StringItem index="66" value="Faster move speed while deployed"/>
                     <StringItem index="67" value="Increased max primary ammo on wearer"/>
                     <StringItem index="68" value="Decreased max primary ammo on wearer"/>
+                    <StringItem index="69" value="Increased secondary ammo on wearer"/>
+                    <StringItem index="70" value="Decreased secondary ammo on wearer"/>
+                    <StringItem index="71" value="Increased max metal on wearer"/>
+                    <StringItem index="72" value="Decreased max metal on wearer"/>
+                    <StringItem index="73" value="Increased cloak regeneration rate"/>
+                    <StringItem index="74" value="Decreased cloak regeneration rate"/>
+                    <StringItem index="75" value="Slower spin up time"/>
+                    <StringItem index="76" value="Faster spin up time"/>
+                    <StringItem index="77" value="Max pipebombs out increased"/>
+                    <StringItem index="78" value="Max pipebombs out decreased"/>
+                    <StringItem index="79" value="Sniper rifle charge increased"/>
+                    <StringItem index="80" value="Sniper rifle charge decreased"/>
+                    <StringItem index="81" value="Construction rate increased"/>
+                    <StringItem index="82" value="Construction rate decreased"/>
+                    <StringItem index="83" value="Faster repair rate"/>
+                    <StringItem index="84" value="Slower repair rate"/>
+                    <StringItem index="85" value="Slower reload time"/>
+                    <StringItem index="86" value="Faster reload time"/>
+                    <StringItem index="87" value="On Hit: %s1 health"/>
+                    <StringItem index="88" value="Blast radius increased"/>
+                    <StringItem index="89" value="Blast radius decreased"/>
+                    <StringItem index="90" value="Projectile range increased"/>
+                    <StringItem index="91" value="Projectile range decreased"/>
+                    <StringItem index="92" value="Projectile speed increased"/>
+                    <StringItem index="93" value="Projectile speed decreased"/>
+                    <StringItem index="94" value="Decreased max overheal"/>
+                    <StringItem index="95" value="Increased accuracy"/>
+                    <StringItem index="96" value="Faster move speed on wearer"/>
+                    <StringItem index="97" value="Increased health from packs on wearer"/>
+                    <StringItem index="98" value="Decreased health from packs on wearer"/>
+                    <StringItem index="99" value="On Hit: Gain up to +%s1 health"/>
+                    <StringItem index="100" value="Ammo regenerated every 5 seconds on wearer"/>
+                    <StringItem index="101" value="Metal regenerated every 5 seconds on wearer"/>
+                    <StringItem index="102" value="Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs"/>
+                    <StringItem index="103" value="Damage increases as the user becomes injured"/>
+                    <StringItem index="104" value="Detonates stickybombs near the crosshair and directly under your feet"/>
+                    <StringItem index="105" value="Slower stickybomb arm time"/>
+                    <StringItem index="106" value="Able to destroy enemy stickybombs"/>
                   </StringArray>
                 </Property>
               </Properties>
