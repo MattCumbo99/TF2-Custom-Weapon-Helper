@@ -114,6 +114,19 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(974, "Gold Botkiller Rocket Launcher Mk.II", "tf_weapon_rocketlauncher"));
         weapons.add(new Weapon(1085, "Festive Black Box", "tf_weapon_rocketlauncher"));
         weapons.add(new Weapon(1104, "The Air Strike", "tf_weapon_rocketlauncher_airstrike"));
+        //Soldier secondary
+        weapons.add(new Weapon(10, "Soldier's Shotgun", "tf_weapon_shotgun_soldier"));
+        weapons.add(new Weapon(129, "The Buff Banner", "tf_weapon_buff_item"));
+        weapons.add(new Weapon(133, "Gunboats", "tf_wearable"));
+        weapons.add(new Weapon(226, "The Battalion's Backup", "tf_weapon_buff_item"));
+        weapons.add(new Weapon(354, "The Concheror", "tf_weapon_buff_item"));
+        weapons.add(new Weapon(415, "The Reserve Shooter", "tf_weapon_shotgun"));
+        weapons.add(new Weapon(442, "The Righteous Bison", "tf_weapon_raygun"));
+        weapons.add(new Weapon(444, "The Mantreads", "tf_wearable"));
+        weapons.add(new Weapon(1001, "Festive Buff Banner", "tf_weapon_buff_item"));
+        weapons.add(new Weapon(1101, "The B.A.S.E. Jumper", "tf_weapon_parachute"));
+        weapons.add(new Weapon(1141, "Festive Shotgun", "tf_weapon_shotgun"));
+        weapons.add(new Weapon(1153, "Panic Attack", "tf_weapon_shotgun"));
     }
     
     private void initStatDatabase(){
