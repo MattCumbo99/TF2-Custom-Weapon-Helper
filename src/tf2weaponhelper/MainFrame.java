@@ -94,6 +94,26 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1127, "The Crossing Guard", "saxxy"));
         weapons.add(new Weapon(30667, "Batsaber", "tf_weapon_bat"));
         weapons.add(new Weapon(30758, "Prinny Machete", "saxxy"));
+        //Soldier primary
+        weapons.add(new Weapon(18, "Rocket Launcher", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(127, "The Direct Hit", "tf_weapon_rocketlauncher_directhit"));
+        weapons.add(new Weapon(228, "The Black Box", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(237, "Rocket Jumper", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(414, "The Liberty Launcher", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(441, "The Cow Mangler 5000", "tf_weapon_particle_cannon"));
+        weapons.add(new Weapon(513, "The Original", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(658, "Festive Rocket Launcher", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(730, "The Beggar's Bazooka", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(800, "Silver Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(809, "Gold Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(889, "Rust Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(898, "Blood Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(907, "Carbonado Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(916, "Diamond Botkiller Rocket Launcher Mk.I", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(965, "Silver Botkiller Rocket Launcher Mk.II", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(974, "Gold Botkiller Rocket Launcher Mk.II", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(1085, "Festive Black Box", "tf_weapon_rocketlauncher"));
+        weapons.add(new Weapon(1104, "The Air Strike", "tf_weapon_rocketlauncher_airstrike"));
     }
     
     private void initStatDatabase(){
