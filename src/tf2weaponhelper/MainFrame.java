@@ -184,6 +184,24 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(996, "The Loose Cannon", "tf_weapon_cannon"));
         weapons.add(new Weapon(1007, "Festive Grenade Launcher", "tf_weapon_grenadelauncher"));
         weapons.add(new Weapon(1151, "The Iron Bomber", "tf_weapon_grenadelauncher"));
+        //Demoman secondary
+        weapons.add(new Weapon(20, "Stickybomb Launcher", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(130, "The Scottish Resistance", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(131, "The Chargin' Targe", "tf_wearable_demoshield"));
+        weapons.add(new Weapon(265, "Sticky Jumper", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(406, "The Splendid Screen", "tf_wearable_demoshield"));
+        weapons.add(new Weapon(661, "Festive Stickybomb Launcher", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(797, "Silver Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(806, "Gold Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(886, "Rust Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(895, "Blood Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(904, "Carbonado Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(913, "Diamond Botkiller Stickybomb Launcher Mk.I", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(962, "Silver Botkiller Stickybomb Launcher Mk.II", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(971, "Gold Botkiller Stickybomb Launcher Mk.II", "tf_weapon_pipebomblauncher"));
+        weapons.add(new Weapon(1099, "The Tide Turner", "tf_wearable_demoshield"));
+        weapons.add(new Weapon(1144, "Festive Targe", "tf_wearable_demoshield"));
+        weapons.add(new Weapon(1150, "The Quickiebomb Launcher", "tf_weapon_pipebomblauncher"));
     }
     
     private void initStatDatabase(){
