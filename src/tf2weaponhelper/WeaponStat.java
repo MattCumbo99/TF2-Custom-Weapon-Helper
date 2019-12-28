@@ -25,17 +25,20 @@ public class WeaponStat {
     private final int id;
     private final String name, desc, type;
     private double value;
+    private final boolean is_positive;
     
     /**
      * Creates a new weapon stat. Use this link:
      * https://wiki.teamfortress.com/wiki/List_of_item_attributes
      * @param id Identification number of the attribute
+     * @param is_positive This stat is a positive effect
      * @param name Name of the attribute
      * @param desc Description of the attribute
      * @param type Value type of the attribute
      */
-    public WeaponStat(int id, String name, String desc, String type){
+    public WeaponStat(int id, boolean is_positive, String name, String desc, String type){
         this.id = id;
+        this.is_positive = is_positive;
         this.name = name;
         this.desc = desc;
         this.type = type;
@@ -48,6 +51,14 @@ public class WeaponStat {
      */
     public int getId(){
         return id;
+    }
+    
+    /**
+     * Checks if the stat is a positive effect.
+     * @return true if the stat is a positive effect
+     */
+    public boolean isPositive(){
+        return is_positive;
     }
     
     /**
@@ -86,7 +97,7 @@ public class WeaponStat {
      * Sets the stat's value.
      * @param val Value to set the stat to
      */
-    public void setValue(double val){
+    public void setValue(int val){
         value = val;
     }
     
@@ -95,7 +106,16 @@ public class WeaponStat {
      * @return name | value
      */
     public String displayAttrib(){
-        return name + " | " + value;
+        double nVal = value;
+        if(type.equals("inverted_percentage")){
+            nVal = 1-value;
+            nVal *= .01;
+        }
+        if(type.equals("percentage")){
+            nVal *= .01;
+        }
+        String bet = desc.replaceAll("%s1", Double.toString(nVal));
+        return bet;
     }
     
     /**
