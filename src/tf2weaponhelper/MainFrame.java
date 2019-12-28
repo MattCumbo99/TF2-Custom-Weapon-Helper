@@ -202,6 +202,17 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1099, "The Tide Turner", "tf_wearable_demoshield"));
         weapons.add(new Weapon(1144, "Festive Targe", "tf_wearable_demoshield"));
         weapons.add(new Weapon(1150, "The Quickiebomb Launcher", "tf_weapon_pipebomblauncher"));
+        //Demoman melee
+        weapons.add(new Weapon(1, "Bottle", "tf_weapon_bottle"));
+        weapons.add(new Weapon(132, "The Eyelander", "tf_weapon_sword"));
+        weapons.add(new Weapon(172, "The Scotsman's Skullcutter", "tf_weapon_sword"));
+        weapons.add(new Weapon(266, "Horseless Headless Horsemann's Headtaker", "tf_weapon_sword"));
+        weapons.add(new Weapon(307, "Ullapool Caber", "tf_weapon_stickbomb"));
+        weapons.add(new Weapon(327, "The Claidheamh Mor", "tf_weapon_sword"));
+        weapons.add(new Weapon(404, "The Persian Persuader", "tf_weapon_sword"));
+        weapons.add(new Weapon(482, "Nessie's Nine Iron", "tf_weapon_sword"));
+        weapons.add(new Weapon(609, "The Scottish Handshake", "tf_weapon_bottle"));
+        weapons.add(new Weapon(1082, "Festive Eyelander", "tf_weapon_sword"));
     }
     
     private void initStatDatabase(){
