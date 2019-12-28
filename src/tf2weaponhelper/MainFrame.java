@@ -339,6 +339,11 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1083, "Festive Jarate", "tf_weapon_jar"));
         weapons.add(new Weapon(1105, "The Self-Aware Beauty Mark", "tf_weapon_jar"));
         weapons.add(new Weapon(1149, "Festive SMG", "tf_weapon_smg"));
+        //Sniper melee
+        weapons.add(new Weapon(3, "Kukri", "tf_weapon_club"));
+        weapons.add(new Weapon(171, "The Tribalman's Shiv", "tf_weapon_club"));
+        weapons.add(new Weapon(232, "The Bushwacka", "tf_weapon_club"));
+        weapons.add(new Weapon(401, "The Shahanshah", "tf_weapon_club"));
     }
     
     private void initStatDatabase(){
