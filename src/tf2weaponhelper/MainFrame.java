@@ -456,6 +456,12 @@ public class MainFrame extends javax.swing.JFrame {
         setTitle("TF2 Custom Weapon Helper");
         setResizable(false);
 
+        tabbedPane.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                tabbedPaneStateChanged(evt);
+            }
+        });
+
         infBasicSettings.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         infBasicSettings.setFrameIcon(null);
         infBasicSettings.setVisible(true);
@@ -714,6 +720,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_boxModelItemStateChanged
+
+    private void tabbedPaneStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_tabbedPaneStateChanged
+        updateCode();
+    }//GEN-LAST:event_tabbedPaneStateChanged
 
     /**
      * @param args the command line arguments
