@@ -56,7 +56,18 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(973, "Gold Botkiller Scattergun Mk.II", "tf_weapon_scattergun"));
         weapons.add(new Weapon(1078, "Festive Force-A-Nature", "tf_weapon_scattergun"));
         weapons.add(new Weapon(1103, "The Back Scatter", "tf_weapon_scattergun"));
-        
+        //Scout secondary
+        weapons.add(new Weapon(23, "Scout's Pistol", "tf_weapon_pistol"));
+        weapons.add(new Weapon(46, "Bonk! Atomic Punch", "tf_weapon_lunchbox_drink"));
+        weapons.add(new Weapon(163, "Crit-A-Cola", "tf_weapon_lunchbox_drink"));
+        weapons.add(new Weapon(222, "Mad Milk", "tf_weapon_jar_milk"));
+        weapons.add(new Weapon(294, "Lugermorph", "tf_weapon_pistol"));
+        weapons.add(new Weapon(449, "The Winger", "tf_weapon_handgun_scout_secondary"));
+        weapons.add(new Weapon(773, "Pretty Boy's Pocket Pistol", "tf_weapon_handgun_scout_secondary"));
+        weapons.add(new Weapon(812, "The Flying Guillotine", "tf_weapon_cleaver"));
+        weapons.add(new Weapon(1121, "Mutated Milk", "tf_weapon_jar_milk"));
+        weapons.add(new Weapon(1145, "Festive Bonk!", "tf_weapon_lunchbox_drink"));
+        weapons.add(new Weapon(30666, "The C.A.P.P.E.R.", "tf_weapon_pistol"));
     }
     
     private void initStatDatabase(){
