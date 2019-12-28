@@ -411,6 +411,7 @@ public class MainFrame extends javax.swing.JFrame {
         chkUsePreset = new javax.swing.JCheckBox();
         lblAmmo = new javax.swing.JLabel();
         boxModel = new javax.swing.JComboBox<>();
+        sldLevel = new javax.swing.JSlider();
         infAttributes = new javax.swing.JInternalFrame();
         lblIndex1 = new javax.swing.JLabel();
         boxAttribute = new javax.swing.JComboBox<>();
@@ -489,6 +490,7 @@ public class MainFrame extends javax.swing.JFrame {
         infBasicSettings.getContentPane().add(lblLevel);
         lblLevel.setBounds(10, 160, 140, 22);
 
+        txtLevel.setEditable(false);
         txtLevel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtLevel.setText("29");
         infBasicSettings.getContentPane().add(txtLevel);
@@ -539,6 +541,25 @@ public class MainFrame extends javax.swing.JFrame {
         boxModel.setSelectedIndex(55);
         infBasicSettings.getContentPane().add(boxModel);
         boxModel.setBounds(140, 250, 360, 23);
+
+        sldLevel.setMinimum(1);
+        sldLevel.setValue(29);
+        sldLevel.setNextFocusableComponent(txtAmmo);
+        sldLevel.setOpaque(false);
+        sldLevel.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldLevelStateChanged(evt);
+            }
+        });
+        sldLevel.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+                sldLevelCaretPositionChanged(evt);
+            }
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+            }
+        });
+        infBasicSettings.getContentPane().add(sldLevel);
+        sldLevel.setBounds(270, 160, 200, 20);
 
         tabbedPane.addTab("Basic settings", infBasicSettings);
 
@@ -636,6 +657,14 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtAmmoKeyTyped
 
+    private void sldLevelCaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_sldLevelCaretPositionChanged
+        //Delete
+    }//GEN-LAST:event_sldLevelCaretPositionChanged
+
+    private void sldLevelStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldLevelStateChanged
+        txtLevel.setText(Integer.toString(sldLevel.getValue()));
+    }//GEN-LAST:event_sldLevelStateChanged
+
     /**
      * @param args the command line arguments
      */
@@ -690,6 +719,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblQuality;
     private javax.swing.JLabel lblSlot;
     private javax.swing.JLabel lblWeaponNumber;
+    private javax.swing.JSlider sldLevel;
     private javax.swing.JTabbedPane tabbedPane;
     private javax.swing.JTextField txtAmmo;
     private javax.swing.JTextField txtClassname;
