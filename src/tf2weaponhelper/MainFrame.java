@@ -377,6 +377,12 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(910, "Diamond Botkiller Knife Mk.I", "tf_weapon_knife"));
         weapons.add(new Weapon(959, "Silver Botkiller Knife Mk.II", "tf_weapon_knife"));
         weapons.add(new Weapon(968, "Gold Botkiller Knife Mk.II", "tf_weapon_knife"));
+        //Spy invis watch
+        weapons.add(new Weapon(30, "Invis Watch", "tf_weapon_invis"));
+        weapons.add(new Weapon(59, "The Dead Ringer", "tf_weapon_invis"));
+        weapons.add(new Weapon(60, "The Cloak and Dagger", "tf_weapon_invis"));
+        weapons.add(new Weapon(297, "Enthusiast's Timepiece", "tf_weapon_invis"));
+        weapons.add(new Weapon(947, "The Quackenbirdt", "tf_weapon_invis"));
     }
     
     private void initStatDatabase(){
