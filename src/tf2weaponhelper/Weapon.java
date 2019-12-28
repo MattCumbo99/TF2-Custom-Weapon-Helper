@@ -39,14 +39,26 @@ public class Weapon {
         this.weapon_class = weapon_class;
     }
     
+    /**
+     * Gets the index of the weapon.
+     * @return Index of the weapon
+     */
     public int getIndex(){
         return index;
     }
     
+    /**
+     * Gets the name of the weapon.
+     * @return Name of the weapon
+     */
     public String getName(){
         return name;
     }
     
+    /**
+     * Gets the class name of the weapon.
+     * @return Class name of the weapon
+     */
     public String getWeaponClass(){
         return weapon_class;
     }
