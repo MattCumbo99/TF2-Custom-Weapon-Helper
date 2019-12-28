@@ -722,7 +722,7 @@
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="189">
+                  <StringArray count="346">
                     <StringItem index="0" value="%s1% damage penalty"/>
                     <StringItem index="1" value="+%s1% damage bonus"/>
                     <StringItem index="2" value="%s1% clip size"/>
@@ -911,7 +911,164 @@
                     <StringItem index="185" value="%s1% decrease in damage when health &gt;50% of max"/>
                     <StringItem index="186" value="Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills."/>
                     <StringItem index="187" value="When the medic healing you is killed you gain 2 revenge crits"/>
-                    <StringItem index="188" value="&#xdc;berCharge increases healing to 300% and grants immunity to movement-impairing effects"/>
+                    <StringItem index="188" value="Quickfix &#xdc;berCharge"/>
+                    <StringItem index="189" value="When the medic healing you is killed you gain mini-crit boost for %s1 seconds"/>
+                    <StringItem index="190" value="While a medic is healing you, this weapon&apos;s damage is increased by %s1%"/>
+                    <StringItem index="191" value="While not being healed by a medic, your weapon switch time is %s1% longer"/>
+                    <StringItem index="192" value="Move speed increases as the user becomes injured"/>
+                    <StringItem index="193" value="Blocks healing while in use"/>
+                    <StringItem index="194" value="On Scoped Headshot: Rifle charge rate increased by %s1%"/>
+                    <StringItem index="195" value="Silent Killer: No barrel spin sound"/>
+                    <StringItem index="196" value="+%s1% &#xdc;berCharge rate for the medic healing you (no spawn room)"/>
+                    <StringItem index="197" value="%s1% faster reload time while being healed"/>
+                    <StringItem index="198" value="%s1% slower reload time"/>
+                    <StringItem index="199" value="When the medic healing you is killed the killer becomes Marked-For-Death"/>
+                    <StringItem index="200" value="%s1% rage lost on hit"/>
+                    <StringItem index="201" value="%s1% rage gained on hit"/>
+                    <StringItem index="202" value="Gains a damage bonus as rage increases, up to %s1%"/>
+                    <StringItem index="203" value="+%s1% increase in turning control while charging"/>
+                    <StringItem index="204" value="Can deal charge impact damage at any range"/>
+                    <StringItem index="205" value="+%s1% increase in charge impact damage"/>
+                    <StringItem index="206" value="+%s1% increase in charge recharge rate"/>
+                    <StringItem index="207" value="Grants Triple Jump while deployed. Melee attacks mini-crit while airborne."/>
+                    <StringItem index="208" value="On Hit Teammate: Boosts both players&apos; speed for several seconds"/>
+                    <StringItem index="209" value="%s1% reduction in push force taken from damage"/>
+                    <StringItem index="210" value="%s1 sec increase in time to cloak"/>
+                    <StringItem index="211" value="+%s1% airblast push force"/>
+                    <StringItem index="212" value="Ammo collected from ammo boxes becomes health"/>
+                    <StringItem index="213" value="Deals 3x falling damage to the player you land on"/>
+                    <StringItem index="214" value="%s1% increased melee attack range"/>
+                    <StringItem index="215" value="Projectiles penetrate enemy players"/>
+                    <StringItem index="216" value="Deals crits while the wielder is rocket jumping"/>
+                    <StringItem index="217" value="Base charge rate decreased by %s1%"/>
+                    <StringItem index="218" value="Allows you to see enemy health"/>
+                    <StringItem index="219" value="Holds a maximum of %s1 charges"/>
+                    <StringItem index="220" value="Currently holds %s1 charges"/>
+                    <StringItem index="221" value="Each charge lasts %s1 seconds"/>
+                    <StringItem index="222" value="Wearer never takes falling damage"/>
+                    <StringItem index="223" value="Teleporters can be used in both directions"/>
+                    <StringItem index="224" value="+%s1% increase in recharge rate"/>
+                    <StringItem index="225" value="+%s1% max misc ammo on wearer"/>
+                    <StringItem index="226" value="Does not require ammo"/>
+                    <StringItem index="227" value="Cow Mangler Charged Shot Alt-Fire"/>
+                    <StringItem index="228" value="Projectile penetrates enemy targets"/>
+                    <StringItem index="229" value="Deals only 20% damage to buildings"/>
+                    <StringItem index="230" value="Projectile cannot be deflected"/>
+                    <StringItem index="231" value="+%s1% max building health"/>
+                    <StringItem index="232" value="+%s1% Sentry Gun damage bonus"/>
+                    <StringItem index="233" value="Cannot be crit boosted"/>
+                    <StringItem index="234" value="Diamondback crits"/>
+                    <StringItem index="235" value="Cannot fire unless zoomed"/>
+                    <StringItem index="236" value="Per Shot: -%s1 ammo"/>
+                    <StringItem index="237" value="On Hit: damage dealt is returned as ammo"/>
+                    <StringItem index="238" value="Alt-Fire: Launches a projectile-consuming energy ball. Costs 65 metal."/>
+                    <StringItem index="239" value="Uses metal for ammo"/>
+                    <StringItem index="240" value="On Full Charge: +%s1% damage per shot"/>
+                    <StringItem index="241" value="Fires tracer rounds"/>
+                    <StringItem index="242" value="No headshots when not fully charged"/>
+                    <StringItem index="243" value="No reload necessary"/>
+                    <StringItem index="244" value="On Full Charge: Projectiles penetrate players"/>
+                    <StringItem index="245" value="Killing an enemy with a critical hit will dismember your victim. Painfully."/>
+                    <StringItem index="246" value="%s1% movement speed on targets"/>
+                    <StringItem index="247" value="&#xdc;ber duration increased %s1 seconds"/>
+                    <StringItem index="248" value="+%s1% buff duration"/>
+                    <StringItem index="249" value="+%s1% faster build speed"/>
+                    <StringItem index="250" value="Bullets destroy rockets and grenades in-flight."/>
+                    <StringItem index="251" value="Accuracy scales damage"/>
+                    <StringItem index="252" value="+%s1% bonus currency from packs"/>
+                    <StringItem index="253" value="+%s1% greater jump height when active"/>
+                    <StringItem index="254" value="%s1% reduction in airblast vulnerability"/>
+                    <StringItem index="255" value="Explode spectacularly on death"/>
+                    <StringItem index="256" value="Unable to see enemy health"/>
+                    <StringItem index="257" value="On Hit: Victim loses up to %s1% Medigun charge"/>
+                    <StringItem index="258" value="On Hit: Victim loses up to %s1% cloak"/>
+                    <StringItem index="259" value="On Hit Spy: Reveal cloaked Spy"/>
+                    <StringItem index="260" value="On Hit Spy: Reveal disguised Spy"/>
+                    <StringItem index="261" value="When backstabbed: Jarate attacker"/>
+                    <StringItem index="262" value="+%s1% sentry firing speed"/>
+                    <StringItem index="263" value="+%s1% sentry range"/>
+                    <StringItem index="264" value="+%s1% dispenser range"/>
+                    <StringItem index="265" value="Alt-Fire: Launches a festive ornament that shatters causing bleed"/>
+                    <StringItem index="266" value="Backstab turns victim to ice"/>
+                    <StringItem index="267" value="Build +%s1 additional disposable-sentry"/>
+                    <StringItem index="268" value="Press your reload key to choose to teleport to spawn or your exit teleporter"/>
+                    <StringItem index="269" value="Cannot carry buildings"/>
+                    <StringItem index="270" value="Stuns enemies who are also wielding this weapon"/>
+                    <StringItem index="271" value="Per Shot Missed: -%s1 ammo"/>
+                    <StringItem index="272" value="No airblast"/>
+                    <StringItem index="273" value="Critical hit forces victim to laugh"/>
+                    <StringItem index="274" value="Melts in fire, regenerates in %s1 seconds and by picking up ammo"/>
+                    <StringItem index="275" value="All players connected via Medigun beams are hit"/>
+                    <StringItem index="276" value="On Hit by Fire: Fireproof for 1 second and Afterburn immunity for %s1 seconds"/>
+                    <StringItem index="277" value="Always critical hit from behind"/>
+                    <StringItem index="278" value="Critical hits do no damage"/>
+                    <StringItem index="279" value="Alt-Fire: Extinguish teammates to gain guaranteed critical hits"/>
+                    <StringItem index="280" value="Build &apos;Mmmph&apos; by dealing damage."/>
+                    <StringItem index="281" value="On Hit: Force enemies to laugh who are also wearing this item"/>
+                    <StringItem index="282" value="Generate Rage by dealing damage"/>
+                    <StringItem index="283" value="No flinching when aiming and fully charged"/>
+                    <StringItem index="284" value="Knockback reduced by %s1% when aiming"/>
+                    <StringItem index="285" value="%s1% slower move speed when aiming"/>
+                    <StringItem index="286" value="Gain Focus on kills and assists"/>
+                    <StringItem index="287" value="Shots go through multiple enemies"/>
+                    <StringItem index="288" value="Headshots deal an extra +%s1% damage"/>
+                    <StringItem index="289" value="%s1% damage on body shot"/>
+                    <StringItem index="290" value="Press &apos;Reload&apos; to activate focus"/>
+                    <StringItem index="291" value="+%s1% faster melee attack speed"/>
+                    <StringItem index="292" value="Bullets penetrate +%s1 enemies"/>
+                    <StringItem index="293" value="Increase backstab damage against Giant Robots by %s1%"/>
+                    <StringItem index="294" value="Wearer cannot carry the intelligence briefcase or PASS Time JACK"/>
+                    <StringItem index="295" value="Cannot be backstabbed"/>
+                    <StringItem index="296" value="100% critical hit vs disguised players"/>
+                    <StringItem index="297" value="100% critical hit vs non-burning players"/>
+                    <StringItem index="298" value="On Kill: Burst into joyous laughter"/>
+                    <StringItem index="299" value="+%s1% damage bonus while disguised"/>
+                    <StringItem index="300" value="+%s1 degrees random projectile deviation"/>
+                    <StringItem index="301" value="%s1% damage vulnerability on wearer"/>
+                    <StringItem index="302" value="auto fires full clip"/>
+                    <StringItem index="303" value="You are Marked-For-Death while active"/>
+                    <StringItem index="304" value="Flare knocks back target on hit and explodes when it hits the ground"/>
+                    <StringItem index="305" value="Overloading the chamber will cause a misfire"/>
+                    <StringItem index="306" value="On Hit: Builds Boost. Run speed increased with Boost"/>
+                    <StringItem index="307" value="Boost reduced on air jumps"/>
+                    <StringItem index="308" value="No ammo from dispensers when active"/>
+                    <StringItem index="309" value="Only visible in Pyroland"/>
+                    <StringItem index="310" value="%s1% clip size"/>
+                    <StringItem index="311" value="+%s1% sapper damage bonus"/>
+                    <StringItem index="312" value="%s1% sapper damage penalty"/>
+                    <StringItem index="313" value="+%s1 health regenerated per second for each active sapper"/>
+                    <StringItem index="314" value="%s1% sapper health bonus"/>
+                    <StringItem index="315" value="%s1% sapper health penalty"/>
+                    <StringItem index="316" value="Creates a ring of flames while spun up"/>
+                    <StringItem index="317" value="Consumes an additional %s1 ammo per second while spun up"/>
+                    <StringItem index="318" value="Reverses enemy building construction"/>
+                    <StringItem index="319" value="%s1% sapper damage penalty"/>
+                    <StringItem index="320" value="Throw at your enemies to make them bleed!"/>
+                    <StringItem index="321" value="100% critical hit vs stunned players"/>
+                    <StringItem index="322" value="100% critical hit vs wet players"/>
+                    <StringItem index="323" value="On Equip: Visit Pyroland"/>
+                    <StringItem index="324" value="Sentry build speed increased by %s1%"/>
+                    <StringItem index="325" value="Increases teleporter build speed by %s1%."/>
+                    <StringItem index="326" value="grenade launcher mortar mode"/>
+                    <StringItem index="327" value="Cannonballs do not explode on impact"/>
+                    <StringItem index="328" value="Alt-Fire: Use %s1 metal to pick up your targeted building from long range"/>
+                    <StringItem index="329" value="%s1% damage on contact with surfaces"/>
+                    <StringItem index="330" value="Generate building rescue energy on damage"/>
+                    <StringItem index="331" value="Self mark for death when hauling buildings"/>
+                    <StringItem index="332" value="medigun charge is resists"/>
+                    <StringItem index="333" value="Fires a special bolt that can repair friendly buildings"/>
+                    <StringItem index="334" value="Cannonballs push players back on impact"/>
+                    <StringItem index="335" value="%s1% Overheal build rate."/>
+                    <StringItem index="336" value="Syringes deliver a highly concentrated dose of Mad Milk."/>
+                    <StringItem index="337" value="generate rage on heal"/>
+                    <StringItem index="338" value="+%s1% greater jump height when active"/>
+                    <StringItem index="339" value="%s1% increase in push force taken from damage"/>
+                    <StringItem index="340" value="+%s1% bonus healing from all sources"/>
+                    <StringItem index="341" value="Immune to the effects of afterburn."/>
+                    <StringItem index="342" value="Hype Decays Over Time."/>
+                    <StringItem index="343" value="%s1% increase in push force taken from damage"/>
+                    <StringItem index="344" value="Increase in push force taken from damage and airblast"/>
+                    <StringItem index="345" value="This weapon deploys %s1% faster"/>
                   </StringArray>
                 </Property>
               </Properties>
