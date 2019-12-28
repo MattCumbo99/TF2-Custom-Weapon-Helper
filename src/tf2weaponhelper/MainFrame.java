@@ -263,6 +263,22 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(528, "The Short Circuit", "tf_weapon_mechanical_arm"));
         weapons.add(new Weapon(1086, "Festive Wrangler", "tf_weapon_laser_pointer"));
         weapons.add(new Weapon(30668, "The Gigar Counter", "tf_weapon_laser_pointer"));
+        //Engineer melee
+        weapons.add(new Weapon(7, "Wrench", "tf_weapon_wrench"));
+        weapons.add(new Weapon(142, "The Gunslinger", "tf_weapon_robot_arm"));
+        weapons.add(new Weapon(155, "The Southern Hospitality", "tf_weapon_wrench"));
+        weapons.add(new Weapon(169, "Golden Wrench", "tf_weapon_wrench"));
+        weapons.add(new Weapon(329, "The Jag", "tf_weapon_wrench"));
+        weapons.add(new Weapon(589, "The Eureka Effect", "tf_weapon_wrench"));
+        weapons.add(new Weapon(662, "Festive Wrench", "tf_weapon_wrench"));
+        weapons.add(new Weapon(795, "Silver Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(804, "Gold Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(884, "Rust Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(893, "Blood Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(902, "Carbonado Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(911, "Diamond Botkiller Wrench Mk.I", "tf_weapon_wrench"));
+        weapons.add(new Weapon(960, "Silver Botkiller Wrench Mk.II", "tf_weapon_wrench"));
+        weapons.add(new Weapon(969, "Gold Botkiller Wrench Mk.II", "tf_weapon_wrench"));
     }
     
     private void initStatDatabase(){
