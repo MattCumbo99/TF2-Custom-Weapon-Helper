@@ -162,6 +162,20 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1081, "Festive Flare Gun", "tf_weapon_flaregun"));
         weapons.add(new Weapon(1179, "Thermal Thruster", "tf_weapon_rocketpack"));
         weapons.add(new Weapon(1180, "Gas Passer", "tf_weapon_jar_gas"));
+        //Pyro melee
+        weapons.add(new Weapon(2, "Fire Axe", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(38, "The Axtinguisher", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(153, "The Homewrecker", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(214, "The Powerjack", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(326, "The Back Scratcher", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(348, "Sharpened Volcano Fragment", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(457, "The Postal Pummeler", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(466, "The Maul", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(593, "The Third Degree", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(739, "The Lollichop", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(813, "Neon Annihilator", "tf_weapon_breakable_sign"));
+        weapons.add(new Weapon(1000, "The Festive Axtinguisher", "tf_weapon_fireaxe"));
+        weapons.add(new Weapon(1181, "Hot Hand", "tf_weapon_slap"));
     }
     
     private void initStatDatabase(){
