@@ -452,10 +452,14 @@ public class MainFrame extends javax.swing.JFrame {
         boxAttribute = new javax.swing.JComboBox<>();
         txtValue = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        attribsList = new javax.swing.JList<>();
+        attribsListNegative = new javax.swing.JList<>();
         btnAdd = new javax.swing.JButton();
         btnRemove = new javax.swing.JButton();
         lblPercent = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        attribsListPositive = new javax.swing.JList<>();
+        lblNegative = new javax.swing.JLabel();
+        lblPositive = new javax.swing.JLabel();
         infWeaponCode = new javax.swing.JInternalFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         codeText = new javax.swing.JTextArea();
@@ -648,9 +652,9 @@ public class MainFrame extends javax.swing.JFrame {
         lblIndex1.setBounds(10, 10, 80, 22);
 
         boxAttribute.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        boxAttribute.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "%s1% damage penalty", "+%s1% damage bonus", "%s1% clip size", "+%s1% clip size", "%s1% slower firing speed", "+%s1% faster firing speed", "%s1% heal rate", "+%s1% heal rate", "%s1% ÜberCharge rate", "+%s1% ÜberCharge rate", "+%s1% max overheal", "%s1% shorter overheal time", "+%s1% longer overheal time", "Overheal bonus doesn't decay", "No random critical hits", "On Hit: Gain up to +%s1 health", "On Hit: %s1% ÜberCharge added", "ÜberCharge grants 100% critical chance", "On Hit: +%s1% damage bonus", "100% critical hit vs burning players", "%s1% damage vs non-burning players", "No critical hits vs non-burning players", "No compression blast", "100% critical hits from behind", "+%s1 max health on wearer", "No random critical hits (hidden)", "On Kill: %s1 seconds of 100% critical chance", "On Hit: %s1% chance to slow target", "Cloak Type: Feign Death.", "+%s1% cloak drain rate", "+%s1% cloak regen rate", "%s1% less accurate", "Alt-Fire: Launches a ball that slows opponents", "%s1% damage vs non-stunned players", "No move speed penalty from zoom", "+%s1% charge rate", "No headshots", "Knockback on the target and shooter", "+%s1% bullets per shot", "%s1% zoom reduction", "No zoom or damage charge", "Cloak Type: Motion Sensitive.", "Disables double jump", "Absorbs %s1% damage while cloaked", "Crits on headshot", "Blocks a single backstab attempt", "Wearer cannot ignite", "%s1% slower move speed on wearer", "Coated enemies take mini-crits, Can be used to extinguish fire", "+%s1 health regenerated per second on wearer", "+%s1% self damage force", "%s1% self damage force", "+%s1% fire damage resistance on wearer", "%s1% fire damage vulnerability on wearer", "+%s1% critical hit damage resistance on wearer", "%s1% critical hit damage vulnerability on wearer", "+%s1% explosive damage resistance on wearer", "%s1% explosive damage vulnerability on wearer", "+%s1% bullet damage resistance on wearer", "%s1% bullet damage vulnerability on wearer", "+%s1 capture rate on wearer", "%s1% health from healers on wearer", "+%s1% health from healers on wearer", "+%s1% afterburn damage bonus", "%s1% afterburn damage penalty", "+%s1% afterburn duration", "%s1% afterburn duration", "+%s1% faster move speed while deployed", "+%s1% max primary ammo on wearer", "%s1% max primary ammo on wearer", "+%s1% max secondary ammo on wearer", "%s1% max secondary ammo on wearer", "+%s1% max metal on wearer", "%s1% max metal on wearer", "-%s1% cloak duration", "+%s1% cloak duration", "+%s1% cloak regeneration rate", "%s1% cloak regeneration rate", "%s1% slower spin up time", "%s1% faster spin up time", "+%s1 max pipebombs out", "%s1 max pipebombs out", "%s1% faster power charge", "%s1% slower power charge", "Construction hit speed boost increased by %s1%", "Construction hit speed boost decreased by %s1%", "%s1% faster repair rate", "%s1% slower repair rate", "%s1% slower reload time", "%s1% faster reload time", "On Hit: %s1 health", "+%s1% explosion radius", "%s1% explosion radius", "+%s1% projectile range", "%s1% projectile range", "+%s1% projectile speed", "%s1% projectile speed", "%s1% max overheal", "%s1% more accurate", "+%s1% faster move speed on wearer", "+%s1% health from packs on wearer", "%s1% health from packs on wearer", "On Hit: Gain up to +%s1 health", "On Hit: %s1 health", "+%s1% ammo regenerated every 5 seconds on wearer", "+%s1 metal regenerated every 5 seconds on wearer", "Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs", "Damage increases as the user becomes injured", "%s1% splash damage fall off", "Detonates stickybombs near the crosshair and directly under your feet", "%s1 sec slower bomb arm time", "Able to destroy enemy stickybombs", "%s1% speed boost while active weapon", "Replaces the Sentry with a Mini-Sentry", "%s1 max health on wearer", "%s1 sec faster bomb arm time", "Launched bombs shatter on surfaces", "%s1 health drained per second on wearer", "+%s1% natural regen rate", "-%s1% natural regen rate", "★ Unusual Effect: %s1", "%s1% blast damage from rocket jumps", "mod sentry killed revenge", "+%s1% damage vs buildings", "%s1% damage vs players", "lunchbox adds maxhealth bonus", "+%s1 max health on wearer", "I made this!", "Damage removes Sappers", "Wrench no. %s1", "%s1 metal reduction in building cost", "On Hit: Bleed for %s1 seconds", "Imbued with an ancient power", "Not Tradable or Marketable", "disguise on backstab", "Wearer cannot disguise", "Silent Killer: No attack noise from backstabs", "%s1 sec slower disguise speed", "+%s1% cloak on kill", "%s1 sec longer cloak blink time", "Reduced decloak sound volume", "%s1% less flame spread area", "+%s1% more flame spread area", "%s1% less flame distance", "+%s1% more flame distance", "Airblast can now be charged, which will push enemies further", "+%s1% cloak on hit", "Immune to fire damage while disguised", "+%s1% sentry damage resistance on wearer", "+%s1% airblast cost", "%s1% airblast cost", "Purchased: Not Tradable, Marketable, or Usable in Crafting", "+%s1% flamethrower ammo consumed per second", "%s1% flamethrower ammo consumed per second", "jarate duration", "The wearer cannot be killed by headshots", "%s1% longer weapon switch", "%s1% faster weapon switch", "Crits whenever it would normally mini-crit", "+%s1 health restored on kill", "No self inflicted blast damage taken", "On Hit: Slow target movement by 40% for %s1s", "%s1% slower move speed while deployed", "On death up to %s1% of your stored ÜberCharge is retained", "+%s1 health regenerated per second on wearer", "%s1 health drained per second on wearer", "This is a special Halloween %s1 item", "This weapon holsters %s1% faster", "Alt-Fire: Applies a healing effect to all nearby teammates", "+%s1% faster taunt speed on wearer", "%s1 sec increase in charge duration", "On Kill: A small health pack is dropped", "On Miss: Hit yourself. Idiot.", "%s1% damage from ranged sources while active", "+%s1% damage from melee sources while active", "+%s1% damage to self", "On Hit: target is engulfed in flames", "100% minicrits vs burning players", "Tradable After: %s1", "On Backstab: Absorbs the health from your victim.", "On Hit: One target at a time is Marked-For-Death", "On Kill: Gain %s1% of base health on kill", "On Scoped Bodyshot: Rifle charge rate increased by %s1%", "On Scoped Miss: Rifle charge rate decreased by %s1%", "%s1% increase in damage when health <50% of max", "%s1% decrease in damage when health >50% of max", "Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills." }));
+        boxAttribute.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "%s1% damage penalty", "+%s1% damage bonus", "%s1% clip size", "+%s1% clip size", "%s1% slower firing speed", "+%s1% faster firing speed", "%s1% heal rate", "+%s1% heal rate", "%s1% ÜberCharge rate", "+%s1% ÜberCharge rate", "+%s1% max overheal", "%s1% shorter overheal time", "+%s1% longer overheal time", "Overheal bonus doesn't decay", "No random critical hits", "On Hit: Gain up to +%s1 health", "On Hit: %s1% ÜberCharge added", "ÜberCharge grants 100% critical chance", "On Hit: +%s1% damage bonus", "100% critical hit vs burning players", "%s1% damage vs non-burning players", "No critical hits vs non-burning players", "No compression blast", "100% critical hits from behind", "+%s1 max health on wearer", "No random critical hits (hidden)", "On Kill: %s1 seconds of 100% critical chance", "On Hit: %s1% chance to slow target", "Cloak Type: Feign Death.", "+%s1% cloak drain rate", "+%s1% cloak regen rate", "%s1% less accurate", "Alt-Fire: Launches a ball that slows opponents", "%s1% damage vs non-stunned players", "No move speed penalty from zoom", "+%s1% charge rate", "No headshots", "Knockback on the target and shooter", "+%s1% bullets per shot", "%s1% zoom reduction", "No zoom or damage charge", "Cloak Type: Motion Sensitive.", "Disables double jump", "Absorbs %s1% damage while cloaked", "Crits on headshot", "Blocks a single backstab attempt", "Wearer cannot ignite", "%s1% slower move speed on wearer", "Coated enemies take mini-crits, Can be used to extinguish fire", "+%s1 health regenerated per second on wearer", "+%s1% self damage force", "%s1% self damage force", "+%s1% fire damage resistance on wearer", "%s1% fire damage vulnerability on wearer", "+%s1% critical hit damage resistance on wearer", "%s1% critical hit damage vulnerability on wearer", "+%s1% explosive damage resistance on wearer", "%s1% explosive damage vulnerability on wearer", "+%s1% bullet damage resistance on wearer", "%s1% bullet damage vulnerability on wearer", "+%s1 capture rate on wearer", "%s1% health from healers on wearer", "+%s1% health from healers on wearer", "+%s1% afterburn damage bonus", "%s1% afterburn damage penalty", "+%s1% afterburn duration", "%s1% afterburn duration", "+%s1% faster move speed while deployed", "+%s1% max primary ammo on wearer", "%s1% max primary ammo on wearer", "+%s1% max secondary ammo on wearer", "%s1% max secondary ammo on wearer", "+%s1% max metal on wearer", "%s1% max metal on wearer", "-%s1% cloak duration", "+%s1% cloak duration", "+%s1% cloak regeneration rate", "%s1% cloak regeneration rate", "%s1% slower spin up time", "%s1% faster spin up time", "+%s1 max pipebombs out", "%s1 max pipebombs out", "%s1% faster power charge", "%s1% slower power charge", "Construction hit speed boost increased by %s1%", "Construction hit speed boost decreased by %s1%", "%s1% faster repair rate", "%s1% slower repair rate", "%s1% slower reload time", "%s1% faster reload time", "On Hit: %s1 health", "+%s1% explosion radius", "%s1% explosion radius", "+%s1% projectile range", "%s1% projectile range", "+%s1% projectile speed", "%s1% projectile speed", "%s1% max overheal", "%s1% more accurate", "+%s1% faster move speed on wearer", "+%s1% health from packs on wearer", "%s1% health from packs on wearer", "On Hit: Gain up to +%s1 health", "On Hit: %s1 health", "+%s1% ammo regenerated every 5 seconds on wearer", "+%s1 metal regenerated every 5 seconds on wearer", "Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs", "Damage increases as the user becomes injured", "%s1% splash damage fall off", "Detonates stickybombs near the crosshair and directly under your feet", "%s1 sec slower bomb arm time", "Able to destroy enemy stickybombs", "%s1% speed boost while active weapon", "Replaces the Sentry with a Mini-Sentry", "%s1 max health on wearer", "%s1 sec faster bomb arm time", "Launched bombs shatter on surfaces", "%s1 health drained per second on wearer", "+%s1% natural regen rate", "-%s1% natural regen rate", "★ Unusual Effect: %s1", "%s1% blast damage from rocket jumps", "mod sentry killed revenge", "+%s1% damage vs buildings", "%s1% damage vs players", "lunchbox adds maxhealth bonus", "+%s1 max health on wearer", "I made this!", "Damage removes Sappers", "Wrench no. %s1", "%s1 metal reduction in building cost", "On Hit: Bleed for %s1 seconds", "Imbued with an ancient power", "Not Tradable or Marketable", "disguise on backstab", "Wearer cannot disguise", "Silent Killer: No attack noise from backstabs", "%s1 sec slower disguise speed", "+%s1% cloak on kill", "%s1 sec longer cloak blink time", "Reduced decloak sound volume", "%s1% less flame spread area", "+%s1% more flame spread area", "%s1% less flame distance", "+%s1% more flame distance", "Airblast can now be charged, which will push enemies further", "+%s1% cloak on hit", "Immune to fire damage while disguised", "+%s1% sentry damage resistance on wearer", "+%s1% airblast cost", "%s1% airblast cost", "Purchased: Not Tradable, Marketable, or Usable in Crafting", "+%s1% flamethrower ammo consumed per second", "%s1% flamethrower ammo consumed per second", "jarate duration", "The wearer cannot be killed by headshots", "%s1% longer weapon switch", "%s1% faster weapon switch", "Crits whenever it would normally mini-crit", "+%s1 health restored on kill", "No self inflicted blast damage taken", "On Hit: Slow target movement by 40% for %s1s", "%s1% slower move speed while deployed", "On death up to %s1% of your stored ÜberCharge is retained", "+%s1 health regenerated per second on wearer", "%s1 health drained per second on wearer", "This is a special Halloween %s1 item", "This weapon holsters %s1% faster", "Alt-Fire: Applies a healing effect to all nearby teammates", "+%s1% faster taunt speed on wearer", "%s1 sec increase in charge duration", "On Kill: A small health pack is dropped", "On Miss: Hit yourself. Idiot.", "%s1% damage from ranged sources while active", "+%s1% damage from melee sources while active", "+%s1% damage to self", "On Hit: target is engulfed in flames", "100% minicrits vs burning players", "Tradable After: %s1", "On Backstab: Absorbs the health from your victim.", "On Hit: One target at a time is Marked-For-Death", "On Kill: Gain %s1% of base health on kill", "On Scoped Bodyshot: Rifle charge rate increased by %s1%", "On Scoped Miss: Rifle charge rate decreased by %s1%", "%s1% increase in damage when health <50% of max", "%s1% decrease in damage when health >50% of max", "Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills.", "When the medic healing you is killed you gain 2 revenge crits", "ÜberCharge increases healing to 300% and grants immunity to movement-impairing effects" }));
         infAttributes.getContentPane().add(boxAttribute);
-        boxAttribute.setBounds(100, 10, 390, 23);
+        boxAttribute.setBounds(100, 10, 440, 23);
 
         txtValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtValue.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -664,18 +668,13 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         infAttributes.getContentPane().add(txtValue);
-        txtValue.setBounds(500, 10, 80, 23);
+        txtValue.setBounds(550, 10, 80, 23);
 
-        attribsList.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        attribsList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Attach particle effect | 19" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane2.setViewportView(attribsList);
+        attribsListNegative.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jScrollPane2.setViewportView(attribsListNegative);
 
         infAttributes.getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(20, 100, 410, 154);
+        jScrollPane2.setBounds(20, 260, 410, 130);
 
         btnAdd.setText("Add");
         btnAdd.setEnabled(false);
@@ -685,12 +684,28 @@ public class MainFrame extends javax.swing.JFrame {
         btnRemove.setText("Remove");
         btnRemove.setEnabled(false);
         infAttributes.getContentPane().add(btnRemove);
-        btnRemove.setBounds(450, 160, 71, 30);
+        btnRemove.setBounds(450, 230, 71, 30);
 
         lblPercent.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblPercent.setText("%");
         infAttributes.getContentPane().add(lblPercent);
-        lblPercent.setBounds(580, 10, 20, 20);
+        lblPercent.setBounds(630, 10, 20, 20);
+
+        attribsListPositive.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jScrollPane3.setViewportView(attribsListPositive);
+
+        infAttributes.getContentPane().add(jScrollPane3);
+        jScrollPane3.setBounds(20, 100, 410, 130);
+
+        lblNegative.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblNegative.setText("Negative:");
+        infAttributes.getContentPane().add(lblNegative);
+        lblNegative.setBounds(20, 240, 60, 14);
+
+        lblPositive.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblPositive.setText("Positive:");
+        infAttributes.getContentPane().add(lblPositive);
+        lblPositive.setBounds(20, 80, 50, 14);
 
         tabbedPane.addTab("Attributes", infAttributes);
 
@@ -872,7 +887,8 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JList<String> attribsList;
+    private javax.swing.JList<String> attribsListNegative;
+    private javax.swing.JList<String> attribsListPositive;
     private javax.swing.JComboBox<String> boxAttribute;
     private javax.swing.JComboBox<String> boxModel;
     private javax.swing.JComboBox<String> boxQuality;
@@ -886,13 +902,16 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JInternalFrame infWeaponCode;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JLabel lblAmmo;
     private javax.swing.JLabel lblClassname;
     private javax.swing.JLabel lblIndex;
     private javax.swing.JLabel lblIndex1;
     private javax.swing.JLabel lblLevel;
     private javax.swing.JLabel lblModelPreset;
+    private javax.swing.JLabel lblNegative;
     private javax.swing.JLabel lblPercent;
+    private javax.swing.JLabel lblPositive;
     private javax.swing.JLabel lblQuality;
     private javax.swing.JLabel lblSlot;
     private javax.swing.JLabel lblWeaponNumber;
