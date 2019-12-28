@@ -353,6 +353,12 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(525, "The Diamondback", "tf_weapon_revolver"));
         weapons.add(new Weapon(1006, "Festive Ambassador", "tf_weapon_revolver"));
         weapons.add(new Weapon(1142, "Festive Revolver", "tf_weapon_revolver"));
+        //Spy sapper
+        weapons.add(new Weapon(735, "Sapper", "tf_weapon_builder"));
+        weapons.add(new Weapon(810, "The Red-Tape Recorder", "tf_weapon_sapper"));
+        weapons.add(new Weapon(933, "The Ap-Sap", "tf_weapon_sapper"));
+        weapons.add(new Weapon(1080, "Festive Sapper", "tf_weapon_sapper"));
+        weapons.add(new Weapon(1102, "The Snack Attack", "tf_weapon_sapper"));
     }
     
     private void initStatDatabase(){
