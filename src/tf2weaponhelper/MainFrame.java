@@ -359,6 +359,24 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(933, "The Ap-Sap", "tf_weapon_sapper"));
         weapons.add(new Weapon(1080, "Festive Sapper", "tf_weapon_sapper"));
         weapons.add(new Weapon(1102, "The Snack Attack", "tf_weapon_sapper"));
+        //Spy melee
+        weapons.add(new Weapon(4, "Knife", "tf_weapon_knife"));
+        weapons.add(new Weapon(225, "Your Eternal Reward", "tf_weapon_knife"));
+        weapons.add(new Weapon(356, "Conniver's Kunai", "tf_weapon_knife"));
+        weapons.add(new Weapon(461, "The Big Earner", "tf_weapon_knife"));
+        weapons.add(new Weapon(574, "The Wanga Prick", "tf_weapon_knife"));
+        weapons.add(new Weapon(638, "The Sharp Dresser", "tf_weapon_knife"));
+        weapons.add(new Weapon(649, "The Spy-cicle", "tf_weapon_knife"));
+        weapons.add(new Weapon(665, "Festive Knife", "tf_weapon_knife"));
+        weapons.add(new Weapon(727, "The Black Rose", "tf_weapon_knife"));
+        weapons.add(new Weapon(794, "Silver Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(803, "Gold Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(883, "Rust Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(892, "Blood Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(901, "Carbonado Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(910, "Diamond Botkiller Knife Mk.I", "tf_weapon_knife"));
+        weapons.add(new Weapon(959, "Silver Botkiller Knife Mk.II", "tf_weapon_knife"));
+        weapons.add(new Weapon(968, "Gold Botkiller Knife Mk.II", "tf_weapon_knife"));
     }
     
     private void initStatDatabase(){
