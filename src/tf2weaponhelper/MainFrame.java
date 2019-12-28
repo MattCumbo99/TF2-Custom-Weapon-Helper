@@ -449,6 +449,11 @@ public class MainFrame extends javax.swing.JFrame {
         lblIndex1 = new javax.swing.JLabel();
         boxAttribute = new javax.swing.JComboBox<>();
         txtValue = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        attribsList = new javax.swing.JList<>();
+        btnAdd = new javax.swing.JButton();
+        btnRemove = new javax.swing.JButton();
+        lblPercent = new javax.swing.JLabel();
         infWeaponCode = new javax.swing.JInternalFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         codeText = new javax.swing.JTextArea();
@@ -659,6 +664,32 @@ public class MainFrame extends javax.swing.JFrame {
         infAttributes.getContentPane().add(txtValue);
         txtValue.setBounds(500, 10, 80, 23);
 
+        attribsList.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        attribsList.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Attach particle effect | 19" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane2.setViewportView(attribsList);
+
+        infAttributes.getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(20, 100, 410, 154);
+
+        btnAdd.setText("Add");
+        btnAdd.setEnabled(false);
+        infAttributes.getContentPane().add(btnAdd);
+        btnAdd.setBounds(270, 50, 73, 30);
+
+        btnRemove.setText("Remove");
+        btnRemove.setEnabled(false);
+        infAttributes.getContentPane().add(btnRemove);
+        btnRemove.setBounds(450, 160, 71, 30);
+
+        lblPercent.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblPercent.setText("%");
+        infAttributes.getContentPane().add(lblPercent);
+        lblPercent.setBounds(580, 10, 20, 20);
+
         tabbedPane.addTab("Attributes", infAttributes);
 
         infWeaponCode.setFrameIcon(null);
@@ -839,22 +870,27 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JList<String> attribsList;
     private javax.swing.JComboBox<String> boxAttribute;
     private javax.swing.JComboBox<String> boxModel;
     private javax.swing.JComboBox<String> boxQuality;
     private javax.swing.JComboBox<String> boxSlot;
+    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnRemove;
     private javax.swing.JCheckBox chkUsePreset;
     private javax.swing.JTextArea codeText;
     private javax.swing.JInternalFrame infAttributes;
     private javax.swing.JInternalFrame infBasicSettings;
     private javax.swing.JInternalFrame infWeaponCode;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblAmmo;
     private javax.swing.JLabel lblClassname;
     private javax.swing.JLabel lblIndex;
     private javax.swing.JLabel lblIndex1;
     private javax.swing.JLabel lblLevel;
     private javax.swing.JLabel lblModelPreset;
+    private javax.swing.JLabel lblPercent;
     private javax.swing.JLabel lblQuality;
     private javax.swing.JLabel lblSlot;
     private javax.swing.JLabel lblWeaponNumber;
