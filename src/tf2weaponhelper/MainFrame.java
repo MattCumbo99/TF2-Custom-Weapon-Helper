@@ -239,6 +239,17 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(863, "Robo-Sandvich", "tf_weapon_lunchbox"));
         weapons.add(new Weapon(1002, "Festive Sandvich", "tf_weapon_lunchbox"));
         weapons.add(new Weapon(1190, "Second Banana", "tf_weapon_lunchbox"));
+        //Heavy melee
+        weapons.add(new Weapon(5, "Fists", "tf_weapon_fists"));
+        weapons.add(new Weapon(43, "The Killing Gloves of Boxing", "tf_weapon_fists"));
+        weapons.add(new Weapon(239, "Gloves of Running Urgently", "tf_weapon_fists"));
+        weapons.add(new Weapon(310, "Warrior's Spirit", "tf_weapon_fists"));
+        weapons.add(new Weapon(331, "Fists of Steel", "tf_weapon_fists"));
+        weapons.add(new Weapon(426, "The Eviction Notice", "tf_weapon_fists"));
+        weapons.add(new Weapon(587, "Apoco-Fists", "tf_weapon_fists"));
+        weapons.add(new Weapon(656, "The Holiday Punch", "tf_weapon_fists"));
+        weapons.add(new Weapon(1084, "Festive Gloves of Running Urgently", "tf_weapon_fists"));
+        weapons.add(new Weapon(1100, "The Bread Bite", "tf_weapon_fists"));
     }
     
     private void initStatDatabase(){
