@@ -448,6 +448,7 @@ public class MainFrame extends javax.swing.JFrame {
         infAttributes = new javax.swing.JInternalFrame();
         lblIndex1 = new javax.swing.JLabel();
         boxAttribute = new javax.swing.JComboBox<>();
+        txtValue = new javax.swing.JTextField();
         infWeaponCode = new javax.swing.JInternalFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         codeText = new javax.swing.JTextArea();
@@ -644,6 +645,20 @@ public class MainFrame extends javax.swing.JFrame {
         infAttributes.getContentPane().add(boxAttribute);
         boxAttribute.setBounds(100, 10, 390, 23);
 
+        txtValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtValue.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtValueFocusLost(evt);
+            }
+        });
+        txtValue.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtValueKeyTyped(evt);
+            }
+        });
+        infAttributes.getContentPane().add(txtValue);
+        txtValue.setBounds(500, 10, 80, 23);
+
         tabbedPane.addTab("Attributes", infAttributes);
 
         infWeaponCode.setFrameIcon(null);
@@ -777,6 +792,17 @@ public class MainFrame extends javax.swing.JFrame {
         slot = Integer.toString(boxSlot.getSelectedIndex());
     }//GEN-LAST:event_boxSlotItemStateChanged
 
+    private void txtValueFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtValueFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtValueFocusLost
+
+    private void txtValueKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtValueKeyTyped
+        char enter = evt.getKeyChar();
+        if(!(Character.isDigit(enter))){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtValueKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -838,6 +864,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtClassname;
     private javax.swing.JTextField txtIndex;
     private javax.swing.JTextField txtLevel;
+    private javax.swing.JTextField txtValue;
     private javax.swing.JTextField txtWeaponNumber;
     // End of variables declaration//GEN-END:variables
 }

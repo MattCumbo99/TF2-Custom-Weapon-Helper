@@ -22,10 +22,8 @@ package tf2weaponhelper;
  */
 public class WeaponStat {
     
-    private int id;
-    private String name;
-    private String desc;
-    private int type;
+    private final int id;
+    private final String name, desc, type;
     private double value;
     
     /**
@@ -34,11 +32,9 @@ public class WeaponStat {
      * @param id Identification number of the attribute
      * @param name Name of the attribute
      * @param desc Description of the attribute
-     * @param type Value type of the attribute. 0=percentage, 1=inverted_percentage, 2=additive, 3=constant
+     * @param type Value type of the attribute
      */
-    public WeaponStat(int id, String name, String desc, int type){
-        if(type < 0 || type > 3 || id < 1)
-            throw new IllegalArgumentException();
+    public WeaponStat(int id, String name, String desc, String type){
         this.id = id;
         this.name = name;
         this.desc = desc;
@@ -74,7 +70,7 @@ public class WeaponStat {
      * Gets the type of value of the stat.
      * @return Stat type
      */
-    public int getType(){
+    public String getType(){
         return type;
     }
     
@@ -108,25 +104,6 @@ public class WeaponStat {
      */
     @Override
     public String toString(){
-        String str;
-        switch(type){
-            case 0:
-                str = "percentage";
-                break;
-            case 1:
-                str = "inverted_percentage";
-                break;
-            case 2:
-                str = "additive";
-                break;
-            case 3:
-                str = "constant";
-                break;
-            default:
-                System.out.println("There is a weapon stat with a bad type parameter!");
-                str = "ERROR";
-                break;
-        }
-        return (id + " | " + name + " | " + desc + " | " + str);
+        return (id + " | " + name + " | " + desc + " | " + type);
     }
 }
