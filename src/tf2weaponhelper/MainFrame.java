@@ -329,6 +329,16 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(1092, "The Fortified Compound", "tf_weapon_compound_bow"));
         weapons.add(new Weapon(1098, "The Classic", "tf_weapon_sniperrifle_classic"));
         weapons.add(new Weapon(30665, "Shooting Star", "tf_weapon_sniperrifle"));
+        //Sniper secondary
+        weapons.add(new Weapon(16, "SMG", "tf_weapon_smg"));
+        weapons.add(new Weapon(57, "The Razorback", "tf_wearable_razorback"));
+        weapons.add(new Weapon(58, "Jarate", "tf_weapon_jar"));
+        weapons.add(new Weapon(231, "Darwin's Danger Shield", "tf_wearable"));
+        weapons.add(new Weapon(642, "Cozy Camper", "tf_wearable"));
+        weapons.add(new Weapon(751, "The Cleaner's Carbine", "tf_weapon_charged_smg"));
+        weapons.add(new Weapon(1083, "Festive Jarate", "tf_weapon_jar"));
+        weapons.add(new Weapon(1105, "The Self-Aware Beauty Mark", "tf_weapon_jar"));
+        weapons.add(new Weapon(1149, "Festive SMG", "tf_weapon_smg"));
     }
     
     private void initStatDatabase(){
