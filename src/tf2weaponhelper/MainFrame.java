@@ -176,6 +176,14 @@ public class MainFrame extends javax.swing.JFrame {
         weapons.add(new Weapon(813, "Neon Annihilator", "tf_weapon_breakable_sign"));
         weapons.add(new Weapon(1000, "The Festive Axtinguisher", "tf_weapon_fireaxe"));
         weapons.add(new Weapon(1181, "Hot Hand", "tf_weapon_slap"));
+        //Demoman primary
+        weapons.add(new Weapon(19, "Grenade Launcher", "tf_weapon_grenadelauncher"));
+        weapons.add(new Weapon(308, "The Loch-n-Load", "tf_weapon_grenadelauncher"));
+        weapons.add(new Weapon(405, "Ali Baba's Wee Booties", "tf_wearable"));
+        weapons.add(new Weapon(608, "The Bootlegger", "tf_wearable"));
+        weapons.add(new Weapon(996, "The Loose Cannon", "tf_weapon_cannon"));
+        weapons.add(new Weapon(1007, "Festive Grenade Launcher", "tf_weapon_grenadelauncher"));
+        weapons.add(new Weapon(1151, "The Iron Bomber", "tf_weapon_grenadelauncher"));
     }
     
     private void initStatDatabase(){
