@@ -97,7 +97,7 @@ public class WeaponStat {
      * Sets the stat's value.
      * @param val Value to set the stat to
      */
-    public void setValue(int val){
+    public void setValue(double val){
         value = val;
     }
     
