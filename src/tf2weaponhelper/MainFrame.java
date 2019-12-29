@@ -466,6 +466,59 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(48, true, "set cloak is movement based", "Cloak Type: Motion Sensitive.", "constant"));
         stats.add(new WeaponStat(49, false, "no double jump", "Disables double jump", "constant"));
         stats.add(new WeaponStat(50, true, "absorb damage while cloaked", "Absorbs %s1% damage while cloaked", "percentage"));
+        
+        stats.add(new WeaponStat(51, true, "revolver use hit locations", "Crits on headshot", "constant"));
+        stats.add(new WeaponStat(52, true, "backstab shield", "Blocks a single backstab attempt", "constant"));
+        stats.add(new WeaponStat(53, true, "fire retardant", "Wearer cannot ignite", "constant"));
+        stats.add(new WeaponStat(54, false, "move speed penalty", "%s1% slower move speed on wearer", "inverted_percentage"));
+        stats.add(new WeaponStat(57, true, "health regen", "+%s1 health regenerated per second on wearer", "additive"));
+        stats.add(new WeaponStat(58, true, "self dmg push force increased", "+%s1% self damage force", "percentage"));
+        stats.add(new WeaponStat(59, false, "self dmg push force decreased", "%s1% self damage force", "percentage"));
+        stats.add(new WeaponStat(60, true, "dmg taken from fire reduced", "+%s1% fire damage resistance on wearer", "inverted_percentage"));
+        
+        stats.add(new WeaponStat(61, false, "dmg taken from fire increased", "%s1% fire damage vulnerability on wearer", "percentage"));
+        stats.add(new WeaponStat(62, true, "dmg taken from crit reduced", "+%s1% critical hit damage resistance on wearer", "inverted_percentage"));
+        stats.add(new WeaponStat(63, false, "dmg taken from crit increased", "%s1% critical hit damage vulnerability on wearer", "percentage"));
+        stats.add(new WeaponStat(64, true, "dmg taken from blast reduced", "+%s1% explosive damage resistance on wearer", "inverted_percentage"));
+        stats.add(new WeaponStat(65, false, "dmg taken from blast increased", "%s1% explosive damage vulnerability on wearer", "percentage"));
+        stats.add(new WeaponStat(66, true, "dmg taken from bullets reduced", "+%s1% bullet damage resistance on wearer", "inverted_percentage"));
+        stats.add(new WeaponStat(67, false, "dmg taken from bullets increased", "%s1% bullet damage vulnerability on wearer", "percentage"));
+        stats.add(new WeaponStat(68, true, "increase player capture value", "+%s1 capture rate on wearer", "additive"));
+        stats.add(new WeaponStat(69, false, "health from healers reduced", "%s1% health from healers on wearer", "percentage"));
+        stats.add(new WeaponStat(70, true, "health from healers increased", "+%s1% health from healers on wearer", "percentage"));
+        
+        stats.add(new WeaponStat(71, true, "weapon burn dmg increased", "+%s1% afterburn damage bonus", "percentage"));
+        stats.add(new WeaponStat(72, false, "weapon burn dmg reduced", "%s1% afterburn damage penalty", "percentage"));
+        stats.add(new WeaponStat(73, true, "weapon burn time increased", "+%s1% afterburn duration", "percentage"));
+        stats.add(new WeaponStat(74, false, "weapon burn time reduced", "%s1% afterburn duration", "percentage"));
+        stats.add(new WeaponStat(75, true, "aiming movespeed increased", "+%s1% faster move speed while deployed", "percentage"));
+        stats.add(new WeaponStat(76, true, "maxammo primary increased", "+%s1% max primary ammo on wearer", "percentage"));
+        stats.add(new WeaponStat(77, false, "maxammo primary reduced", "%s1% max primary ammo on wearer", "percentage"));
+        stats.add(new WeaponStat(78, true, "maxammo secondary increased", "+%s1% max secondary ammo on wearer", "percentage"));
+        stats.add(new WeaponStat(79, false, "maxammo secondary reduced", "%s1% max secondary ammo on wearer", "percentage"));
+        stats.add(new WeaponStat(80, true, "maxammo metal increased", "+%s1% max metal on wearer", "percentage"));
+        
+        stats.add(new WeaponStat(81, false, "maxammo metal reduced", "%s1% max metal on wearer", "percentage"));
+        stats.add(new WeaponStat(82, false, "cloak consume rate increased", "-%s1% cloak duration", "percentage"));
+        stats.add(new WeaponStat(83, true, "cloak consume rate decreased", "+%s1% cloak duration", "inverted_percentage"));
+        stats.add(new WeaponStat(84, true, "cloak regen rate increased", "+%s1% cloak regeneration rate", "percentage"));
+        stats.add(new WeaponStat(85, false, "cloak regen rate decreased", "%s1% cloak regeneration rate", "percentage"));
+        stats.add(new WeaponStat(86, false, "minigun spinup time increased", "%s1% slower spin up time", "percentage"));
+        stats.add(new WeaponStat(87, true, "minigun spinup time decreased", "%s1% faster spin up time", "inverted_percentage"));
+        stats.add(new WeaponStat(88, true, "max pipebombs increased", "+%s1 max pipebombs out", "additive"));
+        stats.add(new WeaponStat(89, false, "max pipebombs decreased", "%s1 max pipebombs out", "additive"));
+        stats.add(new WeaponStat(90, true, "SRifle Charge rate increased", "%s1% faster power charge", "percentage"));
+        
+        stats.add(new WeaponStat(91, false, "SRifle Charge rate decreased", "%s1% slower power charge", "inverted_percentage"));
+        stats.add(new WeaponStat(92, true, "Construction rate increased", "Construction hit speed boost increased by %s1%", "percentage"));
+        stats.add(new WeaponStat(93, false, "Construction rate decreased", "Construction hit speed boost decreased by %s1%", "inverted_percentage"));
+        stats.add(new WeaponStat(94, true, "Repair rate increased", "%s1% faster repair rate", "percentage"));
+        stats.add(new WeaponStat(95, false, "Repair rate decreased", "%s1% slower repair rate", "inverted_percentage"));
+        stats.add(new WeaponStat(96, false, "Reload time increased", "%s1% slower reload time", "percentage"));
+        stats.add(new WeaponStat(97, true, "Reload time decreased", "%s1% faster reload time", "inverted_percentage"));
+        stats.add(new WeaponStat(98, false, "selfdmg on hit for rapidfire", "On Hit: %s1 health", "additive"));
+        stats.add(new WeaponStat(99, true, "Blast radius increased", "+%s1% explosion radius", "percentage"));
+        stats.add(new WeaponStat(100, false, "Blast radius decreased", "%s1% explosion radius", "percentage"));
     }
     
     /**
