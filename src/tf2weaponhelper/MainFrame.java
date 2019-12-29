@@ -405,7 +405,20 @@ public class MainFrame extends javax.swing.JFrame {
     private void initStatDatabase(){
         stats = new ArrayList<>();
         
-        stats.add(new WeaponStat(1, "Damage penalty", "%s1% damage penalty", "percentage"));
+        stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage"));
+        stats.add(new WeaponStat(2, true, "damage bonus", "+%s1% damage bonus", "percentage"));
+        stats.add(new WeaponStat(3, false, "clip size penalty", "%s1% clip size", "percentage"));
+        stats.add(new WeaponStat(4, true, "clip size bonus", "+%s1% clip size", "percentage"));
+        stats.add(new WeaponStat(5, false, "fire rate penalty", "%s1% slower firing speed", "inverted_percentage"));
+        stats.add(new WeaponStat(6, true, "fire rate bonus", "+%s1% faster firing speed", "inverted_percentage"));
+        stats.add(new WeaponStat(7, false, "heal rate penalty", "%s1% heal rate", "percentage"));
+        stats.add(new WeaponStat(8, true, "heal rate bonus", "+%s1% heal rate", "percentage"));
+        stats.add(new WeaponStat(9, false, "ubercharge rate penalty", "%s1% ÜberCharge rate", "percentage"));
+        stats.add(new WeaponStat(10, true, "ubercharge rate bonus", "+%s1% ÜberCharge rate", "percentage"));
+        stats.add(new WeaponStat(11, true, "overheal bonus", "+%s1% max overheal", "percentage"));
+        stats.add(new WeaponStat(12, false, "overheal decay penalty", "%s1% shorter overheal time", "inverted_percentage"));
+        stats.add(new WeaponStat(13, true, "overheal decay bonus", "+%s1% longer overheal time", "inverted_percentage"));
+        stats.add(new WeaponStat(14, true, "overheal decay disabled", "Overheal bonus doesn't decay", "constant"));
     }
 
     /**
