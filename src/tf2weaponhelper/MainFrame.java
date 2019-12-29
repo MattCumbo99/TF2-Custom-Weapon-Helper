@@ -527,7 +527,20 @@ public class MainFrame extends javax.swing.JFrame {
      */
     private void removeAttrib(int index){
         String str = attribs.replaceAll(" ; ", ";"); //This makes removing the attribute easier
-        
+        String guess = "";
+        for(int i=0; i<str.length(); i++){
+            if(Character.isDigit(str.charAt(i)) || str.charAt(i)=='.'){
+                guess += str.charAt(i); 
+            }
+            else{
+                if(Integer.toString(index).equals(guess)){ //Found the index
+                    str = str.substring(0, str.indexOf(guess));
+                }
+                else{ //Not the correct id
+                    guess = "";
+                }
+            }
+        }
     }
     
     /**
