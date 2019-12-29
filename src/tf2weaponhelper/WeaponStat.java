@@ -101,18 +101,21 @@ public class WeaponStat {
         value = val;
     }
     
-    /*
+    
     public String getCode(){
         double nVal = value;
+        String good = "";
         switch(type){
             case "percentage":
-                nVal *= 0.01;
+                nVal = (value * .01) + 1;
                 break;
             case "inverted_percentage":
-                nVal 
+                nVal = Math.abs(value / 100 - 1);
+                break;
         }
+        return id + " ; " + good;
     }
-    */
+    
     /**
      * Replaces the %s1's in the description with the real value.
      * @return formatted description
