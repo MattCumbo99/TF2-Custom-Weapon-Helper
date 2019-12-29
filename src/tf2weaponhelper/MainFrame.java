@@ -432,6 +432,9 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(12, false, "overheal decay penalty", "%s1% shorter overheal time", "inverted_percentage"));
         stats.add(new WeaponStat(13, true, "overheal decay bonus", "+%s1% longer overheal time", "inverted_percentage"));
         stats.add(new WeaponStat(14, true, "overheal decay disabled", "Overheal bonus doesn't decay", "constant"));
+        stats.add(new WeaponStat(15, false, "crit mod disabled", "No random critical hits", "constant"));
+        stats.add(new WeaponStat(16, true, "heal on hit for rapidfire", "On Hit: Gain up to +%s1 health", "additive"));
+        stats.add(new WeaponStat(17, true, "add uber charge on hit", "On Hit: %s1% ÜberCharge added", "additive_percentage"));
     }
     
     /**
