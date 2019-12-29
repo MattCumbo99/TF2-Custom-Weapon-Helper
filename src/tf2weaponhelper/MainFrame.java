@@ -894,24 +894,28 @@ public class MainFrame extends javax.swing.JFrame {
     private void boxAttributeItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_boxAttributeItemStateChanged
         for(WeaponStat w: stats){
             if(boxAttribute.getSelectedItem().equals(w.getDescription())){
-                if(w.getType().equals("percentage") || w.getType().equals("inverted_percentage")){
-                    lblPercent.setVisible(true);
-                    txtValue.setVisible(true);
-                    txtValue.setText("");
-                    btnAdd.setEnabled(false);
-                }
-                else if(w.getType().equals("constant")){
-                    lblPercent.setVisible(false);
-                    txtValue.setVisible(false);
-                    txtValue.setText("");
-                    w.setValue(1);
-                    btnAdd.setEnabled(true);
-                }
-                else{ //Additive
-                    lblPercent.setVisible(false);
-                    txtValue.setVisible(true);
-                    txtValue.setText("");
-                    btnAdd.setEnabled(false);
+                switch (w.getType()) {
+                    case "percentage":
+                    case "inverted_percentage":
+                        lblPercent.setVisible(true);
+                        txtValue.setVisible(true);
+                        txtValue.setText("");
+                        btnAdd.setEnabled(false);
+                        break;
+                    case "constant":
+                        lblPercent.setVisible(false);
+                        txtValue.setVisible(false);
+                        txtValue.setText("");
+                        w.setValue(1);
+                        btnAdd.setEnabled(true);
+                        break;
+                    default:
+                        //Additive
+                        lblPercent.setVisible(false);
+                        txtValue.setVisible(true);
+                        txtValue.setText("");
+                        btnAdd.setEnabled(false);
+                        break;
                 }
                 curWeaponStat = w;
                 break;
