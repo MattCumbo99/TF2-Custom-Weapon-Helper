@@ -793,6 +793,16 @@ public class MainFrame extends javax.swing.JFrame {
         txtValue.setBounds(550, 10, 80, 23);
 
         attribsListNegative.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        attribsListNegative.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                attribsListNegativeMousePressed(evt);
+            }
+        });
+        attribsListNegative.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                attribsListNegativeValueChanged(evt);
+            }
+        });
         jScrollPane2.setViewportView(attribsListNegative);
 
         infAttributes.getContentPane().add(jScrollPane2);
@@ -810,6 +820,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         btnRemove.setText("Remove");
         btnRemove.setEnabled(false);
+        btnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveActionPerformed(evt);
+            }
+        });
         infAttributes.getContentPane().add(btnRemove);
         btnRemove.setBounds(450, 230, 71, 30);
 
@@ -819,6 +834,16 @@ public class MainFrame extends javax.swing.JFrame {
         lblPercent.setBounds(630, 10, 20, 20);
 
         attribsListPositive.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        attribsListPositive.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                attribsListPositiveMousePressed(evt);
+            }
+        });
+        attribsListPositive.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                attribsListPositiveValueChanged(evt);
+            }
+        });
         jScrollPane3.setViewportView(attribsListPositive);
 
         infAttributes.getContentPane().add(jScrollPane3);
@@ -1043,6 +1068,34 @@ public class MainFrame extends javax.swing.JFrame {
             btnAdd.setEnabled(true);
         }
     }//GEN-LAST:event_txtValueKeyReleased
+
+    private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
+        if(attribsListPositive.getSelectedValue()!=null){
+            addedStats.remove(attribsListPositive.getSelectedIndex());
+            positiveStats.remove(attribsListPositive.getSelectedIndex());
+        }
+        else if(attribsListNegative.getSelectedValue()!=null){
+            addedStats.remove(attribsListNegative.getSelectedIndex());
+            negativeStats.remove(attribsListNegative.getSelectedIndex());
+        }
+        btnRemove.setEnabled(false);
+    }//GEN-LAST:event_btnRemoveActionPerformed
+
+    private void attribsListPositiveMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_attribsListPositiveMousePressed
+        attribsListNegative.clearSelection();
+    }//GEN-LAST:event_attribsListPositiveMousePressed
+
+    private void attribsListNegativeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_attribsListNegativeMousePressed
+        attribsListPositive.clearSelection();
+    }//GEN-LAST:event_attribsListNegativeMousePressed
+
+    private void attribsListPositiveValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_attribsListPositiveValueChanged
+        btnRemove.setEnabled(true);
+    }//GEN-LAST:event_attribsListPositiveValueChanged
+
+    private void attribsListNegativeValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_attribsListNegativeValueChanged
+        btnRemove.setEnabled(true);
+    }//GEN-LAST:event_attribsListNegativeValueChanged
 
     /**
      * @param args the command line arguments
