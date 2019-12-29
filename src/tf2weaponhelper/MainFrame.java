@@ -428,6 +428,7 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(8, true, "heal rate bonus", "+%s1% heal rate", "percentage"));
         stats.add(new WeaponStat(9, false, "ubercharge rate penalty", "%s1% ÜberCharge rate", "percentage"));
         stats.add(new WeaponStat(10, true, "ubercharge rate bonus", "+%s1% ÜberCharge rate", "percentage"));
+        
         stats.add(new WeaponStat(11, true, "overheal bonus", "+%s1% max overheal", "percentage"));
         stats.add(new WeaponStat(12, false, "overheal decay penalty", "%s1% shorter overheal time", "inverted_percentage"));
         stats.add(new WeaponStat(13, true, "overheal decay bonus", "+%s1% longer overheal time", "inverted_percentage"));
@@ -435,6 +436,36 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(15, false, "crit mod disabled", "No random critical hits", "constant"));
         stats.add(new WeaponStat(16, true, "heal on hit for rapidfire", "On Hit: Gain up to +%s1 health", "additive"));
         stats.add(new WeaponStat(17, true, "add uber charge on hit", "On Hit: %s1% ÜberCharge added", "additive_percentage"));
+        stats.add(new WeaponStat(18, true, "medigun charge is crit boost", "ÜberCharge grants 100% critical chance", "constant"));
+        stats.add(new WeaponStat(19, true, "tmp dmgbuff on hit", "On Hit: +%s1% damage bonus", "additive_percentage"));
+        stats.add(new WeaponStat(20, true, "crit vs burning players", "100% critical hit vs burning players", "constant"));
+        
+        stats.add(new WeaponStat(21, false, "dmg penalty vs nonburning", "%s1% damage vs non-burning players", "percentage"));
+        stats.add(new WeaponStat(22, false, "no crit vs nonburning", "No critical hits vs non-burning players", "constant"));
+        stats.add(new WeaponStat(23, false, "mod flamethrower push", "No compression blast", "constant"));
+        stats.add(new WeaponStat(24, true, "mod flamethrower back crit", "100% critical hits from behind", "constant"));
+        stats.add(new WeaponStat(26, true, "max health additive bonus", "+%s1 max health on wearer", "additive"));
+        stats.add(new WeaponStat(28, false, "crit mod disabled hidden", "No random critical hits (hidden)", "percentage"));
+        
+        stats.add(new WeaponStat(31, true, "critboost on kill", "On Kill: %s1 seconds of 100% critical chance", "additive"));
+        stats.add(new WeaponStat(32, true, "slow enemy on hit", "On Hit: %s1% chance to slow target", "additive_percentage"));
+        stats.add(new WeaponStat(33, true, "set cloak is feign death", "Cloak Type: Feign Death.", "constant"));
+        stats.add(new WeaponStat(34, false, "mult cloak meter consume rate", "+%s1% cloak drain rate", "percentage"));
+        stats.add(new WeaponStat(35, true, "mult cloak meter regen rate", "+%s1% cloak regen rate", "percentage"));
+        stats.add(new WeaponStat(36, false, "spread penalty", "%s1% less accurate", "percentage"));
+        stats.add(new WeaponStat(38, true, "mod bat launches balls", "Alt-Fire: Launches a ball that slows opponents", "additive"));
+        stats.add(new WeaponStat(39, false, "dmg penalty vs nonstunned", "%s1% damage vs non-stunned players", "percentage"));
+        stats.add(new WeaponStat(40, true, "zoom speed mod disabled", "No move speed penalty from zoom", "constant"));
+        
+        stats.add(new WeaponStat(41, true, "sniper charge per sec", "+%s1% charge rate", "percentage"));
+        stats.add(new WeaponStat(42, false, "sniper no headshots", "No headshots", "constant"));
+        stats.add(new WeaponStat(44, true, "scattergun has knockback", "Knockback on the target and shooter", "constant"));
+        stats.add(new WeaponStat(45, true, "bullets per shot bonus", "+%s1% bullets per shot", "percentage"));
+        stats.add(new WeaponStat(46, false, "sniper zoom penalty", "%s1% zoom reduction", "percentage"));
+        stats.add(new WeaponStat(47, false, "sniper no charge", "No zoom or damage charge", "constant"));
+        stats.add(new WeaponStat(48, true, "set cloak is movement based", "Cloak Type: Motion Sensitive.", "constant"));
+        stats.add(new WeaponStat(49, false, "no double jump", "Disables double jump", "constant"));
+        stats.add(new WeaponStat(50, true, "absorb damage while cloaked", "Absorbs %s1% damage while cloaked", "percentage"));
     }
     
     /**
