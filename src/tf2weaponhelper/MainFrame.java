@@ -522,22 +522,12 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     /**
-     * Removes the first attribute in the code.
+     * Removes the specified attribute in the code.
+     * @param index Id number of the attribute
      */
-    private void removeFirstAttrib(){
-        int count = 0;
-        for(int i=0; i<attribs.length(); i++){
-            if(attribs.charAt(i)==';'){
-                count++;
-            }
-            if(count==2){
-                attribs = attribs.substring(i+2);
-                break;
-            }
-        }
-        if(count<2){
-            attribs = "";
-        }
+    private void removeAttrib(int index){
+        String str = attribs.replaceAll(" ; ", ";"); //This makes removing the attribute easier
+        
     }
     
     /**
