@@ -56,6 +56,7 @@ public class MainFrame extends javax.swing.JFrame {
         level = "29";
         attribs = "134 ; 19";
         ammo = "20";
+        curWeaponStat = new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage");
     }
     
     private void initWeaponDatabase(){
@@ -414,6 +415,9 @@ public class MainFrame extends javax.swing.JFrame {
         negativeStats = new DefaultListModel<>();
         positiveStats = new DefaultListModel<>();
         
+        attribsListPositive.setModel(positiveStats);
+        attribsListNegative.setModel(negativeStats);
+        
         stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage"));
         stats.add(new WeaponStat(2, true, "damage bonus", "+%s1% damage bonus", "percentage"));
         stats.add(new WeaponStat(3, false, "clip size penalty", "%s1% clip size", "percentage"));
@@ -690,6 +694,12 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         txtValue.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtValueKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtValueKeyReleased(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtValueKeyTyped(evt);
             }
@@ -913,13 +923,31 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         btnAdd.setEnabled(false);
+        if(!curWeaponStat.getType().equals("constant"))
+            curWeaponStat.setValue(Double.parseDouble(txtValue.getText()));
         if(!addedStats.contains(curWeaponStat)){
             addedStats.add(curWeaponStat);
             if(curWeaponStat.isPositive()){
-                
+                positiveStats.addElement(curWeaponStat.displayAttrib());
+            }
+            else{
+                negativeStats.addElement(curWeaponStat.displayAttrib());
             }
         }
     }//GEN-LAST:event_btnAddActionPerformed
+
+    private void txtValueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtValueKeyPressed
+        
+    }//GEN-LAST:event_txtValueKeyPressed
+
+    private void txtValueKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtValueKeyReleased
+        if(txtValue.getText().isEmpty()){
+            btnAdd.setEnabled(false);
+        }
+        else{
+            btnAdd.setEnabled(true);
+        }
+    }//GEN-LAST:event_txtValueKeyReleased
 
     /**
      * @param args the command line arguments
