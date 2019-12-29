@@ -102,8 +102,8 @@ public class WeaponStat {
     }
     
     /**
-     * Gets the formatted version of the value.
-     * @return name | value
+     * Replaces the %s1's in the description with the real value.
+     * @return formatted description
      */
     public String displayAttrib(){
         return desc.replaceAll("%s1", Integer.toString((int)value));
