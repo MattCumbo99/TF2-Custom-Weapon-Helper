@@ -651,19 +651,23 @@
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="12">
+                  <StringArray count="16">
                     <StringItem index="0" value="Normal"/>
-                    <StringItem index="1" value="Unique"/>
-                    <StringItem index="2" value="Vintage"/>
-                    <StringItem index="3" value="Genuine"/>
-                    <StringItem index="4" value="Strange"/>
+                    <StringItem index="1" value="Genuine"/>
+                    <StringItem index="2" value="rarity2"/>
+                    <StringItem index="3" value="Vintage"/>
+                    <StringItem index="4" value="rarity3"/>
                     <StringItem index="5" value="Unusual"/>
-                    <StringItem index="6" value="Haunted"/>
-                    <StringItem index="7" value="Collector&apos;s"/>
-                    <StringItem index="8" value="Decorated"/>
-                    <StringItem index="9" value="Community"/>
-                    <StringItem index="10" value="Self-Made"/>
-                    <StringItem index="11" value="Valve"/>
+                    <StringItem index="6" value="Unique"/>
+                    <StringItem index="7" value="Community"/>
+                    <StringItem index="8" value="Valve"/>
+                    <StringItem index="9" value="Self-Made"/>
+                    <StringItem index="10" value="Customized"/>
+                    <StringItem index="11" value="Strange"/>
+                    <StringItem index="12" value="Completed"/>
+                    <StringItem index="13" value="Haunted"/>
+                    <StringItem index="14" value="Collector&apos;s"/>
+                    <StringItem index="15" value="Decorated Weapon"/>
                   </StringArray>
                 </Property>
               </Properties>

@@ -654,7 +654,7 @@ public class MainFrame extends javax.swing.JFrame {
         sldLevel.setBounds(270, 160, 200, 20);
 
         boxQuality.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        boxQuality.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Unique", "Vintage", "Genuine", "Strange", "Unusual", "Haunted", "Collector's", "Decorated", "Community", "Self-Made", "Valve" }));
+        boxQuality.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Genuine", "rarity2", "Vintage", "rarity3", "Unusual", "Unique", "Community", "Valve", "Self-Made", "Customized", "Strange", "Completed", "Haunted", "Collector's", "Decorated Weapon" }));
         boxQuality.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 boxQualityItemStateChanged(evt);
