@@ -98,7 +98,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="tf_weapon_rocketlauncher"/>
+                <Property name="text" type="java.lang.String" value="tf_weapon_scattergun"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Constraints>
@@ -125,7 +125,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="228"/>
+                <Property name="text" type="java.lang.String" value="13"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
@@ -182,7 +182,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="29"/>
+                <Property name="text" type="java.lang.String" value="1"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <Constraints>
@@ -613,7 +613,6 @@
                     <StringItem index="314" value="The Quackenbirdt"/>
                   </StringArray>
                 </Property>
-                <Property name="selectedIndex" type="int" value="55"/>
               </Properties>
               <Events>
                 <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="boxModelItemStateChanged"/>
@@ -630,7 +629,7 @@
             <Component class="javax.swing.JSlider" name="sldLevel">
               <Properties>
                 <Property name="minimum" type="int" value="1"/>
-                <Property name="value" type="int" value="29"/>
+                <Property name="value" type="int" value="1"/>
                 <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
                   <ComponentRef name="txtAmmo"/>
                 </Property>
@@ -667,7 +666,6 @@
                     <StringItem index="11" value="Valve"/>
                   </StringArray>
                 </Property>
-                <Property name="selectedIndex" type="int" value="6"/>
               </Properties>
               <Events>
                 <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="boxQualityItemStateChanged"/>
@@ -1262,7 +1260,7 @@
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="&quot;10000&quot;&#xa;{&#xa;&#x9;&quot;classname&quot;&#x9;&#x9;&quot;tf_weapon_rocketlauncher&quot;&#xa;&#x9;&quot;index&quot;&#x9;&#x9;&#x9;&quot;228&quot;&#xa;&#x9;&quot;slot&quot;&#x9;&#x9;&#x9;&quot;0&quot;&#xa;&#x9;&quot;quality&quot;&#x9;&#x9;&quot;6&quot;&#xa;&#x9;&quot;level&quot;&#x9;&#x9;&#x9;&quot;29&quot;&#xa;&#x9;&quot;attribs&quot;&#x9;&#x9;&quot;134 ; 19&quot;&#xa;&#x9;&quot;ammo&quot;&#x9;&#x9;&quot;20&quot;&#xa;}"/>
+                    <Property name="text" type="java.lang.String" value="&quot;10000&quot;&#xa;{&#xa;&#x9;&quot;classname&quot;&#x9;&#x9;&quot;tf_weapon_scattergun&quot;&#xa;&#x9;&quot;index&quot;&#x9;&#x9;&#x9;&quot;13&quot;&#xa;&#x9;&quot;slot&quot;&#x9;&#x9;&#x9;&quot;0&quot;&#xa;&#x9;&quot;quality&quot;&#x9;&#x9;&quot;0&quot;&#xa;&#x9;&quot;level&quot;&#x9;&#x9;&#x9;&quot;1&quot;&#xa;&#x9;&quot;attribs&quot;&#x9;&#x9;&quot;&quot;&#xa;&#x9;&quot;ammo&quot;&#x9;&#x9;&quot;20&quot;&#xa;}"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Text Cursor"/>
                     </Property>
