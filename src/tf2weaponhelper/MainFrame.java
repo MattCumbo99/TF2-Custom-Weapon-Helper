@@ -49,12 +49,12 @@ public class MainFrame extends javax.swing.JFrame {
      */
     private void initValues(){
         wepNumber = "10000";
-        classname = "tf_weapon_rocketlauncher";
-        index = "228";
+        classname = "tf_weapon_scattergun";
+        index = "13";
         slot = "0";
-        quality = "6";
-        level = "29";
-        attribs = "134 ; 19";
+        quality = "0";
+        level = "1";
+        attribs = "";
         ammo = "20";
         curWeaponStat = new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage");
     }
@@ -934,6 +934,12 @@ public class MainFrame extends javax.swing.JFrame {
             }
             else{
                 negativeStats.addElement(curWeaponStat.displayAttrib());
+            }
+            if(attribs.isEmpty()){
+                attribs = curWeaponStat.getCode();
+            }
+            else{
+                attribs += " ; " + curWeaponStat.getCode();
             }
         }
     }//GEN-LAST:event_btnAddActionPerformed
