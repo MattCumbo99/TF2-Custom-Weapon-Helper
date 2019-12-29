@@ -117,6 +117,10 @@ public class WeaponStat {
                 nVal = Math.abs(value / 100 - 1);
                 good = Double.toString(nVal);
                 break;
+            case "additive_percentage":
+                nVal *= 0.01;
+                good = Double.toString(nVal);
+                break;
             default:
                 good = Integer.toString((int) nVal);
                 break;
