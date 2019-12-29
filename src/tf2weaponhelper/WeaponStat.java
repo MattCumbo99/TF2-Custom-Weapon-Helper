@@ -101,16 +101,24 @@ public class WeaponStat {
         value = val;
     }
     
-    
+    /**
+     * Gets the code version of the attribute
+     * @return Example: 213 ; 0.2
+     */
     public String getCode(){
         double nVal = value;
-        String good = "";
+        String good;
         switch(type){
             case "percentage":
                 nVal = (value * .01) + 1;
+                good = Double.toString(nVal);
                 break;
             case "inverted_percentage":
                 nVal = Math.abs(value / 100 - 1);
+                good = Double.toString(nVal);
+                break;
+            default:
+                good = Integer.toString((int) nVal);
                 break;
         }
         return id + " ; " + good;
