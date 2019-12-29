@@ -831,7 +831,7 @@
                     <StringItem index="103" value="On Hit: %s1 health"/>
                     <StringItem index="104" value="+%s1% ammo regenerated every 5 seconds on wearer"/>
                     <StringItem index="105" value="+%s1 metal regenerated every 5 seconds on wearer"/>
-                    <StringItem index="106" value="Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs"/>
+                    <StringItem index="106" value="Mini-crits targets launched airborne"/>
                     <StringItem index="107" value="Damage increases as the user becomes injured"/>
                     <StringItem index="108" value="%s1% splash damage fall off"/>
                     <StringItem index="109" value="Detonates stickybombs near the crosshair and directly under your feet"/>
