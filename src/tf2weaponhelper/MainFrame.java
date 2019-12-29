@@ -522,6 +522,25 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     /**
+     * Removes the first attribute in the code.
+     */
+    private void removeFirstAttrib(){
+        int count = 0;
+        for(int i=0; i<attribs.length(); i++){
+            if(attribs.charAt(i)==';'){
+                count++;
+            }
+            if(count==2){
+                attribs = attribs.substring(i+2);
+                break;
+            }
+        }
+        if(count<2){
+            attribs = "";
+        }
+    }
+    
+    /**
      * Updates the text in the code tab.
      */
     private void updateCode(){
@@ -1070,6 +1089,10 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtValueKeyReleased
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
+        String str = attribs;
+        
+        
+        
         if(attribsListPositive.getSelectedValue()!=null){
             addedStats.remove(attribsListPositive.getSelectedIndex());
             positiveStats.remove(attribsListPositive.getSelectedIndex());
