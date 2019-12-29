@@ -106,16 +106,7 @@ public class WeaponStat {
      * @return name | value
      */
     public String displayAttrib(){
-        double nVal = value;
-        if(type.equals("inverted_percentage")){
-            nVal = 1-value;
-            nVal *= .01;
-        }
-        if(type.equals("percentage")){
-            nVal *= .01;
-        }
-        String bet = desc.replaceAll("%s1", Double.toString(nVal));
-        return bet;
+        return desc.replaceAll("%s1", Integer.toString((int)value));
     }
     
     /**
