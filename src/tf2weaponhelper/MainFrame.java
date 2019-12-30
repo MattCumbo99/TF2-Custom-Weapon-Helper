@@ -584,12 +584,15 @@ public class MainFrame extends javax.swing.JFrame {
                 bet = Integer.parseInt(word);
                 if(index==bet){
                     bruh.remove(i);
-                    bruh.remove(i+1); //Remove attribute and its value
+                    bruh.remove(i); //Remove attribute and its value
                     if(!bruh.isEmpty()){
                         attribs = bruh.get(0) + " ; " + bruh.get(1);
                         for(int j=2; j<bruh.size(); j++){
                             attribs += " ; " + bruh.get(j) + " ; " + bruh.get(j+1);
                         }
+                    }
+                    else{
+                        attribs = "";
                     }
                     updateCode(); // Adjust code to the new variable
                     break;
