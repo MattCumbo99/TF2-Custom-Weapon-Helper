@@ -576,6 +576,7 @@ public class MainFrame extends javax.swing.JFrame {
         String[] temp = str.split(";");
         String word;
         int bet;
+        
         bruh.addAll(Arrays.asList(temp));
         for(int i=0; i<bruh.size(); i++){
             word = bruh.get(i);
@@ -590,6 +591,7 @@ public class MainFrame extends javax.swing.JFrame {
                             attribs += " ; " + bruh.get(j) + " ; " + bruh.get(j+1);
                         }
                     }
+                    updateCode(); // Adjust code to the new variable
                     break;
                 }
             }
@@ -1148,15 +1150,28 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtValueKeyReleased
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
-        String str = attribs;
-        
-        
-        
+        boolean found = false;
         if(attribsListPositive.getSelectedValue()!=null){
+            for(WeaponStat st: stats){
+                for(WeaponStat sup: addedStats){
+                    if(sup.getDescription().equals(st.getDescription())){
+                        found = true;
+                        removeAttrib(sup.getId());
+                        break;
+                    }
+                }
+                if(found) break;
+            }
             addedStats.remove(attribsListPositive.getSelectedIndex());
             positiveStats.remove(attribsListPositive.getSelectedIndex());
         }
         else if(attribsListNegative.getSelectedValue()!=null){
+            for(WeaponStat st: stats){
+                if(st.getDescription().equals(negativeStats.get(attribsListNegative.getSelectedIndex()))){
+                    removeAttrib(st.getId());
+                    break;
+                }
+            }
             addedStats.remove(attribsListNegative.getSelectedIndex());
             negativeStats.remove(attribsListNegative.getSelectedIndex());
         }
