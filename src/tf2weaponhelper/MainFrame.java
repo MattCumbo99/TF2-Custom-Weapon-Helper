@@ -17,6 +17,7 @@
 package tf2weaponhelper;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import javax.swing.DefaultListModel;
 
 /**
@@ -571,18 +572,29 @@ public class MainFrame extends javax.swing.JFrame {
      */
     private void removeAttrib(int index){
         String str = attribs.replaceAll(" ; ", ";"); //This makes removing the attribute easier
-        String guess = "";
-        for(int i=0; i<str.length(); i++){
-            if(Character.isDigit(str.charAt(i)) || str.charAt(i)=='.'){
-                guess += str.charAt(i); 
+        ArrayList<String> bruh = new ArrayList<>();
+        String[] temp = str.split(";");
+        String word;
+        int bet;
+        bruh.addAll(Arrays.asList(temp));
+        for(int i=0; i<bruh.size(); i++){
+            word = bruh.get(i);
+            try{
+                bet = Integer.parseInt(word);
+                if(index==bet){
+                    bruh.remove(i);
+                    bruh.remove(i+1); //Remove attribute and its value
+                    if(!bruh.isEmpty()){
+                        attribs = bruh.get(0) + " ; " + bruh.get(1);
+                        for(int j=2; j<bruh.size(); j++){
+                            attribs += " ; " + bruh.get(j) + " ; " + bruh.get(j+1);
+                        }
+                    }
+                    break;
+                }
             }
-            else{
-                if(Integer.toString(index).equals(guess)){ //Found the index
-                    str = str.substring(0, str.indexOf(guess));
-                }
-                else{ //Not the correct id
-                    guess = "";
-                }
+            catch(NumberFormatException ex){
+                //Do nothing, number is a double
             }
         }
     }
