@@ -156,7 +156,7 @@ public class WeaponStat {
                 good = Double.toString(nVal);
                 break;
             default:
-                good = Integer.toString((int) nVal);
+                good = Integer.toString((int) nVal) + ".0";
                 break;
         }
         return id + " ; " + good;
