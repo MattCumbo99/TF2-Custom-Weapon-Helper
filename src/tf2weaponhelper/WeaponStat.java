@@ -144,7 +144,7 @@ public class WeaponStat {
         String good;
         switch(type){
             case "percentage":
-                nVal = (value * .01) + 1;
+                nVal = 1 - (value * .01);
                 good = Double.toString(nVal);
                 break;
             case "inverted_percentage":
