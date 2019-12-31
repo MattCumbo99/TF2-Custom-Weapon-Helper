@@ -686,6 +686,24 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(307, true, "mod no reload DISPLAY ONLY", "No reload necessary", "constant"));
         stats.add(new WeaponStat(308, true, "sniper penetrate players when charged", "On Full Charge: Projectiles penetrate players", "percentage"));
         stats.add(new WeaponStat(309, true, "crit kill will gib", "Killing an enemy with a critical hit will dismember your victim. Painfully.", "constant"));
+        
+        stats.add(new WeaponStat(313, true, "applies snare effect", "%s1% movement speed on targets", "percentage"));
+        stats.add(new WeaponStat(314, true, "uber duration bonus", "Über duration increased %s1 seconds", "additive"));
+        stats.add(new WeaponStat(319, true, "increase buff duration", "+%s1% buff duration", "percentage"));
+        
+        stats.add(new WeaponStat(321, true, "build rate bonus", "+%s1% faster build speed", "inverted_percentage"));
+        stats.add(new WeaponStat(323, true, "attack projectiles", "Bullets destroy rockets and grenades in-flight.", "constant"));
+        stats.add(new WeaponStat(324, true, "accuracy scales damage", "Accuracy scales damage", "constant"));
+        stats.add(new WeaponStat(325, true, "currency bonus", "+%s1% bonus currency from packs", "percentage"));
+        stats.add(new WeaponStat(326, true, "increased jump height", "+%s1% greater jump height when active", "percentage"));
+        stats.add(new WeaponStat(329, true, "airblast vulnerability multiplier", "%s1% reduction in airblast vulnerability", "percentage"));
+        
+        stats.add(new WeaponStat(334, true, "bombinomicon effect on death", "Explode spectacularly on death", "constant"));
+        stats.add(new WeaponStat(336, false, "hide enemy health", "Unable to see enemy health", "constant"));
+        stats.add(new WeaponStat(337, true, "subtract victim medigun charge on hit", "On Hit: Victim loses up to %s1% Medigun charge", "additive"));
+        stats.add(new WeaponStat(338, true, "subtract victim cloak on hit", "On Hit: Victim loses up to %s1% cloak", "additive"));
+        stats.add(new WeaponStat(339, true, "reveal cloaked victim on hit", "On Hit Spy: Reveal cloaked Spy", "constant"));
+        stats.add(new WeaponStat(340, true, "reveal disguised victim on hit", "On Hit Spy: Reveal disguised Spy", "constant"));
     }
     
     /**
