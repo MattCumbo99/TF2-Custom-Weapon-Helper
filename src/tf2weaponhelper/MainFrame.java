@@ -419,21 +419,20 @@ public class MainFrame extends javax.swing.JFrame {
         attribsListPositive.setModel(positiveStats);
         attribsListNegative.setModel(negativeStats);
         
-        String[] tags1 = ["all"]
-        stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage", ));
-        stats.add(new WeaponStat(2, true, "damage bonus", "+%s1% damage bonus", "percentage"));
-        stats.add(new WeaponStat(3, false, "clip size penalty", "%s1% clip size", "percentage"));
-        stats.add(new WeaponStat(4, true, "clip size bonus", "+%s1% clip size", "percentage"));
-        stats.add(new WeaponStat(5, false, "fire rate penalty", "%s1% slower firing speed", "inverted_percentage"));
-        stats.add(new WeaponStat(6, true, "fire rate bonus", "+%s1% faster firing speed", "inverted_percentage"));
-        stats.add(new WeaponStat(7, false, "heal rate penalty", "%s1% heal rate", "percentage"));
-        stats.add(new WeaponStat(8, true, "heal rate bonus", "+%s1% heal rate", "percentage"));
-        stats.add(new WeaponStat(9, false, "ubercharge rate penalty", "%s1% ÜberCharge rate", "percentage"));
-        stats.add(new WeaponStat(10, true, "ubercharge rate bonus", "+%s1% ÜberCharge rate", "percentage"));
+        stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage", "allclass,damage"));
+        stats.add(new WeaponStat(2, true, "damage bonus", "+%s1% damage bonus", "percentage", "allclass,damage"));
+        stats.add(new WeaponStat(3, false, "clip size penalty", "%s1% clip size", "percentage", "allclass,damage,clip"));
+        stats.add(new WeaponStat(4, true, "clip size bonus", "+%s1% clip size", "percentage", "allclass"));
+        stats.add(new WeaponStat(5, false, "fire rate penalty", "%s1% slower firing speed", "inverted_percentage", "allclass"));
+        stats.add(new WeaponStat(6, true, "fire rate bonus", "+%s1% faster firing speed", "inverted_percentage", "allclass"));
+        stats.add(new WeaponStat(7, false, "heal rate penalty", "%s1% heal rate", "percentage", "medic,medigun"));
+        stats.add(new WeaponStat(8, true, "heal rate bonus", "+%s1% heal rate", "percentage", "medic,medigun"));
+        stats.add(new WeaponStat(9, false, "ubercharge rate penalty", "%s1% ÜberCharge rate", "percentage", "medic,medigun"));
+        stats.add(new WeaponStat(10, true, "ubercharge rate bonus", "+%s1% ÜberCharge rate", "percentage", "medic,medigun"));
         
-        stats.add(new WeaponStat(11, true, "overheal bonus", "+%s1% max overheal", "percentage"));
-        stats.add(new WeaponStat(12, false, "overheal decay penalty", "%s1% shorter overheal time", "inverted_percentage"));
-        stats.add(new WeaponStat(13, true, "overheal decay bonus", "+%s1% longer overheal time", "inverted_percentage"));
+        stats.add(new WeaponStat(11, true, "overheal bonus", "+%s1% max overheal", "percentage", "medic,medigun"));
+        stats.add(new WeaponStat(12, false, "overheal decay penalty", "%s1% shorter overheal time", "inverted_percentage", "medic,medigun"));
+        stats.add(new WeaponStat(13, true, "overheal decay bonus", "+%s1% longer overheal time", "inverted_percentage", "medic,medigun"));
         stats.add(new WeaponStat(14, true, "overheal decay disabled", "Overheal bonus doesn't decay", "constant"));
         stats.add(new WeaponStat(15, false, "crit mod disabled", "No random critical hits", "constant"));
         stats.add(new WeaponStat(16, true, "heal on hit for rapidfire", "On Hit: Gain up to +%s1 health", "additive"));
