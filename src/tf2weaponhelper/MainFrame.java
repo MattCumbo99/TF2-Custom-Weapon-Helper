@@ -635,6 +635,57 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(238, true, "minigun no spin sounds", "Silent Killer: No barrel spin sound", "constant"));
         stats.add(new WeaponStat(239, true, "ubercharge rate bonus for healer", "+%s1% ÜberCharge rate for the medic healing you (no spawnroom)", "percentage"));
         stats.add(new WeaponStat(240, true, "reload time decreased while healed", "%s1% faster reload time while being healed", "inverted_percentage"));
+        
+        stats.add(new WeaponStat(241, false, "reload time increased hidden", "%s1% slower reload time (hidden)", "percentage"));
+        stats.add(new WeaponStat(242, true, "mod medic killed marked for death", "When the medic healing you is killed the killer becomes Marked-For-Death", "constant"));
+        stats.add(new WeaponStat(243, false, "mod rage on hit penalty", "%s1% rage lost on hit", "additive"));
+        stats.add(new WeaponStat(244, true, "mod rage on hit bonus", "%s1% rage gained on hit", "additive"));
+        stats.add(new WeaponStat(245, true, "mod rage damage boost", "Gains a damage bonus as rage increases, up to %s1%", "percentage"));
+        stats.add(new WeaponStat(246, true, "mult charge turn control", "+%s1% increase in turning control while charging", "percentage"));
+        stats.add(new WeaponStat(247, true, "no charge impact range", "Can deal charge impact damage at any range", "additive"));
+        stats.add(new WeaponStat(248, true, "charge impact damage increased", "+%s1% increase in charge impact damage", "percentage"));
+        stats.add(new WeaponStat(249, true, "charge recharge rate increased", "+%s1% increase in charge recharge rate", "percentage"));
+        stats.add(new WeaponStat(250, true, "air dash count", "Grants Triple Jump while deployed. Melee attacks mini-crit while airborne.", "additive"));
+        
+        stats.add(new WeaponStat(251, true, "speed buff ally", "On Hit Teammate: Boosts both players' speed for several seconds", "constant"));
+        stats.add(new WeaponStat(252, true, "damage force reduction", "%s1% reduction in push force taken from damage", "percentage"));
+        stats.add(new WeaponStat(253, false, "mult cloak rate", "%s1 sec increase in time to cloak", "additive"));
+        stats.add(new WeaponStat(255, true, "airblast pushback scale", "+%s1% airblast push force", "percentage"));
+        stats.add(new WeaponStat(258, true, "ammo becomes health", "Ammo collected from ammo boxes becomes health", "constant"));
+        stats.add(new WeaponStat(259, true, "boots falling stomp", "Deals 3x falling damage to the player you land on", "constant"));
+        
+        stats.add(new WeaponStat(264, true, "melee range multiplier", "%s1% increased melee attack range", "percentage"));
+        stats.add(new WeaponStat(266, true, "projectile penetration", "Projectiles penetrate enemy players", "constant"));
+        stats.add(new WeaponStat(267, true, "mod crit while airborne", "Deals crits while the wielder is rocket jumping", "constant"));
+        stats.add(new WeaponStat(269, true, "mod see enemy health", "Allows you to see enemy health", "constant"));
+        stats.add(new WeaponStat(270, true, "powerup max charges", "Holds a maximum of %s1 charges", "additive"));
+        
+        stats.add(new WeaponStat(275, true, "cancel falling damage", "Wearer never takes falling damage", "constant", "allclass"));
+        stats.add(new WeaponStat(276, true, "bidirectional teleport", "Teleporters can be used in both directions", "constant", "engineer"));
+        stats.add(new WeaponStat(278, true, "effect bar recharge rate increased", "+%s1% increase in recharge rate", "inverted_percentage"));
+        stats.add(new WeaponStat(279, true, "maxammo grenades1 increased", "+%s1% max misc ammo on wearer", "percentage"));
+        
+        stats.add(new WeaponStat(281, true, "energy weapon no ammo", "Does not require ammo", "constant"));
+        stats.add(new WeaponStat(282, true, "energy weapon charged shot", "Cow Mangler Charged Shot Alt-Fire", "constant"));
+        stats.add(new WeaponStat(283, true, "energy weapon penetration", "Projectile penetrates enemy targets", "constant"));
+        stats.add(new WeaponStat(284, false, "energy weapon no hurt building", "Deals only 20% damage to buildings", "constant"));
+        stats.add(new WeaponStat(285, true, "energy weapon no deflect", "Projectile cannot be deflected", "additive"));
+        stats.add(new WeaponStat(286, true, "engy building health bonus", "+%s1% max building health", "percentage"));
+        stats.add(new WeaponStat(287, true, "engy sentry damage bonus", "+%s1% Sentry Gun damage bonus", "percentage"));
+        stats.add(new WeaponStat(288, true, "no crit boost", "Cannot be crit boosted", "percentage"));
+        
+        stats.add(new WeaponStat(296, true, "sapper kills collect crits", "Gives one guaranteed critical hit for each building destroyed with your sapper attached or backstab kill", "constant"));
+        stats.add(new WeaponStat(297, false, "sniper only fire zoomed", "Cannot fire unless zoomed", "constant"));
+        stats.add(new WeaponStat(298, false, "mod ammo per shot", "Per Shot: -%s1 ammo", "additive"));
+        stats.add(new WeaponStat(299, true, "add onhit addammo", "On Hit: damage dealt is returned as ammo", "constant"));
+        
+        stats.add(new WeaponStat(301, false, "mod use metal ammo type", "Uses metal for ammo", "constant"));
+        stats.add(new WeaponStat(304, true, "sniper full charge damage bonus", "On Full Charge: +%s1% damage per shot", "percentage"));
+        stats.add(new WeaponStat(305, true, "sniper fires tracer", "Fires tracer rounds", "constant"));
+        stats.add(new WeaponStat(306, false, "sniper no headshot without full charge", "No headshots when not fully charged", "constant"));
+        stats.add(new WeaponStat(307, true, "mod no reload DISPLAY ONLY", "No reload necessary", "constant"));
+        stats.add(new WeaponStat(308, true, "sniper penetrate players when charged", "On Full Charge: Projectiles penetrate players", "percentage"));
+        stats.add(new WeaponStat(309, true, "crit kill will gib", "Killing an enemy with a critical hit will dismember your victim. Painfully.", "constant"));
     }
     
     /**
