@@ -564,6 +564,77 @@ public class MainFrame extends javax.swing.JFrame {
         stats.add(new WeaponStat(148, true, "building cost reduction", "%s1 metal reduction in building cost", "percentage"));
         stats.add(new WeaponStat(149, true, "bleeding duration", "On Hit: Bleed for %s1 seconds", "additive"));
         stats.add(new WeaponStat(150, true, "turn to gold", "Imbued with an ancient power", "constant"));
+        
+        stats.add(new WeaponStat(153, false, "cannot trade", "Not Tradable or Marketable", "constant"));
+        stats.add(new WeaponStat(154, true, "disguise on backstab", "Upon a successful backstab against a human target, you rapidly disguise as your victim", "constant"));
+        stats.add(new WeaponStat(155, false, "cannot disguise", "Wearer cannot disguise", "constant"));
+        stats.add(new WeaponStat(156, true, "silent killer", "Silent Killer: No attack noise from backstabs", "constant"));
+        stats.add(new WeaponStat(157, false, "disguise speed penalty", "%s1 sec slower disguise speed", "additive"));
+        stats.add(new WeaponStat(158, true, "add cloak on kill", "+%s1% cloak on kill", "additive"));
+        stats.add(new WeaponStat(159, false, "SET BONUS: cloak blink time penalty", "%s1 sec longer cloak blink time", "additive"));
+        stats.add(new WeaponStat(160, true, "SET BONUS: quiet unstealth", "Reduced decloak sound volume", "constant"));
+        
+        stats.add(new WeaponStat(161, false, "flame size penalty", "%s1% less flame spread area", "percentage"));
+        stats.add(new WeaponStat(162, true, "flame size bonus", "+%s1% more flame spread area", "percentage"));
+        stats.add(new WeaponStat(163, false, "flame life penalty", "%s1% less flame distance", "percentage"));
+        stats.add(new WeaponStat(164, true, "flame life bonus", "+%s1% more flame distance", "percentage"));
+        stats.add(new WeaponStat(165, true, "charged airblast", "Airblast can now be charged, which will push enemies further", "constant"));
+        stats.add(new WeaponStat(166, true, "add cloak on hit", "+%s1% cloak on hit", "additive"));
+        stats.add(new WeaponStat(168, true, "disguise no burn", "Immune to fire damage while disguised", "constant"));
+        stats.add(new WeaponStat(169, true, "SET BONUS: dmg from sentry reduced", "+%s1% sentry damage resistance on wearer", "inverted_percentage"));
+        stats.add(new WeaponStat(170, false, "airblast cost increased", "+%s1% airblast cost", "percentage"));
+        
+        stats.add(new WeaponStat(171, true, "airblast cost decreased", "%s1% airblast cost", "percentage"));
+        stats.add(new WeaponStat(173, false, "flame ammopersec increased", "+%s1% flamethrower ammo consumed per second", "percentage"));
+        stats.add(new WeaponStat(174, true, "flame ammopersec decreased", "%s1% flamethrower ammo consumed per second", "percentage"));
+        stats.add(new WeaponStat(175, true, "jarate duration", "Jarate jar", "constant"));
+        stats.add(new WeaponStat(176, true, "SET BONUS: no death from headshots", "The wearer cannot be killed by headshots", "constant"));
+        stats.add(new WeaponStat(177, false, "deploy time increased", "%s1% longer weapon switch", "percentage"));
+        stats.add(new WeaponStat(178, true, "deploy time decreased", "%s1% faster weapon switch", "inverted_percentage"));
+        stats.add(new WeaponStat(179, true, "minicrits become crits", "Crits whenever it would normally mini-crit", "constant"));
+        stats.add(new WeaponStat(180, true, "heal on kill", "+%s1 health restored on kill", "additive"));
+        
+        stats.add(new WeaponStat(181, true, "no self blast dmg", "No self inflicted blast damage taken", "constant"));
+        stats.add(new WeaponStat(182, true, "slow enemy on hit major", "On Hit: Slow target movement by 40% for %s1s", "additive"));
+        stats.add(new WeaponStat(183, false, "aiming movespeed decreased", "%s1% slower move speed while deployed", "percentage"));
+        stats.add(new WeaponStat(188, true, "preserve ubercharge", "On death up to %s1% of your stored ÜberCharge is retained", "additive"));
+        stats.add(new WeaponStat(190, true, "active health regen", "+%s1 health regenerated per second on wearer", "additive"));
+        
+        stats.add(new WeaponStat(191, false, "active health degen", "%s1 health drained per second on wearer", "additive"));
+        stats.add(new WeaponStat(199, true, "switch from wep deploy time decreased", "This weapon holsters %s1% faster", "inverted_percentage"));
+        stats.add(new WeaponStat(200, true, "enables aoe heal", "Alt-Fire: Applies a healing effect to all nearby teammates", "constant"));
+        
+        stats.add(new WeaponStat(201, true, "gesture speed increase", "+%s1% faster taunt speed on wearer", "percentage"));
+        stats.add(new WeaponStat(202, true, "charge time increased", "%s1 sec increase in charge duration", "additive"));
+        stats.add(new WeaponStat(203, true, "drop health pack on kill", "On Kill: A small health pack is dropped", "constant"));
+        stats.add(new WeaponStat(204, false, "hit self on miss", "On Miss: Hit yourself. Idiot.", "constant"));
+        stats.add(new WeaponStat(205, true, "dmg from ranged reduced", "%s1% damage from ranged sources while active", "percentage"));
+        stats.add(new WeaponStat(206, false, "dmg from melee increased", "+%s1% damage from melee sources while active", "percentage"));
+        stats.add(new WeaponStat(207, false, "blast dmg to self increased", "+%s1% damage to self", "percentage"));
+        stats.add(new WeaponStat(208, true, "Set DamageType Ignite", "On Hit: target is engulfed in flames", "constant"));
+        stats.add(new WeaponStat(209, true, "minicrit vs burning player", "100% minicrits vs burning players", "constant"));
+        
+        stats.add(new WeaponStat(217, true, "sanguisuge", "On Backstab: Absorbs the health from your victim.", "constant"));
+        stats.add(new WeaponStat(218, true, "mark for death", "On Hit: One target at a time is Marked-For-Death", "constant"));
+        stats.add(new WeaponStat(220, true, "restore health on kill", "On Kill: Gain %s1% of base health on kill", "additive"));
+        
+        stats.add(new WeaponStat(222, true, "mult sniper charge after bodyshot", "On Scoped Bodyshot: Rifle charge rate increased by %s1%", "percentage"));
+        stats.add(new WeaponStat(223, false, "mult sniper charge after miss", "On Scoped Miss: Rifle charge rate decreased by %s1%", "percentage"));
+        stats.add(new WeaponStat(224, true, "dmg bonus while half dead", "%s1% increase in damage when health <50% of max", "percentage"));
+        stats.add(new WeaponStat(225, false, "dmg penalty while half alive", "%s1% decrease in damage when health >50% of max", "percentage"));
+        stats.add(new WeaponStat(226, false, "honorbound", "Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills.", "constant"));
+        stats.add(new WeaponStat(230, true, "mod medic killed revenge", "When the medic healing you is killed you gain 2 revenge crits", "additive"));
+        
+        stats.add(new WeaponStat(231, true, "medigun charge is megaheal", "Quickfix ÜberCharge", "constant"));
+        stats.add(new WeaponStat(232, true, "mod medic killed minicrit boost", "When the medic healing you is killed you gain mini-crit boost for %s1 seconds", "additive"));
+        stats.add(new WeaponStat(233, true, "mod medic healed damage bonus", "While a medic is healing you, this weapon's damage is increased by %s1%", "percentage"));
+        stats.add(new WeaponStat(234, false, "mod medic healed deploy time penalty", "While not being healed by a medic, your weapon switch time is %s1% longer", "percentage"));
+        stats.add(new WeaponStat(235, true, "mod shovel speed boost", "Move speed increases as the user becomes injured", "constant"));
+        stats.add(new WeaponStat(236, false, "mod weapon blocks healing", "Blocks healing while in use", "constant"));
+        stats.add(new WeaponStat(237, true, "mult sniper charge after headshot", "On Scoped Headshot: Rifle charge rate increased by %s1%", "percentage"));
+        stats.add(new WeaponStat(238, true, "minigun no spin sounds", "Silent Killer: No barrel spin sound", "constant"));
+        stats.add(new WeaponStat(239, true, "ubercharge rate bonus for healer", "+%s1% ÜberCharge rate for the medic healing you (no spawnroom)", "percentage"));
+        stats.add(new WeaponStat(240, true, "reload time decreased while healed", "%s1% faster reload time while being healed", "inverted_percentage"));
     }
     
     /**
