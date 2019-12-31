@@ -587,7 +587,7 @@ public class MainFrame extends javax.swing.JFrame {
                     bruh.remove(i); //Remove attribute and its value
                     if(!bruh.isEmpty()){
                         attribs = bruh.get(0) + " ; " + bruh.get(1);
-                        for(int j=2; j<bruh.size(); j++){
+                        for(int j=2; j<bruh.size()-1; j++){
                             attribs += " ; " + bruh.get(j) + " ; " + bruh.get(j+1);
                         }
                     }
@@ -1157,7 +1157,7 @@ public class MainFrame extends javax.swing.JFrame {
         if(attribsListPositive.getSelectedValue()!=null){
             for(WeaponStat st: stats){
                 for(WeaponStat sup: addedStats){
-                    if(sup.getDescription().equals(st.getDescription())){
+                    if(sup.displayAttrib().equals(attribsListPositive.getSelectedValue())){
                         found = true;
                         removeAttrib(sup.getId());
                         break;
@@ -1170,10 +1170,14 @@ public class MainFrame extends javax.swing.JFrame {
         }
         else if(attribsListNegative.getSelectedValue()!=null){
             for(WeaponStat st: stats){
-                if(st.getDescription().equals(negativeStats.get(attribsListNegative.getSelectedIndex()))){
-                    removeAttrib(st.getId());
-                    break;
+                for(WeaponStat sup: addedStats){
+                    if(sup.displayAttrib().equals(attribsListNegative.getSelectedValue())){
+                        found = true;
+                        removeAttrib(sup.getId());
+                        break;
+                    }
                 }
+                if(found) break;
             }
             addedStats.remove(attribsListNegative.getSelectedIndex());
             negativeStats.remove(attribsListNegative.getSelectedIndex());
