@@ -32,11 +32,11 @@ public class WeaponStat {
     /**
      * Creates a new weapon stat. Use this link:
      * https://wiki.teamfortress.com/wiki/List_of_item_attributes
-     * @param id Identification number of the attribute
-     * @param is_positive This stat is a positive effect
-     * @param name Name of the attribute
-     * @param desc Description of the attribute
-     * @param type Value type of the attribute
+     * @param id Identification number of the attribute.
+     * @param is_positive This stat is a positive effect.
+     * @param name Name of the attribute.
+     * @param desc Description of the attribute.
+     * @param type Value type of the attribute.
      */
     public WeaponStat(int id, boolean is_positive, String name, String desc, String type){
         this.id = id;
@@ -50,12 +50,12 @@ public class WeaponStat {
     /**
      * Creates a new weapon stat. Use this link:
      * https://wiki.teamfortress.com/wiki/List_of_item_attributes
-     * @param id Identification number of the attribute
-     * @param is_positive This stat is a positive effect
-     * @param name Name of the attribute
-     * @param desc Description of the attribute
-     * @param type Value type of the attribute
-     * @param tags Search tags associated with the attribute
+     * @param id Identification number of the attribute.
+     * @param is_positive This stat is a positive effect.
+     * @param name Name of the attribute.
+     * @param desc Description of the attribute.
+     * @param type Value type of the attribute.
+     * @param tags Search tags associated with the attribute. NO SPACES
      */
     public WeaponStat(int id, boolean is_positive, String name, String desc, String type, String[] tags){
         this.id = id;
