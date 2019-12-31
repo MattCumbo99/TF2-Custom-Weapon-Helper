@@ -55,7 +55,7 @@ public class WeaponStat {
      * @param name Name of the attribute.
      * @param desc Description of the attribute.
      * @param type Value type of the attribute.
-     * @param tags Search tags associated with the attribute. NO SPACES
+     * @param tags Search tags associated with the attribute. NO SPACES.
      */
     public WeaponStat(int id, boolean is_positive, String name, String desc, String type, String[] tags){
         this.id = id;
@@ -69,7 +69,7 @@ public class WeaponStat {
     
     /**
      * Gets the ID number of the stat.
-     * @return Stat ID number.
+     * @return Stat ID number
      */
     public int getId(){
         return id;
@@ -130,7 +130,7 @@ public class WeaponStat {
     
     /**
      * Sets the stat's value.
-     * @param val Value to set the stat to
+     * @param val Value to set the stat to.
      */
     public void setValue(double val){
         value = val;
