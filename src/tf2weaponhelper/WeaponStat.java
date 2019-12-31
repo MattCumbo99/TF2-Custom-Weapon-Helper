@@ -49,6 +49,10 @@ public class WeaponStat {
     /**
      * Creates a new weapon stat. Use this link:
      * https://wiki.teamfortress.com/wiki/List_of_item_attributes
+     * 
+     * Possible tags: scout,soldier,pyro,demoman,heavy,engineer,medic,sniper,spy,
+     * pistol
+     * 
      * @param id Identification number of the attribute.
      * @param is_positive This stat is a positive effect.
      * @param name Name of the attribute.
