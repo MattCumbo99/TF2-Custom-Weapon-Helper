@@ -23,11 +23,9 @@ package tf2weaponhelper;
 public class WeaponStat {
     
     private final int id;
-    private final String name, desc, type;
+    private final String name, desc, type, tags;
     private double value;
     private final boolean is_positive;
-    
-    private String[] tags;
     
     /**
      * Creates a new weapon stat. Use this link:
@@ -44,6 +42,7 @@ public class WeaponStat {
         this.name = name;
         this.desc = desc;
         this.type = type;
+        tags = "";
         value = 0.0;
     }
     
@@ -57,7 +56,7 @@ public class WeaponStat {
      * @param type Value type of the attribute.
      * @param tags Search tags associated with the attribute. NO SPACES.
      */
-    public WeaponStat(int id, boolean is_positive, String name, String desc, String type, String[] tags){
+    public WeaponStat(int id, boolean is_positive, String name, String desc, String type, String tags){
         this.id = id;
         this.is_positive = is_positive;
         this.name = name;
@@ -121,11 +120,7 @@ public class WeaponStat {
      * @return tag1 tag2 tag3
      */
     public String getTags(){
-        String good = "";
-        for(String str: tags){
-            good += str + " ";
-        }
-        return good;
+        return tags;
     }
     
     /**

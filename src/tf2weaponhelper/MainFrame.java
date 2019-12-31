@@ -419,7 +419,8 @@ public class MainFrame extends javax.swing.JFrame {
         attribsListPositive.setModel(positiveStats);
         attribsListNegative.setModel(negativeStats);
         
-        stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage"));
+        String[] tags1 = ["all"]
+        stats.add(new WeaponStat(1, false, "damage penalty", "%s1% damage penalty", "percentage", ));
         stats.add(new WeaponStat(2, true, "damage bonus", "+%s1% damage bonus", "percentage"));
         stats.add(new WeaponStat(3, false, "clip size penalty", "%s1% clip size", "percentage"));
         stats.add(new WeaponStat(4, true, "clip size bonus", "+%s1% clip size", "percentage"));
