@@ -27,6 +27,8 @@ public class WeaponStat {
     private double value;
     private final boolean is_positive;
     
+    private String[] tags;
+    
     /**
      * Creates a new weapon stat. Use this link:
      * https://wiki.teamfortress.com/wiki/List_of_item_attributes
@@ -42,6 +44,26 @@ public class WeaponStat {
         this.name = name;
         this.desc = desc;
         this.type = type;
+        value = 0.0;
+    }
+    
+    /**
+     * Creates a new weapon stat. Use this link:
+     * https://wiki.teamfortress.com/wiki/List_of_item_attributes
+     * @param id Identification number of the attribute
+     * @param is_positive This stat is a positive effect
+     * @param name Name of the attribute
+     * @param desc Description of the attribute
+     * @param type Value type of the attribute
+     * @param tags Search tags associated with the attribute
+     */
+    public WeaponStat(int id, boolean is_positive, String name, String desc, String type, String[] tags){
+        this.id = id;
+        this.is_positive = is_positive;
+        this.name = name;
+        this.desc = desc;
+        this.type = type;
+        this.tags = tags;
         value = 0.0;
     }
     
@@ -91,6 +113,19 @@ public class WeaponStat {
      */
     public double getValue(){
         return value;
+    }
+    
+    /**
+     * Gets a string containing all of the tags associated with
+     * this weapon stat.
+     * @return tag1 tag2 tag3
+     */
+    public String getTags(){
+        String good = "";
+        for(String str: tags){
+            good += str + " ";
+        }
+        return good;
     }
     
     /**
